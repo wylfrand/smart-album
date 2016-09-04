@@ -1,0 +1,51 @@
+<n1:result xmlns:n1="http://sigc.sfr.com/listerVision360" 
+           xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" 
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		   xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" 
+		   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <n1:entete>
+      <n1:idTransaction>0A87235820100820201330251002</n1:idTransaction>
+      <n1:ssaEmetteur>0A87</n1:ssaEmetteur>
+      <n1:ssaRecepteur>CLFY</n1:ssaRecepteur>
+      <n1:dateOrigineFlux>2010-08-20T20:13:30.251+02:00</n1:dateOrigineFlux>
+      <n1:versionFlux>01.00</n1:versionFlux>
+      <n1:numeroFlux>FFLINT2358</n1:numeroFlux>
+      <n1:dateTraitementFlux>2011-05-27T17:26:20.252+02:00</n1:dateTraitementFlux>
+      <n1:typeFlux>RU</n1:typeFlux>
+   </n1:entete>
+   <n1:reponse>
+      <n1:resultat>OK</n1:resultat>
+      <n1:codeErreur>0000</n1:codeErreur>
+      <n1:LibelleErreur>Pas d erreur</n1:LibelleErreur>
+   </n1:reponse>
+   <n1:personne xsi:type="n1:PersonnePhysique">
+      <n1:idFonctionnel>236872786</n1:idFonctionnel>
+      <n1:civilite>MR</n1:civilite>
+      <n1:nom>DI MAMBRO</n1:nom>
+      <n1:prenom>Marie</n1:prenom>
+      <n1:fictive>false</n1:fictive>
+      <n1:VIP>false</n1:VIP>
+      <n1:migreSIGC>true</n1:migreSIGC>
+      <n1:email1>marie.dimambro@neuf.fr</n1:email1>
+      <n1:rolesLigne>
+         <n1:codeSCS>06</n1:codeSCS>
+         <n1:numeroCSU>0IR2KN</n1:numeroCSU>
+         <n1:numeroLignePrincipaleVoix>0120304059</n1:numeroLignePrincipaleVoix>
+         <n1:numeroAccesFT>0120304059</n1:numeroAccesFT>
+         <n1:numeroVOIP>0481189331</n1:numeroVOIP>
+         <n1:idOffreAramis>1-1EMPM1O</n1:idOffreAramis>
+         <n1:dateActivation>2007-12-05+01:00</n1:dateActivation>
+         <n1:statut>10</n1:statut>
+         <n1:marqueSIGC>FIX</n1:marqueSIGC>
+         <n1:typeCSU>ADSL</n1:typeCSU>
+         <n1:idFoncCompteClient>1-1BDJU87</n1:idFoncCompteClient>
+         <n1:idFoncDocContractuel>06-0IR2KN</n1:idFoncDocContractuel>
+         <n1:codePTA>MA002</n1:codePTA>
+         <n1:roles>
+            <n1:titulaire>true</n1:titulaire>
+            <n1:payeur>true</n1:payeur>
+            <n1:utilisateur>true</n1:utilisateur>
+         </n1:roles>
+      </n1:rolesLigne>
+   </n1:personne>
+</n1:result>

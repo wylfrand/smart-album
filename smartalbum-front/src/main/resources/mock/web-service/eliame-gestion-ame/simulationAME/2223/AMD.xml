@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reponse xmlns="http://eliame.sfr.com/types">
+    <Code-Retour>0</Code-Retour>
+    <Code-Erreur></Code-Erreur>
+    <Libelle-Erreur></Libelle-Erreur>
+    <Reponse>
+        <ID-reponse>001</ID-reponse>
+        <ListeProposition>
+            <Nombre-Propositions>1</Nombre-Propositions>
+            <Proposition>
+                <ID-Proposition>90293R1P11</ID-Proposition>
+                <ListeGroupe>
+                    <Nombre-Groupes>1</Nombre-Groupes>
+                    <Groupe>
+                        <Categorie>MP01</Categorie>
+                        <Nbr-ligne-min>2</Nbr-ligne-min>
+                        <Nbr-ligne-max>5</Nbr-ligne-max>
+                        <Libelle>Cr?ez votre pack et r?alisez des ?conomies</Libelle>
+                        <Description>Cr?ez votre pack et r?alisez des ?conomies</Description>
+                        <ID-Groupe>1078</ID-Groupe>
+                        <Nom-Groupe>Multi-Packs</Nom-Groupe>
+                        <Administrateur>0620304059</Administrateur>
+                        <Segment-Ligne-Adm>GP</Segment-Ligne-Adm>
+                        <Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+                        <Canal>WB</Canal>
+                        <Contexte>ADM-GRP</Contexte>
+                        <Acte-de-gestion>AMD</Acte-de-gestion>
+                        <Code-pdv>9802270</Code-pdv>
+                        <Code-Action>D</Code-Action>
+                        <Motif>[ADM-GRP]:[AMD]</Motif>
+                        <ListeLignes>
+                            <Nombre-Lignes>3</Nombre-Lignes>
+                            <Ligne>
+                                <ID-Ligne>1118</ID-Ligne>
+                                <ID-CSU>01-IZZ302</ID-CSU>
+                                <Segment-Ligne>GP</Segment-Ligne>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620304059</Num-Ligne>
+                                <Code-Action>D</Code-Action>
+                                <Motif>[ADM-GRP]:[AMD]</Motif>
+                                <Statut-Ligne>10</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Contexte>ADM-GRP</Contexte>
+                                <Acte-de-gestion>AMD</Acte-de-gestion>
+                                <Code-pdv>9802270</Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>2</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>1120</ID-Benefice>
+                                        <Code-Action>D</Code-Action>
+                                        <Code-Benefice>BMP01M1</Code-Benefice>
+                                        <Nature-Benefice>REM</Nature-Benefice>
+                                        <Libelle>remise  MP01 mobile</Libelle>
+                                        <Description>remise Multi-Packs pour les lignes mobiles</Description>
+                                        <Code-produit>P90M</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>5.0</Valeur-min>
+                                        <Valeur-max>5.0</Valeur-max>
+                                        <Duree>99999</Duree>
+                                        <ListePRA>
+                                            <PTA>WR4</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                    </Benefice>
+                                    <Benefice>
+                                        <ID-Benefice>1121</ID-Benefice>
+                                        <Code-Action>D</Code-Action>
+                                        <Code-Benefice>TMP01M1</Code-Benefice>
+                                        <Nature-Benefice>TECH</Nature-Benefice>
+                                        <Libelle>topage MP01 mobile</Libelle>
+                                        <Description>suivi soucription Multi-Pack de SFR pour la ligne mobile</Description>
+                                        <Code-produit>P14N</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>0.0</Valeur-min>
+                                        <Valeur-max>0.0</Valeur-max>
+                                        <Duree>99999</Duree>
+                                        <ListePRA>
+                                            <PTA>WR4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>0</Nombre-Contreparties>
+                                </ListeContrepartie>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>1258</ID-Ligne>
+                                <ID-CSU>02-BR8623</ID-CSU>
+                                <Segment-Ligne>GP</Segment-Ligne>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0624173978</Num-Ligne>
+                                <Code-Action>D</Code-Action>
+                                <Motif>[ADM-GRP]:[AMD]</Motif>
+                                <Statut-Ligne>10</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Contexte>ADM-GRP</Contexte>
+                                <Acte-de-gestion>AMD</Acte-de-gestion>
+                                <Code-pdv>9802270</Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>2</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>1260</ID-Benefice>
+                                        <Code-Action>D</Code-Action>
+                                        <Code-Benefice>BMP01M1</Code-Benefice>
+                                        <Nature-Benefice>REM</Nature-Benefice>
+                                        <Libelle>remise  MP01 mobile</Libelle>
+                                        <Description>remise Multi-Packs pour les lignes mobiles</Description>
+                                        <Code-produit>P90M</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>2.0</Valeur-min>
+                                        <Valeur-max>12.0</Valeur-max>
+                                        <Duree>99999</Duree>
+                                        <ListePRA>
+                                            <PTA>CQ0</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>ED0</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EB2</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CS4</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>ED2</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EB4</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CQ4</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CS2</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>ED4</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CS0</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CQ2</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EB0</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WR4</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>X14</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WR2</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WT0</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>X12</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>X11</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WR0</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QS0</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WT4</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WT2</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>XL4</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QS4</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QS2</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QD0</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QD2</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WS4</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EC0</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WQ2</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EC4</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EC2</PTA>
+                                            <Montant>2</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WQ4</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QD4</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WQ0</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WS0</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QT0</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WS2</PTA>
+                                            <Montant>5</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QT2</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QT4</PTA>
+                                            <Montant>3</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WW2</PTA>
+                                            <Montant>8</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WW0</PTA>
+                                            <Montant>8</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>XL0</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>XL2</PTA>
+                                            <Montant>12</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WW4</PTA>
+                                            <Montant>8</Montant>
+                                        </ListePRA>
+                                    </Benefice>
+                                    <Benefice>
+                                        <ID-Benefice>1261</ID-Benefice>
+                                        <Code-Action>D</Code-Action>
+                                        <Code-Benefice>TMP01M1</Code-Benefice>
+                                        <Nature-Benefice>TECH</Nature-Benefice>
+                                        <Libelle>topage MP01 mobile</Libelle>
+                                        <Description>suivi soucription Multi-Pack de SFR pour la ligne mobile</Description>
+                                        <Code-produit>P14N</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>0.0</Valeur-min>
+                                        <Valeur-max>0.0</Valeur-max>
+                                        <Duree>99999</Duree>
+                                        <ListePRA>
+                                            <PTA>CQ0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>ED0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EB2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CS4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>ED2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EB4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CQ4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CS2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>ED4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CS0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>CQ2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EB0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WR4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>X14</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WR2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WT0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>X12</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>X11</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WR0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QS0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WT4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WT2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>XL4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QS4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QS2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QD0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QD2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WS4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EC0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WQ2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EC4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>EC2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WQ4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QD4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WQ0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WS0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QT0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WS2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QT2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>QT4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WW2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WW0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>XL0</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>XL2</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                        <ListePRA>
+                                            <PTA>WW4</PTA>
+                                            <Montant>0</Montant>
+                                        </ListePRA>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>1</Nombre-Contreparties>
+                                    <Contrepartie>
+                                        <ID-Contrepartie>1117</ID-Contrepartie>
+                                        <Code-Action>D</Code-Action>
+                                        <Code>MIGMP01</Code>
+                                        <Libelle>migration vers nouvelles offres</Libelle>
+                                        <Description>Pour b&#233;n&#233;ficier de vos remises vous devez passer &#224; un forfait compatible Multi-Packs dans le mois suivant la cr&#233;ation du groupe</Description>
+                                        <Duree>90</Duree>
+                                        <Nature-contrepartie>PTA</Nature-contrepartie>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARECONECT</Sous-Gamme>
+                                            <Libelle-PTA>CARRE CONNECT 3H</Libelle-PTA>
+                                            <PTA>QT0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 2H PX 24</Libelle-PTA>
+                                            <PTA>ED4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE ABSOLU INT  PX24</Libelle-PTA>
+                                            <PTA>XL4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 1H</Libelle-PTA>
+                                            <PTA>EB0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARRE VOIX</Sous-Gamme>
+                                            <Libelle-PTA>CARRE VOIX 6H  PX 12</Libelle-PTA>
+                                            <PTA>CS2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 8H </Libelle-PTA>
+                                            <PTA>WS0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 2H  </Libelle-PTA>
+                                            <PTA>WQ0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 5H PX 24</Libelle-PTA>
+                                            <PTA>WR4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE ABSOLU</Libelle-PTA>
+                                            <PTA>X11</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARRE VOIX</Sous-Gamme>
+                                            <Libelle-PTA>CARRE VOIX 4H  PX 24</Libelle-PTA>
+                                            <PTA>CQ4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARRE VOIX</Sous-Gamme>
+                                            <Libelle-PTA>CARRE VOIX 4H  PX 12</Libelle-PTA>
+                                            <PTA>CQ2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARRE VOIX</Sous-Gamme>
+                                            <Libelle-PTA>CARRE VOIX 6H  PX 24</Libelle-PTA>
+                                            <PTA>CS4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE ABSOLU INT </Libelle-PTA>
+                                            <PTA>XL0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 30M PX 12</Libelle-PTA>
+                                            <PTA>EC2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE ABSOLU 500 Mo </Libelle-PTA>
+                                            <PTA>QS0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE WEB  24h/24  </Libelle-PTA>
+                                            <PTA>WW0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE ABSOLU 500 Mo X24 </Libelle-PTA>
+                                            <PTA>QS4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE WEB  24h/24  PX24</Libelle-PTA>
+                                            <PTA>WW4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE ABSOLU PX 12</Libelle-PTA>
+                                            <PTA>X12</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARRE VOIX</Sous-Gamme>
+                                            <Libelle-PTA>CARRE VOIX 4H  </Libelle-PTA>
+                                            <PTA>CQ0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARRE VOIX</Sous-Gamme>
+                                            <Libelle-PTA>CARRE VOIX 6H  </Libelle-PTA>
+                                            <PTA>CS0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 5H PX 12</Libelle-PTA>
+                                            <PTA>WR2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 1H PX 24</Libelle-PTA>
+                                            <PTA>EB4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE WEB 3H</Libelle-PTA>
+                                            <PTA>WT0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 8H PX 12</Libelle-PTA>
+                                            <PTA>WS2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARECONECT</Sous-Gamme>
+                                            <Libelle-PTA>CARRE CONNECT 2H PX 24</Libelle-PTA>
+                                            <PTA>QD4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 1H PX 12</Libelle-PTA>
+                                            <PTA>EB2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 2H PX 12</Libelle-PTA>
+                                            <PTA>ED2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 2H  PX 12</Libelle-PTA>
+                                            <PTA>WQ2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 30M PX 24</Libelle-PTA>
+                                            <PTA>EC4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARECONECT</Sous-Gamme>
+                                            <Libelle-PTA>CARRE CONNECT 2H</Libelle-PTA>
+                                            <PTA>QD0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 30M</Libelle-PTA>
+                                            <PTA>EC0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 5H </Libelle-PTA>
+                                            <PTA>WR0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE  WEB 3H PX24</Libelle-PTA>
+                                            <PTA>WT4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARECONECT</Sous-Gamme>
+                                            <Libelle-PTA>CARRE CONNECT 3H PX 24</Libelle-PTA>
+                                            <PTA>QT4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 2H  PX 24</Libelle-PTA>
+                                            <PTA>WQ4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE ABSOLU INT  PX12</Libelle-PTA>
+                                            <PTA>XL2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE ABSOLU PX 24</Libelle-PTA>
+                                            <PTA>X14</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE WEB  24h/24  PX12</Libelle-PTA>
+                                            <PTA>WW2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARECONECT</Sous-Gamme>
+                                            <Libelle-PTA>CARRE CONNECT 3H PX 12</Libelle-PTA>
+                                            <PTA>QT2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREABS  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE CARRE ABSOLU 500 Mo X12</Libelle-PTA>
+                                            <PTA>QS2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARECONECT</Sous-Gamme>
+                                            <Libelle-PTA>CARRE CONNECT 2H PX 12</Libelle-PTA>
+                                            <PTA>QD2</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>CARRE WEB 8H PX 24</Libelle-PTA>
+                                            <PTA>WS4</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREMINI </Sous-Gamme>
+                                            <Libelle-PTA>CARRE MINI 2H</Libelle-PTA>
+                                            <PTA>ED0</PTA>
+                                        </ListeUnivers>
+                                        <ListeUnivers>
+                                            <Univers>CARRE GP</Univers>
+                                            <Marque>ABO</Marque>
+                                            <Gamme>CARRE</Gamme>
+                                            <Sous-Gamme>CARREWEB  </Sous-Gamme>
+                                            <Libelle-PTA>EDITION SPECIALE WEB 3H PX12</Libelle-PTA>
+                                            <PTA>WT2</PTA>
+                                        </ListeUnivers>
+                                    </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>1119</ID-Ligne>
+                                <ID-CSU>01-DCL272</ID-CSU>
+                                <Segment-Ligne>GP</Segment-Ligne>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620497800</Num-Ligne>
+                                <Code-Action>D</Code-Action>
+                                <Motif>[ADM-GRP]:[AMD]</Motif>
+                                <Statut-Ligne>Actif</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Contexte>ADM-GRP</Contexte>
+                                <Acte-de-gestion>AMD</Acte-de-gestion>
+                                <Code-pdv>9802270</Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>2</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>1123</ID-Benefice>
+                                        <Code-Action>D</Code-Action>
+                                        <Code-Benefice>TMP01M1</Code-Benefice>
+                                        <Nature-Benefice>TECH</Nature-Benefice>
+                                        <Libelle>topage MP01 mobile</Libelle>
+                                        <Description>suivi soucription Multi-Pack de SFR pour la ligne mobile</Description>
+                                        <Code-produit>P14N</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>0.0</Valeur-min>
+                                        <Valeur-max>0.0</Valeur-max>
+                                        <Duree>99999</Duree>
+                                    </Benefice>
+                                    <Benefice>
+                                        <ID-Benefice>1122</ID-Benefice>
+                                        <Code-Action>D</Code-Action>
+                                        <Code-Benefice>BMP01M1</Code-Benefice>
+                                        <Nature-Benefice>REM</Nature-Benefice>
+                                        <Libelle>remise  MP01 mobile</Libelle>
+                                        <Description>remise Multi-Packs pour les lignes mobiles</Description>
+                                        <Code-produit>P90M</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>5.0</Valeur-min>
+                                        <Valeur-max>5.0</Valeur-max>
+                                        <Duree>99999</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>0</Nombre-Contreparties>
+                                </ListeContrepartie>
+                            </Ligne>
+                        </ListeLignes>
+                    </Groupe>
+                </ListeGroupe>
+            </Proposition>
+        </ListeProposition>
+    </Reponse>
+</Reponse>

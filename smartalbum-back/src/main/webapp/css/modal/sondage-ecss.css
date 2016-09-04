@@ -1,0 +1,87 @@
+.popin_sondage_ecss {
+    background: url("../img/0407_12_04_012_hd.jpg") no-repeat scroll center top transparent;
+    height: 901px;
+    position: absolute;
+	left: 20px;
+    width: 1200px;
+    z-index: 100;
+	font-size: 15px; 
+	display: block;
+
+}
+
+.popin_sondage_txt {
+  color: #FFFFFF;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 18%;
+    padding-left: 10px;
+    padding-top: 7px;
+    width: 492px;
+	line-height: 33px;
+}
+
+body {
+    font-family: Futura,Arial,Verdana,serif;
+    font-size: 1em;
+	cursor : default;
+}
+
+.close_popin_sondage {
+    float: right;
+    font-size: 16px;
+    height: 18px;
+    position: absolute;
+    right: 27px;
+    top: 5px;
+    width: 19px;
+	cursor: pointer;
+}
+
+.texteFermer_sondage {
+     color: #FFFFFF;
+    float: right;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: x-small;
+    position: absolute;
+    right: 56px;
+    text-decoration: underline;
+    top: 8px;
+}
+
+.bt_bottom_sondage {
+    font-family: Futura,Arial,Verdana,serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+	cursor: default;
+	margin-top: 7%;
+	position: relative;
+}
+
+.bt_repondre_questionnaire_sondage {
+    background: none no-repeat scroll 0px 0px #FF5500;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+	position: relative;
+    margin-right: 133px;
+    padding: 7px 80px;
+    text-decoration: none;
+    width: 180px;
+}
+
+.bt_nonmerci_sondage {
+    background: none no-repeat scroll 0px 0px #FF5500;
+	position: relative;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+	padding: 7px 37px;
+    width: 180px;
+}
+
+div.popin_sondage_txt p#sondage_ecss_title{
+	color:#FF5500;
+	font-size:22px;
+}

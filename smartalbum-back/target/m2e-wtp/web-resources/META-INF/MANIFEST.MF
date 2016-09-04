@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Built-By: aristidemvou
+Build-Jdk: 1.7.0_79
+Specification-Title: Smart Album - Application back office
+Specification-Version: 1.0.0-SNAPSHOT
+Implementation-Title: Smart Album - Application back office
+Implementation-Version: 1.0.0-SNAPSHOT
+Implementation-Vendor-Id: com.mycompany.application.smartalbum
+Build-Date: 
+Build-Number: 
+Build-Scm-Branch: 
+Created-By: Maven Integration for Eclipse
+Scm-Branch: 
+Svn-Revision: 
+

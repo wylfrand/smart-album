@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reponse xmlns="http://eliame.sfr.com/types">
+    <Code-Retour>0</Code-Retour>
+    <Code-Erreur></Code-Erreur>
+    <Libelle-Erreur></Libelle-Erreur>
+    <Reponse>
+        <ID-reponse>001</ID-reponse>
+        <ListeProposition>
+            <Nombre-Propositions>1</Nombre-Propositions>
+            <Code-ineligibilite></Code-ineligibilite>
+            <Cause-ineligibilite></Cause-ineligibilite>
+            <Proposition>
+                <ID-Proposition>1</ID-Proposition>
+                <ListeGroupe>
+                    <Nombre-Groupes>1</Nombre-Groupes>
+                    <Groupe>
+                        <Categorie>CAT1</Categorie>
+                        <Nbr-ligne-min>1</Nbr-ligne-min>
+                        <Nbr-ligne-max>5</Nbr-ligne-max>
+                        <Libelle>Multi-Pack</Libelle>
+                        <Description>Description Multi-Pack</Description>
+                        <ID-Groupe>g001</ID-Groupe>
+                        <Nom-Groupe>My Groupe</Nom-Groupe>
+                        <Administrateur>0620304070</Administrateur>
+                        <Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+                        <Canal>WB</Canal>
+                        <Sous-Canal></Sous-Canal>
+                        <Code-pdv></Code-pdv>
+                        <Code-Action>I</Code-Action>
+                        <ListeLignes>
+                            <Nombre-Lignes>2</Nombre-Lignes>
+                            <Ligne>
+                                <ID-Ligne>1</ID-Ligne>
+                                <ID-CSU></ID-CSU>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620304070</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>B001</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>2</Libelle>
+                                        <Description>description bénéfice 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>5</Valeur-min>
+                                        <Valeur-max>5</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>B002</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>2</Libelle>
+                                        <Description>description bénéfice 002</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>3</Valeur-min>
+                                        <Valeur-max>3</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>B003</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>2</Libelle>
+                                        <Description>description bénéfice 003</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>2</Valeur-min>
+                                        <Valeur-max>2</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>1</ID-Ligne>
+                                <ID-CSU></ID-CSU>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620304060</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>B001</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description bénéfice 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>0</Unite>
+                                        <Valeur-min>5.0</Valeur-min>
+                                        <Valeur-max>5.0</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>1</Nombre-Contreparties>
+                                    <Contrepartie>
+                                        <ID-Contrepartie>cp001</ID-Contrepartie>
+                                        <Code-Action>I</Code-Action>
+                                        <Code>001</Code>
+                                        <Libelle>Contrepartie libelle 001</Libelle>
+                                        <Description>description contrepartie 001</Description>
+                                        <Duree>1</Duree>
+                                        <Nature-contrepartie>PTA</Nature-contrepartie>
+                                    </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>1</ID-Ligne>
+                                <ID-CSU></ID-CSU>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620304061</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>B001</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description bénéfice 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>0</Unite>
+                                        <Valeur-min>2.0</Valeur-min>
+                                        <Valeur-max>2.0</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>1</Nombre-Contreparties>
+                                    <Contrepartie>
+                                        <ID-Contrepartie>cp001</ID-Contrepartie>
+                                        <Code-Action>I</Code-Action>
+                                        <Code>001</Code>
+                                        <Libelle>Contrepartie libelle 001</Libelle>
+                                        <Description>description contrepartie 001</Description>
+                                        <Duree>1</Duree>
+                                        <Nature-contrepartie>PTA</Nature-contrepartie>
+                                    </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>1</ID-Ligne>
+                                <ID-CSU></ID-CSU>
+                                <Nature-Ligne>DSL</Nature-Ligne>
+                                <Num-Ligne>0120304060</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>B001</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description bénéfice 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>0</Unite>
+                                        <Valeur-min>5.0</Valeur-min>
+                                        <Valeur-max>5.0</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>1</Nombre-Contreparties>
+                                    <Contrepartie>
+                                        <ID-Contrepartie>cp001</ID-Contrepartie>
+                                        <Code-Action>I</Code-Action>
+                                        <Code>001</Code>
+                                        <Libelle>Contrepartie libelle 001</Libelle>
+                                        <Description>description contrepartie 001</Description>
+                                        <Duree>1</Duree>
+                                        <Nature-contrepartie>PTA</Nature-contrepartie>
+                                    </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>1</ID-Ligne>
+                                <ID-CSU></ID-CSU>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620304065</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>B001</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description bénéfice 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>0</Unite>
+                                        <Valeur-min>5.0</Valeur-min>
+                                        <Valeur-max>5.0</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>1</Nombre-Contreparties>
+                                    <Contrepartie>
+                                        <ID-Contrepartie>cp001</ID-Contrepartie>
+                                        <Code-Action>I</Code-Action>
+                                        <Code>001</Code>
+                                        <Libelle>Contrepartie libelle 001</Libelle>
+                                        <Description>description contrepartie 001</Description>
+                                        <Duree>1</Duree>
+                                        <Nature-contrepartie>PTA</Nature-contrepartie>
+                                    </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                        </ListeLignes>
+                    </Groupe>
+                </ListeGroupe>
+            </Proposition>
+        </ListeProposition>
+    </Reponse>
+</Reponse>

@@ -1,0 +1,67 @@
+insert into maam_transcodification(id,code,name,libelle,type_transco,create_date,update_date)
+values (1, 'Actif', 'Status Groupe Actif', 'Actif', 'STATUS','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (2, 'Pending', 'Status Groupe Pending', 'En cours', 'STATUS','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (3, 'Deleted', 'Status Groupe Deleted', 'Supprimé', 'STATUS','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (4, 'Failed', 'Status Groupe Failed', 'En échec', 'STATUS','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (5, 'Realised', 'Status Groupe Realised', 'Satisfaite', 'STATUS','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (6, 'Inactive', 'Status Groupe Inactive', 'Inactif', 'STATUS','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (55, 'Under construction', 'Status Groupe Under construction', 'En coustruction', 'STATUS','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       
+       (7, '001', 'Inéligibilité Eliame Code retour 001', 'Aucun avantage éligible', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (8, '002', 'Inéligibilité Eliame Code retour 002', 'Impossible d''ajouter la ligne à un avantage dont vous n''êtes pas l''administrateur', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (9, '003', 'Inéligibilité Eliame Code retour 003', 'Date de fin de validité de l’AME est échue', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (10, '004', 'Inéligibilité Eliame Code retour 004', 'Groupe en cours de construction', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (11, '005', 'Inéligibilité Eliame Code retour 005', 'Nombre de lignes maximum du groupe est dépassé', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (12, '006', 'Inéligibilité Eliame Code retour 006', 'Ligne fait déjà partie du groupe', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (13, '007', 'Inéligibilité Eliame Code retour 007', 'Groupe inexistant dans Gena', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (14, '008', 'Inéligibilité Eliame Code retour 008', 'Ligne introuvable dans le SI', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (15, '009', 'Inéligibilité Eliame Code retour 009', 'Nombre de Lignes minimum du groupe est supérieur', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (16, '010', 'Inéligibilité Eliame Code retour 010', 'Ligne ne fait pas partie du groupe', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (17, '011', 'Inéligibilité Eliame Code retour 011', 'Ligne administrateur et le titulaire n’a pas d’autres lignes', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (18, '012', 'Inéligibilité Eliame Code retour 012', 'Aucune ligne n’est administrateur', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (19, '013', 'Inéligibilité Eliame Code retour 013', 'Pas de meilleure proposition que celle existante', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (20, '014', 'Inéligibilité Eliame Code retour 014', 'La ligne à retirer est une ligne administrateur et le titulaire ne possède pas une autre ligne pour la remplacer. Le groupe sera donc supprimé.', 'INELIGIBILITE_ELIAME','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       
+       (21, '01', 'Motif Suppression Membre Code retour 01', 'Suppression manuelle de membre', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (22, '02', 'Motif Suppression Membre Code retour 02', 'Suppression manuelle de groupe', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (23, '03', 'Motif Suppression Membre Code retour 03', 'Résiliation ou annulation de ligne', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (24, '04', 'Motif Suppression Membre Code retour 04', 'Changement d’offre (nouvelle offre inéligible)', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (25, '05', 'Motif Suppression Membre Code retour 05', 'Ajout d''une option incompatible', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (26, '06', 'Motif Suppression Membre Code retour 06', 'Suppression de la remise', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (27, '07', 'Motif Suppression Membre Code retour 07', 'Pièces Justificatives non reçues ou incorrectes', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (28, '08', 'Motif Suppression Membre Code retour 08', 'Ajout d''une option incompatible', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (29, '09', 'Motif Suppression Membre Code retour 09', 'Changement d''offre non effectué', 'MOTIF_SUPPRESSION_MEMBRE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       (30, '02', 'Motif Suppression Groupe Code retour 02', 'Suppression manuelle de groupe', 'MOTIF_SUPPRESSION_GROUPE','2011-11-12 10:40:40','2011-12-12 10:40:40'),
+       
+       (31, 'AMS', 'Acte de gestion AMS', 'Souscription d''AME', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (32, 'AMA', 'Acte de gestion AMA', 'Ajout de membre à un groupe', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (33, 'AMD', 'Acte de gestion AMD', 'Retrait de membre d''un groupe', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (34, 'AMC', 'Acte de gestion AMC', 'Suppression d''un groupe', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (35, 'VLM', 'Acte de gestion VLM', 'VLA mobile effectuée via V&S ou BOL/Ecom', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (36, 'VLF', 'Acte de gestion VLF', 'VLA Fixe', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (37, 'SMO', 'Acte de gestion SMO', 'Migration de PTA', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (38, 'AOP', 'Acte de gestion AOP', 'Souscription de produit provoquant un calcul d''impact', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (39, 'ROP', 'Acte de gestion ROP', 'Résiliation de produit provoquant un calcul d''impact', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (40, 'LSU', 'Acte de gestion LSU', 'Résiliation d''une ligne appartenant à un groupe', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (41, 'LIC', 'Acte de gestion LIC', 'Levée de contrepartie', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (42, 'LNM', 'Acte de gestion LNM', 'Changement de numéro de ligne', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (43, 'VML', 'Acte de gestion VML', 'Vente Multiple de Ligne', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (44, 'SAV', 'Acte de gestion SAV', 'Service Après-Vente', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (45, 'CAI', 'Acte de gestion CAI', 'Changement d''Adresse  d''Installation', 'ACTE_DE_GESTION', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       
+       (46, 'RC', 'Canal de l''acte RC', 'IHM Chargé de clientèle', 'CANAL_DE_ACTE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (47, 'VS', 'Canal de l''acte VS', 'VENTES ET SOUSCRIPTIONS', 'CANAL_DE_ACTE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (48, 'WB', 'Canal de l''acte WB', 'SELFCARE WEB', 'CANAL_DE_ACTE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (49, 'ACD', 'Canal de l''acte ACD', 'ACCUEIL EN DISTRIBUTION', 'CANAL_DE_ACTE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (50, 'BOF', 'Canal de l''acte BOF', 'SSA Back-Office', 'CANAL_DE_ACTE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       
+       (51, 'PARC', 'Type de ligne PARC', 'Ligne parc', 'TYPE_DE_LIGNE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (52, 'VLA', 'Type de ligne VLA', 'Ligne souscrite en vente additionnelle', 'TYPE_DE_LIGNE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (53, 'PTA', 'Type de ligne PTA', 'Ligne parc simulant un changement de plan tarifaire', 'TYPE_DE_LIGNE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (54, 'SIMU', 'Type de ligne SIMU', 'Ligne simulée', 'TYPE_DE_LIGNE', '2012-01-02 15:30:00', '2012-01-02 15:30:00'),
+       (56, 'MOB', 'Type de ligne MOBILE', 'Ligne Mobile', 'TYPE_DE_LIGNE', '2012-01-02 15:30:00', '2012-01-02 15:30:00');
+       
+       
+       
+       
+       

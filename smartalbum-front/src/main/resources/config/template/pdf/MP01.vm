@@ -1,0 +1,463 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/pdf; charset=utf-8" />
+<!--     @import url("/css/pdf_design.css"); -->
+    <title></title>
+    
+    
+<style type="text/css">
+   
+/*css.css*/
+
+a {
+	color: #FF6533;
+}
+a:hover, a:focus {
+	color: #FF4C00;
+
+}
+
+/* Page */
+
+/* Navigation */
+#navigation {
+	background: #ffffff;
+	padding: 12px 15px;
+}
+
+.underlined
+{
+	border-bottom : 1px solid #000000;
+	width : 410px;
+	float : right;
+	margin-right: 20px;
+	margin-top : 10px;
+}
+}
+
+.nomPrenomMessage
+{
+	font-weight : italic;
+}
+
+#navigation a:hover, #navigation a:focus {
+	background: #000000;
+}
+
+/* Pied de page */
+
+.puce{color:#555555;margin-left:37px;}
+.message2 .puce li{
+list-style-image: URL(/img/puce.png);
+list-style:URL(/img/puce.png);
+}
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+html, body {
+	height: 100%; /* Voir -> Note 1 ci-dessous */
+}
+
+body {
+	margin: 0;
+	padding: 10px 20px; /* Note -> 2 */
+	font-family: arial, sans-serif; /* 3 */
+	font-size: 12px; /* -> 4 */
+	line-height: 1.25; /* -> 5 */
+	color: #000000;
+	background: #ffffff;
+}
+
+/* En-tête */
+#entete {
+   padding: 15px 0 10px;
+	height:85px;
+	width:607px;
+}
+#entete h1 {
+	margin: 0;
+}
+
+.champ-saisie{
+background: none repeat scroll 0 0 transparent;
+border-style: none none solid;
+border-width:0 0 1px;
+border-color:#000000;
+width:426px;
+}
+.champ-signature{
+    border: 2px solid #FF0000;
+    height: 40px;
+    width: 200px;
+	background:none;
+}
+.text-small{
+font-size:9px;
+}
+.champ-saisie-ligne{
+background: none repeat scroll 0 0 transparent;
+border-bottom: solid 1px black;
+border-style: none none dashed;
+border-width:0 0 1px;
+border-color:#000000;}
+
+.champ-date{
+background: none repeat scroll 0 0 transparent;
+border-style: none none solid;
+border-width:0 0 1px;
+border-color:#000000;
+width:50px;
+}
+
+#entete h1 img {
+	float: left;
+	margin: 0 40px 10px 0;
+}
+#entete .sous-titre1 {
+	font-size:17px;
+	margin-left:140px;
+	margin-bottom:0;
+	margin-top:29px;
+	font-weight:bold;
+}
+
+#entete .sous-titre2 {
+	font-size:17px;
+	margin-top:0;
+	font-weight:bold;
+}
+#entete .sous-titre3{
+	font-size:17px;
+	margin-top:50px;
+	font-weight:bold;
+}
+.message1{
+margin-left:25px;
+text-align:left;
+}
+.message2{
+
+text-align:left;
+}
+.liste-piece{
+margin-left:38px;
+}
+.kbis{
+margin-left:60px;}
+.message2 li {
+list-style:circle outside none;}
+.text-delai{
+color:#ff0000;
+}
+.adresse{
+font-weight:bold;
+text-align:center;
+}
+/* Menu de navigation */
+
+#navigation ul {
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+#navigation li {
+	display: inline;
+}
+#navigation a {
+	padding: 6px;
+	line-height: 1.5;
+	font-size: .9em;
+	text-decoration: none;
+	font-size: .9em;
+	color: #FF6533;
+}
+
+/* Contenu */
+#contenu {
+	padding: 10px 20px;
+	background: #afafaf;
+	border:3px solid;
+	width:525px;
+	text-align:left;
+	margin-bottom:120px;
+	margin-left: 70px;
+	color: #363B29;
+}
+
+#contenu > :first-child {
+	margin-top: 10px;
+}
+#contenu p, #contenu li {
+	line-height: 1.5;
+}
+#contenu ul{margin-bottom:22px;}
+#contenu a {
+	color: #332510;
+}
+#contenu a:hover, #contenu a:focus {
+	color: #6E5122;
+}
+#contenu strong {
+	color: #181A12;
+}
+/* Pied de page */
+#pied {
+	font-size: 8px;
+	color: #000000;
+	padding: 0 15px 0 15px;
+	margin-top: 90px;
+}
+
+#pied p {
+	margin: .5em 0;
+}
+
+#copyright {
+	text-align: left;
+	font-size: 1em;
+}
+   /* fin contenu */
+   
+/* fin  css.css*/   
+
+
+/*model03*/
+/* --- COULEURS --- */
+
+/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
+   uniquement les couleurs de fond (propriétés background) et les couleurs
+   du texte (propriété color).
+   Pour modifier la disposition des blocs, voir plus bas dans la feuille de
+   styles la partie «positionnement». */
+
+/* Général */
+
+#global {
+	min-height: 100%; /* -> 1 */
+	width: 572px;
+	overflow: hidden; /* -> 2 */
+	margin-left: auto;
+	margin-right: auto; /* -> 3 */
+}
+
+li {
+	list-style:disc outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.message{
+width:520px;
+margin-left:25px;
+text-align:left;
+}
+
+@page { 
+        size: 210mm 275mm;
+        background: #ffffff;
+        margin: 0.1in; 
+        -fs-flow-top: "header";
+        -fs-flow-bottom: "footer";
+        -fs-flow-left: "left";
+        -fs-flow-right: "right";
+        padding: 2em 1em 2em 1em;
+		overflow: hidden; /* -> 2 */
+    }
+
+#header {
+    font: bold serif;
+    position: absolute; top: 0; left: 0; 
+    -fs-move-to-flow: "header";
+}
+
+#footer {
+    font-size: 90%; font-style: italic; 
+    position: absolute; top: 0; left: 0;
+    -fs-move-to-flow: "footer";
+}
+
+#pagenumber:before {
+   content: counter(page); 
+}
+
+#pagecount:before {
+   content: counter(page);  
+}
+
+
+/*fin du model03*/
+
+    </style>
+</head>
+<body>
+  
+<div class="page">
+
+	<div id="entete">
+		<h1>
+			<img alt="" src="img/SFR.png"></img>
+		</h1>
+		<p class="sous-titre1">
+			FORMULAIRE POUR VOTRE DEMANDE DE</p>
+<p class="sous-titre2">REMISES MULTI-PACKS (à signer et renvoyer complété)
+		</p>
+	</div><!-- #entete -->
+	<div class="message1">
+	<p>Chère cliente, cher client,<br/>
+Vous avez demandé des remises Multi-Packs pour votre foyer ou votre entreprise : excellent
+choix !
+<br/><br/>
+Afin de compléter et de valider la prise en compte de vos remises, vous devez imprimer, remplir
+et envoyer ce document avec la ou les pièces justificative(s) nécessaire(s) à l'adresse suivante
+dans <span class="text-delai">un délai maximum d'un mois </span>:<br/><br/>
+<div class="adresse">SFR Service Client Département Relation Distribution<br/>
+TSA 48103<br/>
+27109 Val de Reuil</div><br/><br/>
+Ces pièces justificatives nous permettront de vérifier que les titulaires des abonnements grâce
+auxquels vous bénéficiez de remises Multi-Packs appartiennent bien au même foyer ou à la
+même entreprise.<br/><br/>
+Maintenant, c'est à vous !</p><br/>
+	</div>
+	<div id="contenu">
+		
+		<div id="cont-normal">
+
+			<form>
+					<label for="pseudo">Je soussigné(e) :</label><div class="underlined"></div>
+					<div class="nomPrenomMessage">(merci d'indiquer ici votre nom et prénom)</div>
+			</form>
+			
+			<p><strong>déclare souhaiter bénéficier des remises Multi-Packs pour les lignes SFR de mon foyer
+(et/ou entreprise) ci-dessous :</strong></p>
+			<form>
+			#set($emptyNum = ["&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;","&#160;"])
+				<ul>
+					<li><input type="text" name="ligne" class="champ-saisie-ligne" />
+					#if ($premierNumero && $premierNumero != "")
+								#set($numP = $premierNumero)
+								#set($numP = [$numP.charAt(0),$numP.charAt(1),$numP.charAt(2),$numP.charAt(3),$numP.charAt(4),$numP.charAt(5),$numP.charAt(6),$numP.charAt(7),$numP.charAt(8),$numP.charAt(9)])
+					#else
+								#set($numP = $emptyNum)
+					#end
+				<span style="border-bottom: solid 1px black;">$numP[0]$numP[1]&#160;$numP[2]$numP[3]&#160;$numP[4]$numP[5]&#160;$numP[6]$numP[7]&#160;$numP[8]$numP[9]</span>	
+					</li>
+					#foreach( $list in $listLineWaitingForPJ)
+					<li><input type="text" name="ligne" class="champ-saisie-ligne" />
+
+					#if ($list && $list != "")
+								#set($numP = $list)
+								#set($numP = [$numP.charAt(0),$numP.charAt(1),$numP.charAt(2),$numP.charAt(3),$numP.charAt(4),$numP.charAt(5),$numP.charAt(6),$numP.charAt(7),$numP.charAt(8),$numP.charAt(9)])
+					#else
+								#set($numP = $emptyNum)
+					#end
+				<span style="border-bottom: solid 1px black;">$numP[0]$numP[1]&#160;$numP[2]$numP[3]&#160;$numP[4]$numP[5]&#160;$numP[6]$numP[7]&#160;$numP[8]$numP[9]</span>
+					</li>
+					#end
+                    
+				</ul>
+			</form>
+			
+			<p>	J'ai bien noté que les remises ne seront accordées définitivement qu'après validation écrite de
+				SFR de l'ensemble des pièces justificatives du dossier. Dans le cas de non réception de ce
+				document, les remises seront désactivées dans un délai d'un mois à compter de la date de
+				souscription du Multi-Packs.</p>
+		
+			<p>le<input type="text" name="ligne" class="champ-date" />/<input type="text" name="ligne" class="champ-date" />/ 20<input type="text" name="date" class="champ-date" />
+			</p>
+			<p>
+			Signature du titulaire :<br/><br/>
+			<input type="text" name="ligne" class="champ-signature" />
+			<br/><br/>Code canal (renseigné par SFR) : <input type="text" name="ligne" class="champ-date" />
+			</p>
+			
+
+		</div><!-- #cont-normal -->
+
+		<div id="cont-special" style="display: none;">
+			<p>On constate que même lorsque le contenu est court, le bloc
+			<code>div#global</code> prend toute la hauteur de son parent,
+			l'élément <code>body</code>.</p>
+			
+		</div><!-- #cont-normal -->
+		
+	</div><!-- #contenu -->
+
+	<div id="pied">
+
+	</div><!-- #pied -->
+
+</div><!-- #global -->
+  
+
+<div class="page">
+
+	<div id="entete">
+		<h1>
+			<img alt="" src="/img/SFR.png"></img>
+		</h1>
+		
+<p class="sous-titre3">LISTE DES PIECES JUSTIFICATIVES A FOURNIR
+		</p>
+	</div><!-- #entete -->
+	<div class="message2">
+	<h3>VOUS ETES UN PARTICULIER ?</h3>
+
+	<ul class="puce">
+		<li> Vous souhaitez bénéficier des remises Multi-Packs sur votre abonnement personnel et un
+		abonnement au nom d’un des membres de votre foyer, veuillez fournir <strong>l’une des pièces
+		suivantes au choix </strong>:<br/>
+		</li>
+	</ul>
+	<ul class="liste-piece">
+		<li>Photocopie des pages du livret de famille <span class="text-small">(faisant apparaître les noms des titulaires des 2 abonnements)</span></li>
+		<li>Ou certificat de concubinage <span class="text-small">(faisant apparaître les noms des titulaires des 2 abonnements)</span></li>
+		<li>Ou contrat de PACS <span class="text-small">(faisant apparaître les noms des titulaires des 2 abonnements)</span></li>
+		<li>Ou chèque barré <span class="text-small">(faisant apparaître les noms des titulaires des 2 abonnements)</span></li>
+		<li>Ou justificatif de domicile <span class="text-small">(faisant apparaître les noms des titulaires des 2 abonnements)</span></li>
+	</ul>
+<br/>
+	</div>
+	<div class="message2">
+	<h3>VOUS ETES UN PROFESSIONNEL ?</h3>
+
+	<ul class="puce">
+		<li> Vous souhaitez bénéficier des remises Multi-Packs sur votre abonnement professionnel au
+			nom de la société dont vous êtes le gérant et un abonnement au nom d’un des membres
+			de votre famille, veuillez fournir <strong>les trois pièces suivantes </strong>:<br/><br/>
+		</li>
+	</ul>
+	<div class="kbis">Extrait Kbis <span class="text-small">(faisant apparaître la raison sociale de l’entreprise titulaire de l’abonnement). Peut être complété par une
+	Attestation de l’employeur (certifiant sur l’honneur l’emploi du titulaire de l’abonnement, et la prise en charge de cet abonnement par
+	l’entreprise) si vous êtes salarié.</span><br/>
+	+ Pièce d’identité<br/>
+	+ L’une des pièces justificatives au choix parmi celles listées dans le cas précédent
+	</div><br/>
+	<ul class="puce">
+		<li>Vous souhaitez bénéficier des remises Multi-Packs sur votre abonnement professionnel au
+			nom de la société dont vous êtes le gérant et un abonnement au nom d’un des membres
+			de votre société, veuillez fournir <strong>les trois pièces suivantes</strong> :<br/><br/>
+		</li>
+	</ul>
+	<div class="kbis">Extrait Kbis <span class="text-small">(faisant apparaître la raison sociale de l’entreprise titulaire de l’abonnement). Peut être complété par une
+	Attestation de l’employeur (certifiant sur l’honneur l’emploi du titulaire de l’abonnement, et la prise en charge de cet abonnement
+	par l’entreprise) si vous êtes salarié.</span><br/>
+	+ Pièce d’identité<br/>
+	+ Attestation de l’employeur <span class="text-small">(certifiant sur l’honneur l’emploi du titulaire de l’abonnement, et la prise en
+	charge de cet abonnement par l’entreprise)</span>
+	</div><br/>
+<br/>
+	</div>
+
+	<div id="pied">
+		<p>
+			#foreach($param in $mentionsLegales)
+	              <div style="padding-bottom:2px;">$param</div>
+	        #end
+       </p>
+	</div><!-- #pied -->
+
+</div><!-- #global -->
+  
+</body>
+</html>

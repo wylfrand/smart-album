@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+       <idAsc>0HR6bM7kn6U7NHwg</idAsc>
+       <utilisateurAsc>true</utilisateurAsc>
+       <civilite>M</civilite>
+       <genre>MASCULIN</genre>
+       <nom>AUGRAS</nom>
+       <prenom>CEDRIC</prenom>
+       <dateNaissance>1973-06-22+01:00</dateNaissance>
+       <emailDeSecours>tacha4@hotmail.fr</emailDeSecours>
+       <emailDeContact1>tacha4@hotmail.fr</emailDeContact1>
+       <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+       <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+       <personneFictive>false</personneFictive>
+       <logins>0120304063</logins>
+       <logins>0120304063@sfr.fr</logins>
+       <logins>sfr.bouchon@sfr.fr</logins>
+       <idPersonne>2224</idPersonne>
+       <services>
+           <type>FUT-SFCU</type>
+           <identifiant>FUT-SFCU</identifiant>
+       </services>
+       <lignesPrincipales>
+		    <ligneFixe>
+               <numeroCSU>2223</numeroCSU>
+               <statutBackend>COMPLET</statutBackend>
+               <roles>UTILISATEUR_PRINCIPAL_COMPLET</roles>
+               <profilPsw>INTERNET_ADSL</profilPsw>
+               <label>0120304063</label>
+               <adresseClient>
+                   <adresse>14 F QUARTIER DE L ESTEL</adresse>
+                   <codePostal>30210</codePostal>
+                   <localite>CASTILLON DU GARD</localite>
+               </adresseClient>
+               <numeroVOIP>0120304063</numeroVOIP>
+			   <numeroAccesFT>0120304100</numeroAccesFT>
+               <gamme>ADSL</gamme>
+               <segment>RESIDENTIEL</segment>
+               <libelleOffreSouscrite>9PASS</libelleOffreSouscrite>
+               <facture></facture>
+           </ligneFixe>
+       </lignesPrincipales>
+       <lignesSupplementaires>
+       </lignesSupplementaires>
+       <mailBoxes>
+           <email>0620304063@sfr.fr</email>
+           <type>MOBILE</type>
+       </mailBoxes>
+       <mailBoxes>
+           <email>cedric.augras@sfr.fr</email>
+           <type>FIXE</type>
+       </mailBoxes>
+       <dateDerniereConnexion>2011-01-12T00:00:00+01:00</dateDerniereConnexion>
+</ficheUtilisateur>

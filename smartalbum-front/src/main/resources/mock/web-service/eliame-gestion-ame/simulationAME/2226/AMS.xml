@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reponse xmlns="http://eliame.sfr.com/types">
+    <Code-Retour>0</Code-Retour>
+    <Code-Erreur></Code-Erreur>
+    <Libelle-Erreur></Libelle-Erreur>
+    <Reponse>
+        <ID-reponse>001</ID-reponse>
+        <ListeProposition>
+            <Nombre-Propositions>1</Nombre-Propositions>
+            <Code-ineligibilite></Code-ineligibilite>
+            <Cause-ineligibilite></Cause-ineligibilite>
+            
+            <Proposition>
+                <ID-Proposition>2</ID-Proposition>
+                <ListeGroupe>
+                    <Nombre-Groupes>1</Nombre-Groupes>
+                    <Groupe>
+                        <Categorie>AME_1</Categorie>
+                        <Nbr-ligne-min>1</Nbr-ligne-min>
+                        <Nbr-ligne-max>5</Nbr-ligne-max>
+                        <Libelle>Multi-Pack 2</Libelle>
+                        <Description>Description Multi-Pack 2</Description>
+                        <Nom-Groupe>My Groupe</Nom-Groupe>
+                        <Administrateur>0620304071</Administrateur>
+                        <Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+                        <Canal>WB</Canal>
+                        <Sous-Canal></Sous-Canal>
+                        <Code-pdv></Code-pdv>
+                        <Code-Action>I</Code-Action>
+                        <ListeLignes>
+                            <Nombre-Lignes>2</Nombre-Lignes>
+                            <Ligne>
+                                <ID-Ligne>1</ID-Ligne>
+                                <ID-CSU>01-0620304071</ID-CSU>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620304071</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>BMP01M1</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description bénéfice 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>5</Valeur-min>
+                                        <Valeur-max>5.0</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>1</Nombre-Contreparties>
+                                    <Contrepartie>
+			                            <ID-Contrepartie>27510104</ID-Contrepartie>
+			                            <Code-Action>I</Code-Action>
+			                            <Code>PJMP01</Code>
+			                            <Libelle>fourniture de pi&#232;ce justificative</Libelle>
+			                            <Description>Les lignes d'un groupe Multi-Packs de SFR doivent &#234;tre d&#233;tenues par des titulaires de m&#234;me nom et m&#234;me adresse.&#160;T&#233;l&#233;chargez le formulaire correspondant &#224; votre situation&#160; et renvoyez le, accompagn&#233; des pi&#232;ces justificatives demand&#233;es.</Description>
+			                            <Statut>R&#233;alis&#233;</Statut>
+			                            <Duree>50</Duree>
+			                            <Nature-contrepartie>ADM</Nature-contrepartie>
+			                          </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>1</ID-Ligne>
+                                <ID-CSU>01-0620304061</ID-CSU>
+                                <Nature-Ligne>MOB</Nature-Ligne>
+                                <Num-Ligne>0620304061</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>BMP01M1</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description bénéfice 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>1</Valeur-min>
+                                        <Valeur-max>1</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+                                <ListeContrepartie>
+                                    <Nombre-Contreparties>1</Nombre-Contreparties>
+                                    <Contrepartie>
+			                            <ID-Contrepartie>27510104</ID-Contrepartie>
+			                            <Code-Action>I</Code-Action>
+			                            <Code>PJMP01</Code>
+			                            <Libelle>fourniture de pi&#232;ce justificative</Libelle>
+			                            <Description>Les lignes d'un groupe Multi-Packs de SFR doivent &#234;tre d&#233;tenues par des titulaires de m&#234;me nom et m&#234;me adresse.&#160;T&#233;l&#233;chargez le formulaire correspondant &#224; votre situation&#160; et renvoyez le, accompagn&#233; des pi&#232;ces justificatives demand&#233;es.</Description>
+			                            <Statut>R&#233;alis&#233;</Statut>
+			                            <Duree>50</Duree>
+			                            <Nature-contrepartie>ADM</Nature-contrepartie>
+			                          </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                            <Ligne>
+                                <ID-Ligne>0120304059</ID-Ligne>
+                                <ID-CSU>01-0120304059</ID-CSU>
+                                <Nature-Ligne>DSL</Nature-Ligne>
+                                <Num-Ligne>0120304059</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>BMP01M1</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description contrepartie 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>6</Valeur-min>
+                                        <Valeur-max>6</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+								<ListeContrepartie>
+                                    <Nombre-Contreparties>2</Nombre-Contreparties>
+                                    <Contrepartie>
+                                        <ID-Contrepartie>cp001</ID-Contrepartie>
+                                        <Code-Action>I</Code-Action>
+                                        <Code>001</Code>
+                                        <Libelle>Contrepartie libelle 001</Libelle>
+                                        <Description>001 description contrepartie 001 description contrepartie 001 description contrepartie 001 description contrepartie 001 description contrepartie 001</Description>
+                                        <Duree>1</Duree>
+                                        <Nature-contrepartie>ADM</Nature-contrepartie>
+                                    </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                   <Ligne>
+                                <ID-Ligne>0120304060</ID-Ligne>
+                                <ID-CSU>01-0120304060</ID-CSU>
+                                <Nature-Ligne>DSL</Nature-Ligne>
+                                <Num-Ligne>0120304060</Num-Ligne>
+                                <Code-Action>I</Code-Action>
+                                <Statut-Ligne>A</Statut-Ligne>
+                                <Canal>WB</Canal>
+                                <Sous-Canal></Sous-Canal>
+                                <Code-pdv></Code-pdv>
+                                <ListeBenefice>
+                                    <Nombre-Benefices>1</Nombre-Benefices>
+                                    <Benefice>
+                                        <ID-Benefice>bene001</ID-Benefice>
+                                        <Code-Action>I</Code-Action>
+                                        <Code-Benefice>BMP01M1</Code-Benefice>
+                                        <Nature-Benefice>PTA</Nature-Benefice>
+                                        <Libelle>Benefice 001 lib</Libelle>
+                                        <Description>description contrepartie 001</Description>
+                                        <Code-produit>0</Code-produit>
+                                        <Unite>Euro</Unite>
+                                        <Valeur-min>10.0</Valeur-min>
+                                        <Valeur-max>10.0</Valeur-max>
+                                        <Duree>12</Duree>
+                                    </Benefice>
+                                </ListeBenefice>
+								<ListeContrepartie>
+                                    <Nombre-Contreparties>2</Nombre-Contreparties>
+                                    <Contrepartie>
+                                        <ID-Contrepartie>cp001</ID-Contrepartie>
+                                        <Code-Action>I</Code-Action>
+                                        <Code>001</Code>
+                                        <Libelle>Contrepartie libelle 001</Libelle>
+                                        <Description>Les lignes d'un groupe Multi-Packs de SFR doivent &#234;tre d&#233;tenues par des titulaires de m&#234;me nom et m&#234;me adresse.&#160;T&#233;l&#233;chargez le formulaire correspondant &#224; votre situation&#160; et renvoyez le, accompagn&#233; des pi&#232;ces justificatives demand&#233;es.</Description>
+                                        <Duree>1</Duree>
+                                        <Nature-contrepartie>ADM</Nature-contrepartie>
+                                    </Contrepartie>
+                                </ListeContrepartie>
+                            </Ligne>
+                        </ListeLignes>
+                    </Groupe>
+                </ListeGroupe>
+            </Proposition>
+        </ListeProposition>
+    </Reponse>
+</Reponse>

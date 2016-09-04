@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/decorators">
+	<decorator name="maam" page="smartalbum-decorator.jsp">
+		<pattern>/controller/*.html</pattern>
+		<pattern>/shelvesController/synchronyseAll.html</pattern>
+		<pattern>/albumsController/showAlbum/*.html</pattern>
+		<pattern>/albumsController/editAlbum/*.html</pattern>
+		<pattern>/albumsController/page/*.html</pattern>
+<!-- 		<pattern>/shelvesController/myShelves.html</pattern> -->
+		<pattern>/shelvesController/shelfDetails/*.html</pattern>
+		<pattern>/searchController/index.html</pattern>
+		<pattern>/searchController/search.html</pattern>
+		<pattern>/albumsController/showAlbumWithOnePicture/*.html</pattern>
+		<pattern>/imagesController/showImageDetails/**.html*</pattern>
+	</decorator>
+	<decorator name="smartalbum" page="smartalbum-decorator-public.jsp">
+		<pattern>/shelvesController/publicShelves.html</pattern>
+		<pattern>/menuController/*.html</pattern>
+	</decorator>
+	
+	<decorator name="myshelf" page="smartalbum-decorator-myshelf.jsp">
+		<pattern>/shelvesController/myShelves.html</pattern>
+	</decorator>
+
+	<decorator name="createUser" page="smartalbum-create-user.jsp">
+		<pattern>/usersController/*.html</pattern>
+	</decorator>
+	<decorator name="home" page="smartalbum-decorator-home.jsp">
+		<pattern>/home/index.html</pattern>
+	</decorator>
+	<decorator name="login" page="smartalbum-decorator-login.jsp">
+		<pattern>/authentification/login.html</pattern>
+	</decorator>
+</decorators>

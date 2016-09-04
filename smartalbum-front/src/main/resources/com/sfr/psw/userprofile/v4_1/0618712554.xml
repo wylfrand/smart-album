@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1"
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+	<idAsc>lIoFr1bjuADEx7CB</idAsc>
+	<utilisateurAsc>true</utilisateurAsc>
+	<statutBackend>COMPLET</statutBackend>
+	<civilite>M</civilite>
+	<genre>MASCULIN</genre>
+	<nom>UIHPUCKSJKLT</nom>
+	<prenom>Rnisjyvj</prenom>
+	<dateNaissance>1982-03-07+01:00</dateNaissance>
+	<emailDeContact1>nkfpmxt@oyn.dxs</emailDeContact1>
+	<stopMailEmailDeContact1>true</stopMailEmailDeContact1>
+	<compteurNPEIEmailDeContact1>0</compteurNPEIEmailDeContact1>
+	<stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+	<personneFictive>false</personneFictive>
+	<logins>0618712554</logins>
+	<lignesPrincipales>
+		<statutBackend>COMPLET</statutBackend>
+		<ligneMobile>
+			<statutBackend>COMPLET</statutBackend>
+			<label>0618712554</label>
+			<typeCSU>MOBILE</typeCSU>
+			<statutCSU>ACTIF</statutCSU>
+			<profilPsw>MOBILE_ABONNE</profilPsw>
+			<roles>UTILISATEUR_PRINCIPAL_COMPLET</roles>
+			<roles>UTILISATEUR_PRINCIPAL_INTERMEDIAIRE</roles>
+			<roles>UTILISATEUR_PRINCIPAL_BASIQUE</roles>
+			<roles>PAYEUR</roles>
+			<roles>TITULAIRE</roles>
+			<roles>UTILISATEUR_DELEGUE_COMPLET</roles>
+			<roles>UTILISATEUR_DELEGUE_INTERMEDIAIRE</roles>
+			<roles>UTILISATEUR_DELEGUE_BASIQUE</roles>
+			<creationSIGCExplicite>false</creationSIGCExplicite>
+			<adresseFacturation>
+				<adresse>9 RBF HQCTCOF</adresse>
+				<codePostal>75009</codePostal>
+				<localite>PARIS</localite>
+			</adresseFacturation>
+			<adresseClient>
+				<adresse>9 RBF HQCTCOF</adresse>
+				<codePostal>75009</codePostal>
+				<localite>PARIS</localite>
+			</adresseClient>
+			<idAem>3041393</idAem>
+			<numeroContrat>IGF672</numeroContrat>
+			<numeroContratOperateur>AO51497</numeroContratOperateur>
+			<msisdn>0618712554</msisdn>
+			<vfCid>01BKP07201</vfCid>
+			<categorie>PROFESSIONEL</categorie>
+			<gammeTarifaire>CARABSPRO</gammeTarifaire>
+			<segment>01</segment>
+			<operateur>SFR</operateur>
+			<planTarifaire>sfrcarre_pro_abs_24h_px_24__</planTarifaire>
+			<libelleForfait>Formule Carrée Pro Absolu/iPhone 24/24</libelleForfait>
+			<jourReinitialisationCompteurs>2013-07-10+02:00</jourReinitialisationCompteurs>
+			<factureDematerialisee>false</factureDematerialisee>
+			<optionsSouscrites>
+				<code>P28W</code>
+				<libelleCourt>Répondeur Visuel +</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>P302</code>
+				<libelleCourt>Alerte Conso</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>P79T</code>
+				<libelleCourt>Limitation 3Go</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>P84A</code>
+				<libelleCourt>Prix mobile 24M</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>P97S</code>
+				<libelleCourt>Avantage fidélité 24 mois</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>P97U</code>
+				<libelleCourt>Remise engagement</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S100</code>
+				<libelleCourt>Visio</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S103</code>
+				<libelleCourt>Liste rouge</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S131</code>
+				<libelleCourt>Présentation du numéro</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S13C</code>
+				<libelleCourt>Multisurf Modem</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S13F</code>
+				<libelleCourt>Option Modem Internet 3G+ Ajustable</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S13R</code>
+				<libelleCourt>Pack jour modem Europe USA</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S13V</code>
+				<libelleCourt>Tarif Jour Internet Europe DOM Amérique du Nord</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S175</code>
+				<libelleCourt>Enregistrement du Répertoire</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S190</code>
+				<libelleCourt>Minutes reportables</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S196</code>
+				<libelleCourt>Vodafone Passport (+SFRMonde)</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S19A</code>
+				<libelleCourt>Suivi Conso Internet International</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S20A</code>
+				<libelleCourt>SFR Messagerie</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S76R</code>
+				<libelleCourt>Option TV à la demande</libelleCourt>
+			</optionsSouscrites>
+			<optionsSouscrites>
+				<code>S7B5</code>
+				<libelleCourt>Option TV en Direct</libelleCourt>
+			</optionsSouscrites>
+			<controleParental>18+=-</controleParental>
+			<peutAcheter>false</peutAcheter>
+			<typeOffre>ABONNE</typeOffre>
+			<produitsSouscrits>PASS_CATCHUP_TV_HV</produitsSouscrits>
+			<produitsSouscrits>PASS_TV_DIRECT_GRATUIT</produitsSouscrits>
+			<produitsSouscrits>PASS_TV_MOBILE</produitsSouscrits>
+			<produitsSouscrits>PRD DROIT VVM</produitsSouscrits>
+			<produitsSouscrits>S131</produitsSouscrits>
+			<produitsSouscrits>S196</produitsSouscrits>
+			<produitsSouscrits>SFRBOX_CONFCALL</produitsSouscrits>
+			<produitsSouscrits>SL2SFR</produitsSouscrits>
+			<produitsSouscrits>TV_CARRE_ABSOLU_PRO</produitsSouscrits>
+			<derniereFacture>
+				<date>2013-03-12+01:00</date>
+				<montantTtcEnCentimes>11061</montantTtcEnCentimes>
+			</derniereFacture>
+			<garantieCarreRouge>
+				<soldeDePoints>27860</soldeDePoints>
+				<dateActualisation>2013-03-24T00:00:00+01:00</dateActualisation>
+			</garantieCarreRouge>
+			<telephoneMobile>
+				<imei>01284900789873</imei>
+				<tac>01284900</tac>
+			</telephoneMobile>
+		</ligneMobile>
+	</lignesPrincipales>
+	<services>
+		<type>SEGMT-CLI</type>
+		<identifiant>GP</identifiant>
+	</services>
+	<dateDerniereConnexion>2013-07-09T08:55:17.020+02:00</dateDerniereConnexion>
+	<dateParcoursPremiereAuthentification>2013-04-09T10:30:45+02:00</dateParcoursPremiereAuthentification>
+</ficheUtilisateur>

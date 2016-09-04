@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reponse xmlns="http://eliame.sfr.com/types">
+	<Code-Retour>OK</Code-Retour>
+	<Code-Erreur></Code-Erreur>
+	<Libelle-Erreur></Libelle-Erreur>
+	<Reponse>
+		<ID-reponse>4269R1</ID-reponse>
+		<ListeProposition>
+			<Nombre-Propositions>5</Nombre-Propositions>
+			<Proposition>
+				<ID-Proposition>4269R1P11</ID-Proposition>
+				<Libelle xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<ListeGroupe>
+					<Nombre-Groupes>1</Nombre-Groupes>
+					<Groupe>
+						<Categorie>MP01</Categorie>
+						<Nbr-ligne-min>2</Nbr-ligne-min>
+						<Nbr-ligne-max>5</Nbr-ligne-max>
+						<Libelle>Multipack - SPIDER</Libelle>
+						<Description>Plus vous avez de lignes, plus vous avez
+							d'avantages</Description>
+						<Administrateur>0620304059</Administrateur>
+						<Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+						<Canal>WB</Canal>
+						<Sous-Canal xsi:nil="true"
+							xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+						<Contexte>SOUS-AME</Contexte>
+						<Acte-de-gestion>AMS</Acte-de-gestion>
+						<Code-pdv>9802270</Code-pdv>
+						<Code-Action>I</Code-Action>
+						<ListeLignes>
+							<Nombre-Lignes>3</Nombre-Lignes>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT274</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0620304060</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M1</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise DUO MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile du DUO
+										</Description>
+										<Code-produit>P68A</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT239</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0620304059</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M1</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise DUO MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile du DUO
+										</Description>
+										<Code-produit>P68A</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne>168</ID-Ligne>
+								<ID-CSU>01-ZZP899</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0620304062</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<ID-Benefice>424</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M2</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise 345 MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile
+											suppl&#233;mentaire</Description>
+										<Code-produit>P90M</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>3</Valeur-min>
+										<Valeur-max>3</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OH1</PTA>
+											<Montant>3</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<ID-Benefice>423</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OH1</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<ID-Contrepartie>120</ID-Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+						</ListeLignes>
+					</Groupe>
+				</ListeGroupe>
+			</Proposition>
+			<Proposition>
+				<ID-Proposition>4269R1P21</ID-Proposition>
+				<Libelle xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<ListeGroupe>
+					<Nombre-Groupes>1</Nombre-Groupes>
+					<Groupe>
+						<Categorie>MP01</Categorie>
+						<Nbr-ligne-min>2</Nbr-ligne-min>
+						<Nbr-ligne-max>5</Nbr-ligne-max>
+						<Libelle>Multipack - SPIDER</Libelle>
+						<Description>Plus vous avez de lignes, plus vous avez
+							d'avantages</Description>
+						<Administrateur>0612172459</Administrateur>
+						<Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+						<Canal>WB</Canal>
+						<Sous-Canal xsi:nil="true"
+							xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+						<Contexte>SOUS-AME</Contexte>
+						<Acte-de-gestion>AMS</Acte-de-gestion>
+						<Code-pdv>9802270</Code-pdv>
+						<Code-Action>I</Code-Action>
+						<ListeLignes>
+							<Nombre-Lignes>3</Nombre-Lignes>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT274</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0612743763</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M1</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise DUO MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile du DUO
+										</Description>
+										<Code-produit>P68A</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne>193</ID-Ligne>
+								<ID-CSU>01-ZYV894</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0618119167</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<ID-Benefice>486</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M2</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise 345 MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile
+											suppl&#233;mentaire</Description>
+										<Code-produit>P90M</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>3</Valeur-min>
+										<Valeur-max>3</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>AL2</PTA>
+											<Montant>3</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<ID-Benefice>487</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>AL2</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<ID-Contrepartie>153</ID-Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT239</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0612172459</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M1</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise DUO MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile du DUO
+										</Description>
+										<Code-produit>P68A</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+						</ListeLignes>
+					</Groupe>
+				</ListeGroupe>
+			</Proposition>
+			<Proposition>
+				<ID-Proposition>4269R1P31</ID-Proposition>
+				<Libelle xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<ListeGroupe>
+					<Nombre-Groupes>1</Nombre-Groupes>
+					<Groupe>
+						<Categorie>MP01</Categorie>
+						<Nbr-ligne-min>2</Nbr-ligne-min>
+						<Nbr-ligne-max>5</Nbr-ligne-max>
+						<Libelle>Multipack - SPIDER</Libelle>
+						<Description>Plus vous avez de lignes, plus vous avez
+							d'avantages</Description>
+						<Administrateur>0612172459</Administrateur>
+						<Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+						<Canal>WB</Canal>
+						<Sous-Canal xsi:nil="true"
+							xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+						<Contexte>SOUS-AME</Contexte>
+						<Acte-de-gestion>AMS</Acte-de-gestion>
+						<Code-pdv>9802270</Code-pdv>
+						<Code-Action>I</Code-Action>
+						<ListeLignes>
+							<Nombre-Lignes>3</Nombre-Lignes>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT239</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0612172459</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M1</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise DUO MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile du DUO
+										</Description>
+										<Code-produit>P68A</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne>193</ID-Ligne>
+								<ID-CSU>01-ZYV894</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0618119167</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M1</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise DUO MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile du DUO
+										</Description>
+										<Code-produit>P68A</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>AL2</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<ID-Benefice>487</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>AL2</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<ID-Contrepartie>153</ID-Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne>168</ID-Ligne>
+								<ID-CSU>01-ZZP899</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0601283527</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<ID-Benefice>424</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M2</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise 345 MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile
+											suppl&#233;mentaire</Description>
+										<Code-produit>P90M</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>3</Valeur-min>
+										<Valeur-max>3</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OH1</PTA>
+											<Montant>3</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<ID-Benefice>423</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OH1</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<ID-Contrepartie>120</ID-Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+						</ListeLignes>
+					</Groupe>
+				</ListeGroupe>
+			</Proposition>
+			<Proposition>
+				<ID-Proposition>4269R1P41</ID-Proposition>
+				<Libelle xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<ListeGroupe>
+					<Nombre-Groupes>1</Nombre-Groupes>
+					<Groupe>
+						<Categorie>MP01</Categorie>
+						<Nbr-ligne-min>2</Nbr-ligne-min>
+						<Nbr-ligne-max>5</Nbr-ligne-max>
+						<Libelle>Multipack - SPIDER</Libelle>
+						<Description>Plus vous avez de lignes, plus vous avez
+							d'avantages</Description>
+						<Administrateur>0612172459</Administrateur>
+						<Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+						<Canal>WB</Canal>
+						<Sous-Canal xsi:nil="true"
+							xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+						<Contexte>SOUS-AME</Contexte>
+						<Acte-de-gestion>AMS</Acte-de-gestion>
+						<Code-pdv>9802270</Code-pdv>
+						<Code-Action>I</Code-Action>
+						<ListeLignes>
+							<Nombre-Lignes>4</Nombre-Lignes>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT274</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0612743763</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M2</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise 345 MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile
+											suppl&#233;mentaire</Description>
+										<Code-produit>P90M</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne>168</ID-Ligne>
+								<ID-CSU>01-ZZP899</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0601283527</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<ID-Benefice>424</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M2</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise 345 MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile
+											suppl&#233;mentaire</Description>
+										<Code-produit>P90M</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>3</Valeur-min>
+										<Valeur-max>3</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OH1</PTA>
+											<Montant>3</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<ID-Benefice>423</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OH1</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<ID-Contrepartie>120</ID-Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne>193</ID-Ligne>
+								<ID-CSU>01-ZYV894</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0618119167</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>2</Nombre-Benefices>
+									<Benefice>
+										<ID-Benefice>486</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>BMP01M2</Code-Benefice>
+										<Nature-Benefice>REM</Nature-Benefice>
+										<Libelle>remise 345 MP01 mobile</Libelle>
+										<Description>remise Multi-Packs pour la ligne mobile
+											suppl&#233;mentaire</Description>
+										<Code-produit>P90M</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>3</Valeur-min>
+										<Valeur-max>3</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>AL2</PTA>
+											<Montant>3</Montant>
+										</ListePRA>
+									</Benefice>
+									<Benefice>
+										<ID-Benefice>487</ID-Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>AL2</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<ID-Contrepartie>153</ID-Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT239</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0612172459</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>1</Nombre-Benefices>
+									<Benefice>
+										<Code-Action>I</Code-Action>
+										<Code-Benefice>TMP01M1</Code-Benefice>
+										<Nature-Benefice>TECH</Nature-Benefice>
+										<Libelle>topage MP01 mobile</Libelle>
+										<Description>suivi soucription Multi-Pack de SFR pour la
+											ligne mobile</Description>
+										<Code-produit>P14N</Code-produit>
+										<Unite>Euro</Unite>
+										<Valeur-min>0</Valeur-min>
+										<Valeur-max>0</Valeur-max>
+										<Duree>99999</Duree>
+										<ListePRA>
+											<PTA>OQV</PTA>
+											<Montant>0</Montant>
+										</ListePRA>
+									</Benefice>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>1</Nombre-Contreparties>
+									<Contrepartie>
+										<Code-Action>I</Code-Action>
+										<Code>MIGMP01</Code>
+										<Libelle>migration vers WEBPHONE</Libelle>
+										<Description>migration vers WEBPHONE only</Description>
+										<Duree>90</Duree>
+										<Nature-contrepartie>PTA</Nature-contrepartie>
+									</Contrepartie>
+								</ListeContrepartie>
+							</Ligne>
+						</ListeLignes>
+					</Groupe>
+				</ListeGroupe>
+			</Proposition>
+			<Proposition>
+				<ID-Proposition>4269R1P51</ID-Proposition>
+				<Libelle xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<ListeGroupe>
+					<Nombre-Groupes>1</Nombre-Groupes>
+					<Groupe>
+						<Categorie>MP01</Categorie>
+						<Nbr-ligne-min>2</Nbr-ligne-min>
+						<Nbr-ligne-max>5</Nbr-ligne-max>
+						<Libelle>Multipack - SPIDER</Libelle>
+						<Description>Plus vous avez de lignes, plus vous avez
+							d'avantages</Description>
+						<Administrateur>0612172459</Administrateur>
+						<Nature-Ligne-Adm>MOB</Nature-Ligne-Adm>
+						<Canal>WB</Canal>
+						<Sous-Canal xsi:nil="true"
+							xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+						<Contexte>SOUS-AME</Contexte>
+						<Acte-de-gestion>AMS</Acte-de-gestion>
+						<Code-pdv>9802270</Code-pdv>
+						<Code-Action>I</Code-Action>
+						<ListeLignes>
+							<Nombre-Lignes>2</Nombre-Lignes>
+							<Ligne>
+								<ID-Ligne />
+								<ID-CSU>01-ZYT239</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0612172459</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>0</Nombre-Benefices>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>0</Nombre-Contreparties>
+								</ListeContrepartie>
+							</Ligne>
+							<Ligne>
+								<ID-Ligne>193</ID-Ligne>
+								<ID-CSU>01-ZYV894</ID-CSU>
+								<Nature-Ligne>MOB</Nature-Ligne>
+								<Num-Ligne>0618119167</Num-Ligne>
+								<Code-Action>I</Code-Action>
+								<Statut-Ligne>10</Statut-Ligne>
+								<Canal>WB</Canal>
+								<Sous-Canal xsi:nil="true"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+								<Contexte>SOUS-AME</Contexte>
+								<Acte-de-gestion>AMS</Acte-de-gestion>
+								<Code-pdv>9802270</Code-pdv>
+								<ListeBenefice>
+									<Nombre-Benefices>0</Nombre-Benefices>
+								</ListeBenefice>
+								<ListeContrepartie>
+									<Nombre-Contreparties>0</Nombre-Contreparties>
+								</ListeContrepartie>
+							</Ligne>
+						</ListeLignes>
+					</Groupe>
+				</ListeGroupe>
+			</Proposition>
+		</ListeProposition>
+	</Reponse>
+</Reponse>

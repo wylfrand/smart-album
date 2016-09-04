@@ -1,0 +1,65 @@
+<div class="blog-item">
+	<div class="entry">
+		<div class="post-head">
+			<div class="post-date">${image.getUploaded()}</div>
+			#set($commentSize = ${image.getComments().size()})
+			#if($commentSize>1) #set($plural = "s") #else #set($plural = "") #end
+			<a href="#" class="comments">${image.getComments().size()}
+				Commentaire${plural}</a>
+			<div class="cl">&nbsp;</div>
+		</div>
+		<a href="#" id="parent${image.getId()}" width="1440"
+			onclick="javascript:printFullImageInLayerFactWithSrc('$imageBaseUrl/imagesController/paintImage${image.getFullPath()}/fullImage.html')"
+			class="images"> <img
+			src="$imageBaseUrl/imagesController/paintImage${image.getFullPath()}/_small200.html"
+			alt="" class="blogImg" />
+		</a> 
+		#foreach($messageHTML in ${image.getMessagesHTML()})
+			#if(${messageHTML.getMessage_type()} == "SHORTDESCRIPTION")
+				#set($messageToPrint = $messageHTML)
+			 #end 
+		#end
+		<div id="messageToPrintPositionId${messageToPrint.getId()}">
+			<div class="shortMessageBlock">
+				<H1 id="title${messageToPrint.getId()}" class="shortMessageTitle">${messageToPrint.getTitle()}</H1>
+				<p id="descriptionMessage${messageToPrint.getId()}" class="shortMessageDescription">${messageToPrint.getHtmlDescription()}</p>
+			</div>
+		</div>
+		<div class="cl">&nbsp;</div>
+		<div class="default-links" style="">
+			<a id="${messageToPrint.getId()}"
+				onclick="javascript:common.showBlockInLayer('messageHTMLLayer${messageToPrint.getId()}')"
+				href="#"
+				class="modifierDescription">Modifier le message</a> <span>|</span><strong>Posted
+				in:</strong> <a href="#">${currentAlbumName}</a><span>|</span> <strong>Tags:</strong>
+			#foreach($metatag in $image.ImageTags)
+				<div style="padding-bottom: 2px;">$metatag.Tag</div>
+			#end
+			<a
+				href="$imageBaseUrl/imagesController/showImageDetails/${currentAlbumId}/${image.getId()}.html"
+				class="read-more">Continue Reading</a>
+		</div>
+	</div>
+</div>
+<div style="text-align: left;" id="messageHTMLLayer${messageToPrint.getId()}" class="blogAjustShortHTML">
+<span style="margin-left:10px;font-size:12px;color: midnightblue;">
+	<img
+			src="$imageBaseUrl/imagesController/paintImage${image.getFullPath()}/_medium.html"
+			alt="" />	
+	</span>
+<form action="#" id="shortDescriptionForm${messageHTML.getId()}">
+	<input type="hidden"  id="id${messageToPrint.getId()}" name="name${messageToPrint.getId()}">
+	<p class="double">
+		<label for="f1-telephone">Titre:</label>
+		<input type="text" id="popupTitle${messageToPrint.getId()}" name="title" value="${messageToPrint.getTitle()}"></input>
+	</p>
+	<p class="double">
+		<label for="f1-infos">Description:
+		<span class="info">(Saisissez ici la description de l'image)</span></label><br/><br/>
+		<textarea id="popupDescription${messageToPrint.getId()}" name="description" rows="5" cols="30">${messageToPrint.getHtmlDescription()}</textarea>
+	</p>
+	<p class="simple">
+		<input type="button" value="Mettre à jour" onClick="blogAlbums.saveShortDescription(${messageToPrint.getId()});" class="row submit-btn"/>
+	</p>
+</form>
+</div>

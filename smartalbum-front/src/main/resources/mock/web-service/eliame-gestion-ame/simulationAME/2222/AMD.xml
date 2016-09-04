@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reponse xmlns="http://eliame.sfr.com/types">
+    <Code-Retour>0</Code-Retour>
+    <Code-Erreur></Code-Erreur>
+    <Libelle-Erreur></Libelle-Erreur>
+    <Reponse>
+        <ID-reponse>001</ID-reponse>
+        <ListeProposition>
+            <Nombre-Propositions>0</Nombre-Propositions>
+            <Code-ineligibilite>INE_001</Code-ineligibilite>
+            <Cause-ineligibilite>Aucun avantage &#233;ligible</Cause-ineligibilite>
+             </ListeProposition>
+    </Reponse>
+</Reponse>

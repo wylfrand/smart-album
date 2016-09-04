@@ -1,0 +1,21 @@
+<div style="text-align: left;" id="messageHTMLLayer${messageHTML.getId()}" class="blogAjustShortHTML">
+<H2>
+		<b>Mise à jour de la description de ${image.getName()}</b>
+	</H2>
+<form action="#" id="shortDescriptionForm${messageHTML.getId()}">
+	<input type="hidden"  id="id${messageHTML.getId()}" name="name${messageHTML.getId()}"  value="${messageHTML.getId()}">
+	<p class="double">
+		<label for="f1-telephone">Titre:</label>
+		<input type="text" id="title${messageHTML.getId()}" name="title"/>
+	</p>
+	<p class="double">
+		<label for="f1-infos">Description:
+		<span class="info">(Saisissez ici la description de l'image)</span></label>
+		<textarea id="description${messageHTML.getId()}" name="description" rows="5" cols="30"></textarea>
+	</p>
+	<p class="simple">
+		<input type="button" value="Mettre à jour" onClick="saveShortDescription(${messageHTML.getId()});" class="row submit-btn"/>
+	</p>
+</form>
+
+</div>

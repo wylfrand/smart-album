@@ -1,0 +1,437 @@
+body #content #col_droite {
+	height: 1437px;
+}
+
+.infos_persos .titre {
+	font-size: 20px;
+	font-family: Arial;
+	color: #1c1c1c;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+}
+
+.infos_persos #deja_client {
+	width: 710px;
+	height: 94px;
+	padding: 15px 0 0 15px;
+	font-size: 14px;
+	margin: 0 0 0 0px;
+}
+
+.infos_persos #deja_client .titre {
+	background: url("../img/home_bkgrd.jpg") top left
+		;
+	padding: 0 0 0 30px;
+	height: 20px;
+	font-size: 14px;
+}
+
+.infos_persos #deja_client p {
+	width: 450px;
+}
+
+.infos_persos #deja_client .btn_sidentifier {
+	margin: -60px 0 0 550px;
+}
+
+.infos_persos form p{padding: 0;margin: 4px 0 0px 0; padding-left:10px;}
+
+.medium_text {
+	width: 215px;
+}
+#numero_identite{
+margin-left:0px;
+}
+#jour{
+margin-left:0px;
+}
+.small_text {
+	width: 100px;
+}
+.large_text {
+	width: 355px;
+}
+
+#check_type_identite{
+padding-top: 15px;	
+}
+
+.txt_gris{color:#9b9797;font-size:11px;margin-left:11px; padding-bottom: 10px;}
+.txt_gris-fact{color:#9b9797;font-size:10px;
+font-style:italic;margin-left:11px; float:left;
+}
+
+#resiliation{
+margin-left:10px;
+margin-top:12px;
+}
+
+.txt_gris {
+	color: #9b9797;
+	font-size: 11px;
+}
+
+
+#madame {
+	margin: 0 0 0 8px;
+}
+
+.separateur {
+	margin: 25px 0 35px -35px;
+}
+
+#col_gauche {
+	margin-left: 5px;
+	margin-right: 5px;
+    width: 98%;
+    margin-top: 17px;
+}
+
+.numero_actuel {
+	font-size: 14px;
+	font-weight: bold;
+	height: 50px;
+	margin: 30px 0 0 0;
+}
+
+.factur-bloc{border:1px solid;}
+
+.numero_actuel a#off_nouveau_numero,.numero_actuel a#off_conserver_numero
+	{
+	color: #4e4e4e;
+	text-decoration: none;
+}
+
+.numero_actuel a:hover#off_nouveau_numero {
+	background: url("../img/infos_persos/numero_gauche_on.png") top left
+		no-repeat;
+	padding: 21px 43px 21px 43px;
+	padding: 21px 30px 21px 30px/9;
+	width: 330px;
+	color: #E2001A;
+}
+
+
+.numero_actuel a#on_nouveau_numero{
+	background:url("../img/infos_persos/numero_gauche_on.png") top left no-repeat;
+	padding:21px 43px 21px 43px;
+	padding:21px 30px 21px 30px/9;
+	width:330px;}
+
+.numero_actuel a#on_conserver_numero,.numero_actuel a#on_nouveau_numero
+	{
+	color: #e2001a;
+	text-decoration: none;
+}
+
+
+
+.numero_actuel a:hover#off_nouveau_numero{
+	background:url("../img/infos_persos/numero_gauche_on.png") top left no-repeat;
+	padding:21px 43px 21px 43px;
+	padding:21px 30px 21px 30px/9;
+	width:330px;}
+.numero_actuel a#off_nouveau_numero {
+	background: url("../img/infos_persos/numero_gauche_off.png") top left
+		no-repeat;
+	padding: 21px 43px 21px 43px;
+	padding: 21px 30px 21px 30px/9;
+	width: 330px;
+}
+
+.numero_actuel a#off_conserver_numero{
+	background:url("../img/infos_persos/numero_droite_off.png") top left no-repeat;
+	padding:21 35px 21px 19px;
+	padding:21px 10px 21px 10px/9;
+	width:360px;}
+
+.numero_actuel a#on_conserver_numero {
+	background: url("../img/infos_persos/numero_droite_on.png") top left
+		no-repeat;
+	padding: 21 35px 21px 19px;
+	padding: 21px 10px 21px 10px/9;
+	width: 360px;
+}
+
+
+.numero_actuel a:hover#on_conserver_numero{background:url("../img/infos_persos/numero_droite_off.png") top left no-repeat;padding:21 35px 21px 19px;padding:21px 10px 21px 10px/9;width:360px;color:#4e4e4e;}
+
+.numero_actuel a#off_nouveau_numero, .numero_actuel a#off_conserver_numero{color:#4e4e4e;text-decoration:none;}
+
+.numero_actuel a:hover#off_nouveau_numero   {background:url("../img/infos_persos/numero_gauche_on.png") top left no-repeat;padding:21px 43px 21px 43px;padding:21px 30px 21px 30px/9;width:330px; color:#E2001A;}
+
+.numero_actuel a#on_conserver_numero, .numero_actuel a#on_nouveau_numero{color:#e2001a;text-decoration:none;}
+.infos_persos form p.infos_sup{font-weight:normal;}
+
+.infos_persos form p.infos_sup {
+	font-weight: normal;
+}
+
+
+a.rio {
+	color: #0061a0;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+span.rio {
+    color: #0061a0;
+    text-decoration: none;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.btn_valider_infos_persos {
+	margin: 40px 0 0 220px;
+}
+
+.btn_valider_infos_persos input {
+	background: url("../img/btn_enregistrer.jpg") top left
+		no-repeat;
+	border: 0;
+	width: 243px;
+	height: 54px;
+	cursor: pointer;
+	font-size: 0;
+}
+
+.infos_persos form .champ_obligatoire {
+	background: #F9CCD1;
+	height: 55px;
+	padding: 10px 0 16px 10px;
+}
+.infos_persos form .champ_obligatoire label{
+font-weight: bold;
+}
+.infos_persos form .champ_obligatoire span{
+font-size: 12px;
+}
+
+.infos_persos form .champ_obligatoire_info{height: 45px;padding:10px 0px 27px 10px;}
+.infos_persos form .champ_obligatoire_info label{font-weight: bold;}
+.infos_persos form .champ_obligatoire_info span{font-size: 12px;}
+.infos_persos form .champ_obligatoire_legende{height: 55px;padding:10px 0 0 10px;background: #EDEDED;}
+.infos_persos form .legende {height: 55px;padding: 10px 0 0 10px;margin-bottom: 15px;background: #EDEDED;}
+.infos_persos form .champ_obligatoire_civ{height: 50px;padding:10px 0 0 10px;}
+.infos_persos form .champ_obligatoire_civ label{font-weight: bold;}
+.infos_persos form .champ_obligatoire_civ-error{height: 50px;padding:10px 0 16px 10px;background: #F9CCD1;}
+.infos_persos form .champ_obligatoire_civ-error label{font-weight: bold;}
+.infos_persos form .champ_obligatoire_civ-error span{font-size: 12px;}
+
+.txt_champ_obligatoire {
+	font-weight: normal;
+	color: #E2001A;
+	margin: -45px 0 25px 358px;
+	text-align: right;
+	display: none
+}
+
+.txt_champ_obligatoire_error {
+	font-weight: normal;
+	color: #E2001A;
+	margin: -45px 0 25px 358px;
+	text-align: right;
+}
+
+
+.champ_obligatoire-ville{    background: none repeat scroll 0 0 #F9CCD1;margin-top: 8px;padding-bottom: 7px;padding-top:7px;}
+
+.infos_persos form .txt_champ_obligatoire{font-weight: normal;color:#E2001A;margin: -35px 0 25px;text-align: right;padding-right:5px;width: 317px;float:right; font-size:11px;}
+.infos_persos form .txt_champ_obligatoire-ville{font-weight: normal;color:#E2001A;margin: -32px 0 25px;text-align: right;padding-right:5px;width: 317px;float:right; font-size:11px; display:none}
+.infos_persos form .txt_champ_obligatoire-ville-error{font-weight: normal;color:#E2001A;margin: -32px 0 25px;text-align: right;padding-right:5px;width: 317px;float:right; font-size:11px;}
+
+#newsletter{margin-left:10px;}
+
+
+
+
+.infos_persos form .txt_champ_legende {
+	font-weight: normal;
+	color: #000000;
+	margin: -45px 0 25px 400px;
+	text-align: right;
+}
+
+.champ_obligatoire_ville_error {
+	background: #F9CCD1;
+}
+
+.infos_persos form .txt_checkrio_champ_obligatoire {
+	font-weight: normal;
+	color: #E2001A;
+	margin: 0 0 25px;
+	text-align: right;
+	padding-right: 10px;
+	width: 317px;
+	float: right;
+	font-size: 11px;
+}
+
+.champ_obligatoire_ville {
+	background: #FFFFFF;
+}
+
+.infos_persos form .legende {
+	background: #EDEDED;
+	height: 55px;
+	padding: 10px 0 0 10px;
+	margin-bottom: 15px;
+}
+
+.infos_persos form .txt_champ_legende {
+	font-weight: normal;
+	color: #000000;
+	margin: -36px 0 25px 400px;
+	text-align: right;
+}
+
+.infos_persos form .txt_champ_obligatoire-ville {
+	font-weight: normal;
+	color: #E2001A;
+	margin: -21px 0 25px;
+	text-align: right;
+	padding-right: 5px;
+	width: 317px;
+	float: right;
+	font-size: 11px;
+	display: none
+}
+
+
+/*.cgv {float: left;margin: -15px 0 0 20px;}*/
+.cgv{float:left;margin:-19px 0 0 31px;}
+.cgvError{float:left;margin:-19px 0 0 31px;background: #F9CCD1;}
+
+input.saisie {
+	width: 150px;
+	height: 20px;
+	padding: 2px;
+	font: normal 11px arial;
+	color: #000;
+	margin-left: 0px;
+	margin-right: 3px;
+}
+
+#chemin {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+
+.commentaires-div-parent {
+	background: #EDEDED;
+	height: 55px;
+	padding: 10px 0 0 10px;
+	margin-bottom: 15px;
+}
+
+
+.legende {
+	background: none repeat scroll 0 0 #DDDDDD;
+
+    color: #000000;
+	font-size:11px;
+    font-weight: normal;
+    height: 50px;
+    margin:-60px 0 0;
+	width:708px;
+    text-align: right;
+	position: absolute;
+    z-index: 50;
+    padding-top: 5px;
+	}
+}
+
+.infos_persos form .info{height: 55px;position: relative;z-index: 100;}
+#ul_onglets {
+	margin: 0;
+	padding: 0 0 0 5px;
+	width: 660px;
+}
+
+.onglet {
+	color: 4 #E4E4E;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	list-style: none outside none;
+	margin: 5px 0 0;
+	padding: 21px 0;
+	text-align: center;
+	width: 327px;
+	background: url("../img/infos_persos/numero_gauche_off.png") no-repeat;
+}
+
+.onglet:hover {
+	background: url("../img/infos_persos/numero_gauche_on.png") no-repeat;
+	color: #E2001A;
+
+}
+
+.onglet a:hover {
+	background: url("../img/infos_persos/numero_gauche_on.png") no-repeat;
+	color: #E2001A;
+	text-decoration: none;
+}
+
+.onglet_selectionner {
+	float: left;
+	margin: 5px 0 0;
+	padding: 21px 0;
+	color: #E2001A;
+	text-align: center;
+	width: 327px;
+	cursor: text;
+	font-weight: bold;
+	list-style: none;
+	background: url("../img/infos_persos/numero_gauche_on.png") no-repeat;
+}
+
+.contenu-onglet {
+	clear: both;
+	background-color: white;
+	color: #000000;
+	cursor: text;
+	padding-top: 10px;
+}
+
+
+}           
+.contenu-onglet{clear: both;background-color:white;color:#000000;cursor: text;padding-top:10px;}
+#conteneur-onglet{width: auto;margin: auto;}
+
+#conteneur-onglet {
+	width: auto;
+	margin: auto;
+}
+.bloc-form {text-align =left;
+	
+}
+
+.fieldInteraction {display: none;font-size: 11px; margin-right: 12px;text-align: right;}		
+.fieldInteractionError {font-size: 11px;margin-right: 5px;text-align: right;color: #E2001A; float : right ; }
+#newsletter{margin-left:10px;}
+
+.fieldCom     {font-size: 11px;margin-left: 2%;text-align: right;width: 46%;display: none;}
+
+.fieldComDisp {font-size: 11px;margin-left: 2%;text-align: right;width:46%;}
+
+.infos_persos form .champ_obligatoire_resiliation {
+	background: #F9CCD1;
+	height: 55px;
+	padding:0;
+}
+.infos_persos form .champ_info_resiliation{height: 55px;padding:0}
+
+#rio_span{margin-top: -16px;position: absolute;}
+
+.select_dep {
+	width: 219px;
+}
+
+
+/**** CSS pour fixer le layer d'authentification SFR ****/
+#mirelayer-wrap{
+	margin-left: 35% !important;
+	margin-top: 5% !important;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+      <idAsc>skWRwkVvTLOsuWBV</idAsc>
+      <utilisateurAsc>true</utilisateurAsc>
+      <statutBackend>COMPLET</statutBackend>
+      <civilite>M</civilite>
+      <genre>MASCULIN</genre>
+      <nom>LIGNE TEST THD</nom>
+      <prenom>LIGNE TEST THD</prenom>
+      <telephoneMobileDeContact>0621795476</telephoneMobileDeContact>
+      <emailDeContact1>jean-paul.ayite@sfr.com</emailDeContact1>
+      <stopMailEmailDeContact1>true</stopMailEmailDeContact1>
+      <compteurNPEIEmailDeContact1>0</compteurNPEIEmailDeContact1>
+      <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+      <personneFictive>false</personneFictive>
+      <logins>pilotageactivationlignetestthd@sfr.fr</logins>
+      <idPersonne>7777</idPersonne>
+      <lignesPrincipales>
+        <statutBackend>COMPLET</statutBackend>
+        <ligneFixe>
+        	<numeroCSU>7777</numeroCSU>
+          <statutBackend>COMPLET</statutBackend>
+          <label>0175330457/THD</label>
+          <typeCSU>THD</typeCSU>
+          <statutCSU>ACTIF</statutCSU>
+          <profilPsw>INTERNET_THD</profilPsw>
+          <creationSIGCExplicite>false</creationSIGCExplicite>
+          <idCompteClient>1-PPU4HZ2</idCompteClient>
+          <adresseFacturation>
+            <adresse>5 RUE NOEL PONS</adresse>
+            <codePostal>92000</codePostal>
+            <localite>NANTERRE</localite>
+          </adresseFacturation>
+          <adresseClient>
+            <adresse>5 RUE NOEL PONS</adresse>
+            <codePostal>92000</codePostal>
+            <localite>NANTERRE</localite>
+          </adresseClient>
+          <numeroAccesFT>0175330457</numeroAccesFT>
+          <gamme>THD</gamme>
+          <segment>RESIDENTIEL</segment>
+          <libelleOffreSouscrite>SFRbox fibre (Internet jusqu'Ã  100 MÃ©ga + TÃ©lÃ©phonie)</libelleOffreSouscrite>
+          <crmId>1-PPU4HZ2</crmId>
+          <emailRattacheAuNeufID>false</emailRattacheAuNeufID>
+          <facture>
+            <ssaFacturation>ARBOR</ssaFacturation>
+            <dateDerniereFacture>2013-08-12+02:00</dateDerniereFacture>
+            <montantDerniereFacture>0</montantDerniereFacture>
+          </facture>
+        </ligneFixe>
+      </lignesPrincipales>
+      <mailBoxes>
+        <email>pilotageactivationlignetestthd@sfr.fr</email>
+        <type>FIXE</type>
+      </mailBoxes>
+      <services>
+        <type>CONTRAT-FIXE</type>
+        <identifiant>1-PPU4HZ2</identifiant>
+      </services>
+      <dateDerniereConnexion>2013-09-13T00:01:25.957+02:00</dateDerniereConnexion>
+      <dateParcoursPremiereAuthentification>2013-08-22T00:00:00+02:00</dateParcoursPremiereAuthentification>
+    </ficheUtilisateur>

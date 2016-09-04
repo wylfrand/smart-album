@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:RestitutionAMEContenuOut xmlns:n1="http://cegetelsi/psg/amemanagement/4.0" 
+                             xmlns:n2="http://cegetelsi/psg/amemanagement/4.0/interface"
+                             xmlns="http://cegetelsi/psg/amemanagement/4.0/AMEManagementV40Response">
+        <GroupCharacteristic>
+            <GroupCharacteristic>
+                <classAME>AME_1</classAME>
+                <shortNameAME>Les Multi-Packs de SFR</shortNameAME>
+                <descriptionAME>Plus vous prenez d'abonnements, plus vous avez de réductions</descriptionAME>
+                <benefitValueMinPerMonth>60</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>120</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>720</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>1200</benefitValueMaxPerYear>
+                <status>Actif</status>
+                <availableLines>3</availableLines>
+                <groupID>1</groupID>
+                <groupName>multi-pack-group-test-1</groupName>
+                <manager>0620304059</manager>
+                <serviceType>MOB</serviceType>
+                <deletionCause></deletionCause>
+                <nom>Martin</nom>
+                <prenom>Gregory</prenom>
+                <updateDate>2009-10-10</updateDate>
+                <MemberCharacteristic>
+<!--                 <MemberCharacteristic> -->
+<!-- 						<csuID>null-null</csuID> -->
+<!-- 						<status>Actif</status> -->
+<!-- 						<csuStatus>En construction</csuStatus> -->
+<!-- 						<lineIdentifier>PRX20130514104224971</lineIdentifier> -->
+<!-- 						<serviceType>CMD-FIX</serviceType> -->
+<!-- 						<nom /> -->
+<!-- 						<prenom /> -->
+<!-- 						<civilite /> -->
+<!-- 						<lineID>29453703</lineID> -->
+<!-- 						<cancelledCause /> -->
+<!-- 						<updateDate>2013-05-23T02:00:00</updateDate> -->
+<!-- 						<BenefitCharacteristic -->
+<!-- 							xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /> -->
+<!-- 						<CompensationCharacteristic> -->
+<!-- 							<CompensationCharacteristic> -->
+<!-- 								<compensationCode>ACTFMP01</compensationCode> -->
+<!-- 								<compensationShortName>Activation -->
+<!-- 								</compensationShortName> -->
+<!-- 								<compensationDescription>Le montant r&#233;el de votre -->
+<!-- 									remise sera indiqu&#233; une fois votre ligne activ&#233;e. -->
+<!-- 								</compensationDescription> -->
+<!-- 								<expirationDate>2013-07-13T02:00:00 -->
+<!-- 								</expirationDate> -->
+<!-- 								<status>R&#233;alis&#233;</status> -->
+<!-- 								<evidenceTypeCode /> -->
+<!-- 								<evidenceTypeDescription /> -->
+<!-- 							</CompensationCharacteristic> -->
+<!-- 						</CompensationCharacteristic> -->
+<!-- 					</MemberCharacteristic> -->
+                    <MemberCharacteristic>
+                        <csuID>1111</csuID>
+                        <status>Actif</status>
+                        <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                        <csuStatus>en cours d’activation</csuStatus>
+                        <lineIdentifier>0620304059</lineIdentifier>
+                        <serviceType>MOB</serviceType>
+                        <nom>Martin</nom>
+                        <prenom>Gregory</prenom>
+                        <lineID>1</lineID>
+                        <cancelledCause>2222</cancelledCause>
+                        <updateDate>2009-10-10</updateDate>
+                        <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>CMP01MS</benefitCode>
+                                <benefitShortName>15</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>16</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>16</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>120</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                    </MemberCharacteristic>
+                    <MemberCharacteristic>
+                        <csuID>2222</csuID>
+                        <status>En attente</status>
+                        <csuStatus>Activation en cours</csuStatus>
+                        <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                        <lineIdentifier>0620304060</lineIdentifier>
+                        <serviceType>MOB</serviceType>
+                        <nom>Bob</nom>
+                        <prenom>Roger</prenom>
+                        <lineID>2</lineID>
+                        <cancelledCause></cancelledCause>
+                        <updateDate>2010-10-10</updateDate>
+                        <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>B001</benefitCode>
+                                <benefitShortName>5</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>9</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>9</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>108</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>108</benefitValueMaxPerYear>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                         <CompensationCharacteristic>
+                             <CompensationCharacteristic>
+                                   <compensationCode>PJMP01</compensationCode>
+                                   <compensationShortName>Piece justificative</compensationShortName>
+                                   <compensationDescription>Téléchargez le formulaire correspondant à votre situation et renvoyez le, accompagné des pièces justificatives demandées.</compensationDescription>
+                                   <expirationDate>2011-06-15</expirationDate>
+                                   <status>Actif</status>
+                                   <evidenceTypeCode>PJMPFP</evidenceTypeCode>
+                             </CompensationCharacteristic>
+                            </CompensationCharacteristic>
+                    </MemberCharacteristic>
+                    
+					<MemberCharacteristic>
+                         <csuID>3333</csuID>
+                         <status>Deleted</status>
+                         <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                         <csuStatus></csuStatus>
+                         <lineIdentifier>0120304060</lineIdentifier>
+                         <serviceType>DSL</serviceType>
+                         <nom>REGRAGUI</nom>
+                         <prenom>Rachid</prenom>
+                         <civilite>M.</civilite>
+                         <lineID>2</lineID>
+                         <cancelledCause>05</cancelledCause>
+                         <updateDate>2010-10-10</updateDate>
+                         <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>BMP01F1</benefitCode>
+                                <benefitShortName>10</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>20</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>20</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>108</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>108</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                             <BenefitCharacteristic>
+                                <benefitCode>BMP01F1</benefitCode>
+                                <benefitShortName>2</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>10</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>10</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>180</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                         <CompensationCharacteristic>
+                             <CompensationCharacteristic>
+                                   <compensationCode>PJMP01</compensationCode>
+                                   <compensationShortName>Piece justificative</compensationShortName>
+                                   <compensationDescription>Téléchargez le formulaire correspondant à votre situation et renvoyez le, accompagné des pièces justificatives demandées.</compensationDescription>
+                                   <expirationDate>2011-06-15</expirationDate>
+                                   <status>Actif</status>
+                                   <evidenceTypeCode>PJMPFP</evidenceTypeCode>
+                             </CompensationCharacteristic>
+                            </CompensationCharacteristic>
+                    </MemberCharacteristic>
+                </MemberCharacteristic>
+            </GroupCharacteristic>
+            <GroupCharacteristic>
+                <classAME>AME_2</classAME>
+                <shortNameAME>Les Re-mixes de SFR</shortNameAME>
+                <descriptionAME>Plus vous prenez d'abonnements, plus vous avez de réductions</descriptionAME>
+                <benefitValueMinPerMonth>20</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>140</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>620</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>1200</benefitValueMaxPerYear>
+                <status>Actif</status>
+                <availableLines>6</availableLines>
+                <groupID>2</groupID>
+                <groupName>re-mixes-group-test-1</groupName>
+                <manager>0620304059</manager>
+                <serviceType>MOB</serviceType>
+                <deletionCause>02</deletionCause>
+                <nom>Martin</nom>
+                <prenom>Gregory</prenom>
+                <updateDate>2009-10-10</updateDate>
+                <MemberCharacteristic>
+                    <MemberCharacteristic>
+                         <csuID>2222</csuID>
+                         <status>Actif</status>
+                         <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                         <csuStatus></csuStatus>
+                         <lineIdentifier>0620304059</lineIdentifier>
+                         <serviceType>MOB</serviceType>
+                         <nom>Bob</nom>
+                         <prenom>Roger</prenom>
+                         <lineID>2</lineID>
+                         <cancelledCause>05</cancelledCause>
+                         <updateDate>2010-10-10</updateDate>
+                         <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>BMP01M9</benefitCode>
+                                <benefitShortName>benef1</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>15</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>15</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>120</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                    </MemberCharacteristic>
+					<MemberCharacteristic>
+                         <csuID>2222</csuID>
+                         <status>Actif</status>
+                         <csuStatus></csuStatus>
+                         <lineIdentifier>0120304060</lineIdentifier>
+                         <serviceType>THD</serviceType>                         
+                         <lineID>2</lineID>
+                         <updateDate>2010-10-10</updateDate>
+                         <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>BMP01M1</benefitCode>
+                                <benefitShortName>16</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2013-10-10</endDate>
+                                <benefitValueMinPerMonth>5</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>15</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>120</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                    </MemberCharacteristic>
+                </MemberCharacteristic>   
+           </GroupCharacteristic>
+            <GroupCharacteristic>
+                <classAME>AME_3</classAME>
+                <shortNameAME>Le super groupe de SFR</shortNameAME>
+                <descriptionAME>Plus vous prenez d'abonnements, plus vous avez de réductions</descriptionAME>
+                <benefitValueMinPerMonth>20</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>140</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>620</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>1200</benefitValueMaxPerYear>
+                <status>Actif</status>
+                <availableLines>3</availableLines>
+                <groupID>3</groupID>
+                <groupName>super-group-test-1</groupName>
+                <manager>0620304059</manager>
+                <serviceType>MOB</serviceType>
+                <deletionCause></deletionCause>
+                <nom>Martin</nom>
+                <prenom>Gregory</prenom>
+                <updateDate>2009-10-10</updateDate>
+                <MemberCharacteristic>
+                    <MemberCharacteristic>
+                         <csuID>1111</csuID>
+                         <status>Acif</status>
+                         <csuStatus></csuStatus>
+                         <libellePTA></libellePTA>
+                         <lineIdentifier>0620304059</lineIdentifier>
+                         <serviceType>MOB</serviceType>
+                         <nom>Bob</nom>
+                         <prenom>Roger</prenom>
+                         <lineID>2</lineID>
+                         <cancelledCause>2222</cancelledCause>
+                         <updateDate>2010-10-10</updateDate>
+                         <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>BMP01M4</benefitCode>
+                                <benefitShortName>benef1</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2013-10-10</endDate>
+                                <benefitValueMinPerMonth>4</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>4</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>48</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>48</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                    </MemberCharacteristic>
+                    <MemberCharacteristic>
+                         <csuID>2222</csuID>
+                         <status>Actif</status>
+                         <csuStatus></csuStatus>
+                         <lineIdentifier>0120304060</lineIdentifier>
+                         <serviceType>CMD-FIX</serviceType>                         
+                         <lineID>2</lineID>
+                         <updateDate>2010-10-10</updateDate>
+                         <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>BMP01M1</benefitCode>
+                                <benefitShortName>17</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2013-10-10</endDate>
+                                <benefitValueMinPerMonth>4</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>4</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>48</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>48</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                    </MemberCharacteristic>
+                </MemberCharacteristic>
+           </GroupCharacteristic>
+    </GroupCharacteristic>
+</n1:RestitutionAMEContenuOut>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1"
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+    <idAsc>mAzDA8SHPsulQ0Vy</idAsc>
+    <utilisateurAsc>true</utilisateurAsc>
+    <statutBackend>COMPLET</statutBackend>
+    <civilite>M</civilite>
+    <genre>MASCULIN</genre>
+    <nom>EVA</nom>
+    <prenom>MARTIAL</prenom>
+    <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+    <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+    <personneFictive>false</personneFictive>
+    <logins>0610633453</logins>
+	<idPersonne>2222</idPersonne>
+    <lignesPrincipales>
+        <statutBackend>COMPLET</statutBackend>
+        <ligneMobile>
+            <statutBackend>COMPLET</statutBackend>
+            <label>0610633453</label>
+            <typeCSU>MOBILE</typeCSU>
+            <statutCSU>ACTIF</statutCSU>
+            <profilPsw>MOBILE_ABONNE</profilPsw>
+            <roles>PAYEUR</roles>
+            <roles>TITULAIRE</roles>
+            <roles>UTILISATEUR_DELEGUE_COMPLET</roles>
+            <roles>UTILISATEUR_DELEGUE_INTERMEDIAIRE</roles>
+            <roles>UTILISATEUR_DELEGUE_BASIQUE</roles>
+            <roles>UTILISATEUR_PRINCIPAL_COMPLET</roles>
+            <roles>UTILISATEUR_PRINCIPAL_INTERMEDIAIRE</roles>
+            <roles>UTILISATEUR_PRINCIPAL_BASIQUE</roles>
+            <creationSIGCExplicite>false</creationSIGCExplicite>
+            <adresseFacturation>
+                <adresse>2 RUE ARISTIDE BRIAND</adresse>
+                <codePostal>67600</codePostal>
+                <localite>SELESTAT</localite>
+            </adresseFacturation>
+            <adresseClient>
+                <adresse>2 RUE ARISTIDE BRIAND</adresse>
+                <codePostal>67600</codePostal>
+                <localite>SELESTAT</localite>
+            </adresseClient>
+            <idAem>ORI0100068028697915330</idAem>
+            <numeroContrat>BR8623</numeroContrat>
+            <numeroContratOperateur>7915330</numeroContratOperateur>
+            <msisdn>0610633453</msisdn>
+            <vfCid>01R2918201</vfCid>
+            <categorie>RESIDENTIEL</categorie>
+            <gammeTarifaire>SFR PERSO</gammeTarifaire>
+            <segment>01</segment>
+            <operateur>SFR</operateur>
+            <planTarifaire>sfr_perso_2h_1h7/7+1hswe_</planTarifaire>
+            <libelleForfait>La Formule SFR Perso 2H</libelleForfait>
+            <jourReinitialisationCompteurs>2012-07-01+02:00</jourReinitialisationCompteurs>
+            <factureDematerialisee>false</factureDematerialisee>
+            <optionsSouscrites>
+                <code>S005</code>
+                <libelleCourt>Fact. seconde gratuite</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S100</code>
+                <libelleCourt>Visio</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S108</code>
+                <libelleCourt>SFR Monde</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S131</code>
+                <libelleCourt>Présentation du numéro</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S175</code>
+                <libelleCourt>Enregistrement du Répertoire</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S19A</code>
+                <libelleCourt>Suivi Conso Internet International</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S520</code>
+                <libelleCourt>Wap GPRS</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S523</code>
+                <libelleCourt>Option MMS</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S718</code>
+                <libelleCourt>Prix Préférentiel au-delà</libelleCourt>
+            </optionsSouscrites>
+            <optionsSouscrites>
+                <code>S940</code>
+                <libelleCourt>Programme GCR</libelleCourt>
+            </optionsSouscrites>
+            <controleParental>18+=-</controleParental>
+            <peutAcheter>false</peutAcheter>
+            <typeOffre>ABONNE</typeOffre>
+            <produitsSouscrits>MMS</produitsSouscrits>
+            <derniereFacture>
+                <date>2012-06-02+02:00</date>
+                <montantTtcEnCentimes>2300</montantTtcEnCentimes>
+            </derniereFacture>
+            <garantieCarreRouge>
+                <soldeDePoints>17330</soldeDePoints>
+                <dateActualisation>2012-06-12T00:00:00+02:00</dateActualisation>
+            </garantieCarreRouge>
+            <telephoneMobile>
+                <imei>35538604303522</imei>
+                <tac>35538604</tac>
+                <idBacarat>11896</idBacarat>
+            </telephoneMobile>
+        </ligneMobile>
+    </lignesPrincipales>
+    <services>
+        <type>SEGMT-CLI</type>
+        <identifiant>GP</identifiant>
+    </services>
+    <dateDerniereConnexion>2012-06-14T16:15:04.162+02:00</dateDerniereConnexion>
+</ficheUtilisateur>

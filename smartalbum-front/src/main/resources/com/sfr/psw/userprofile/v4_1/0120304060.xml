@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1"
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+	<idAsc>Wg52iOfFlc9pTr9z</idAsc>
+      <utilisateurAsc>true</utilisateurAsc>
+      <statutBackend>COMPLET</statutBackend>
+      <civilite>MLLE</civilite>
+      <genre>FEMININ</genre>
+      <nom>RGSAPAKY</nom>
+      <prenom>OKLHORK</prenom>
+      <telephoneFixeDeContact>+330120304060</telephoneFixeDeContact>
+      <emailDeSecours>dsi-gp-int-recettes@neufcegetel.fr</emailDeSecours>
+      <emailDeContact1>dsi-gp-int-recettes@neufcegetel.fr</emailDeContact1>
+      <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+      <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+      <personneFictive>false</personneFictive>
+      <logins>pastoret.melanie@sfr.fr</logins>
+      <lignesPrincipales>
+        <statutBackend>COMPLET</statutBackend>
+        <ligneFixe>
+          <statutBackend>COMPLET</statutBackend>
+          <label>0120304060/null</label>
+          <statutCSU>RESILIE</statutCSU>
+          <profilPsw>INTERNET_SECONDAIRE</profilPsw>
+          <creationSIGCExplicite>false</creationSIGCExplicite>
+          <idCompteClient>1-HKYOYI4</idCompteClient>
+          <adresseFacturation>
+            <adresse>13  RUE RAVIN DES AMANDIER</adresse>
+            <codePostal>66140</codePostal>
+            <localite>CANET EN ROUSSILLON</localite>
+          </adresseFacturation>
+          <adresseClient>
+            <adresse>13  RUE RAVIN DES AMANDIER</adresse>
+            <codePostal>66140</codePostal>
+            <localite>CANET EN ROUSSILLON</localite>
+          </adresseClient>
+          <numeroAccesFT>0120304060</numeroAccesFT>
+          <segment>RESIDENTIEL</segment>
+          <crmId>1-HKYOYI4</crmId>
+          <emailRattacheAuNeufID>false</emailRattacheAuNeufID>
+          <facture>
+            <ssaFacturation>ARBOR</ssaFacturation>
+            <dateDerniereFacture>2012-06-29+02:00</dateDerniereFacture>
+            <montantDerniereFacture>44.73</montantDerniereFacture>
+          </facture>
+        </ligneFixe>
+      </lignesPrincipales>
+      <mailBoxes>
+        <email>pastoret.melanie@sfr.fr</email>
+        <type>FIXE</type>
+      </mailBoxes>
+      <services>
+        <type>CONTRAT-FIXE</type>
+        <identifiant>1-HKYOYI4</identifiant>
+      </services>
+      <dateDerniereConnexion>2013-03-06T14:38:16.890+01:00</dateDerniereConnexion>
+</ficheUtilisateur>

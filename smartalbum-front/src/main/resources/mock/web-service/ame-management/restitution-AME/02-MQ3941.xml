@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:RestitutionAMEContenuOut xmlns:n1="http://cegetelsi/psg/amemanagement/4.0"
+	xmlns:n2="http://cegetelsi/psg/amemanagement/4.0/interface"
+	xmlns="http://cegetelsi/psg/amemanagement/4.0/AMEManagementV40Response">
+	<GroupCharacteristic>
+		<GroupCharacteristic>
+			<classAME>AME_1</classAME>
+			<shortNameAME>Les Multi-Packs de SFR</shortNameAME>
+			<descriptionAME>Creez votre pack et realisez des economies
+			</descriptionAME>
+			<benefitValueMinPerMonth>10.0</benefitValueMinPerMonth>
+			<benefitValueMaxPerMonth>10.0</benefitValueMaxPerMonth>
+			<benefitValueMinPerYear>120.0</benefitValueMinPerYear>
+			<benefitValueMaxPerYear>120.0</benefitValueMaxPerYear>
+			<status>En construction</status>
+			<availableLines>3</availableLines>
+			<groupID>27450632</groupID>
+			<groupName>Multi-Packs</groupName>
+			<manager>0618712555</manager>
+			<serviceType>DSL</serviceType>
+			<deletionCause />
+			<nom>JKRTFUOSG</nom>
+			<prenom>Ogrjfurj</prenom>
+			<civilite>MME</civilite>
+			<updateDate>2013-07-09T02:00:00</updateDate>
+			<MemberCharacteristic>
+				<MemberCharacteristic>
+					<csuID>06-0BS691</csuID>
+					<status>Actif</status>
+					<csuStatus>Actif</csuStatus>
+					<lineIdentifier>0237328892</lineIdentifier>
+					<serviceType>DSL</serviceType>
+					<nom>JKRTFUOSG</nom>
+					<prenom>Ogrjfurj</prenom>
+					<civilite>MME</civilite>
+					<lineID>29454183</lineID>
+					<cancelledCause />
+					<updateDate>2013-07-09T02:00:00</updateDate>
+					<libellePTA>100%Neufbox non d&#233;group&#233;+Ligne Dmgt PRO ABS 24 PX24
+					</libellePTA>
+					<BenefitCharacteristic>
+						<BenefitCharacteristic>
+							<benefitCode>BMP01FR2</benefitCode>
+							<benefitShortName>123
+							</benefitShortName>
+							<benefitDescription>remise de 10 euro sur la box de SFR
+							</benefitDescription>
+							<status>Actif</status>
+							<activationDate>2013-07-09T02:00:00
+							</activationDate>
+							<endDate>2040-11-23T01:00:00</endDate>
+							<benefitValueMinPerMonth>10.0
+							</benefitValueMinPerMonth>
+							<benefitValueMaxPerMonth>10.0
+							</benefitValueMaxPerMonth>
+							<benefitValueMinPerYear>120.0
+							</benefitValueMinPerYear>
+							<benefitValueMaxPerYear>120.0
+							</benefitValueMaxPerYear>
+							<productCode>RVLAMP07</productCode>
+							<unit>Euro</unit>
+							<invoicedProduct />
+							<invoiceAmount>0.0</invoiceAmount>
+							<technicalCode />
+						</BenefitCharacteristic>
+						<BenefitCharacteristic>
+							<benefitCode>TMP01F1</benefitCode>
+							<benefitShortName>1</benefitShortName>
+							<benefitDescription>suivi soucription Multi-Pack de SFR pour la ligne fixe</benefitDescription>
+							<status>Actif</status>
+							<activationDate>2013-07-09T02:00:00
+							</activationDate>
+							<endDate>2287-04-23T02:00:00</endDate>
+							<benefitValueMinPerMonth>0.0
+							</benefitValueMinPerMonth>
+							<benefitValueMaxPerMonth>0.0
+							</benefitValueMaxPerMonth>
+							<benefitValueMinPerYear>0.0
+							</benefitValueMinPerYear>
+							<benefitValueMaxPerYear>0.0
+							</benefitValueMaxPerYear>
+							<productCode>AME0001</productCode>
+							<unit>Euro</unit>
+							<invoicedProduct />
+							<invoiceAmount>0.0</invoiceAmount>
+							<technicalCode>AME0001</technicalCode>
+						</BenefitCharacteristic>
+					</BenefitCharacteristic>
+					<CompensationCharacteristic xsi:nil="true"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				</MemberCharacteristic>
+				<MemberCharacteristic>
+					<csuID>01-IGF672</csuID>
+					<status>En attente</status>
+					<csuStatus>Actif</csuStatus>
+					<lineIdentifier>0618712555</lineIdentifier>
+					<serviceType>MOB</serviceType>
+					<nom>UIHPUCKSJKLT</nom>
+					<prenom>Rnisjyvj</prenom>
+					<civilite>MR</civilite>
+					<lineID>29454184</lineID>
+					<cancelledCause />
+					<updateDate>2013-07-09T02:00:00</updateDate>
+					<libellePTA>100%Neufbox non d&#233;group&#233;+Ligne Dmgt
+						PRO ABS 24 PX24
+					</libellePTA>
+					<BenefitCharacteristic>
+						<BenefitCharacteristic>
+							<benefitCode>TMP01ML</benefitCode>
+							<benefitShortName>tracage souscription mobile
+							</benefitShortName>
+							<benefitDescription>souscription en cluster large
+							</benefitDescription>
+							<status>Actif</status>
+							<activationDate>2013-07-09T02:00:00
+							</activationDate>
+							<endDate>2040-11-23T01:00:00</endDate>
+							<benefitValueMinPerMonth>0.0
+							</benefitValueMinPerMonth>
+							<benefitValueMaxPerMonth>0.0
+							</benefitValueMaxPerMonth>
+							<benefitValueMinPerYear>0.0
+							</benefitValueMinPerYear>
+							<benefitValueMaxPerYear>0.0
+							</benefitValueMaxPerYear>
+							<productCode>P14N</productCode>
+							<unit>Euro</unit>
+							<invoicedProduct />
+							<invoiceAmount>0.0</invoiceAmount>
+							<technicalCode>P14N</technicalCode>
+						</BenefitCharacteristic>
+						<BenefitCharacteristic>
+							<benefitCode>CMP01ML</benefitCode>
+							<benefitShortName>10</benefitShortName>
+							<benefitDescription>contribue a 30% de remise sur fixe
+							</benefitDescription>
+							<status>Actif</status>
+							<activationDate>2013-07-09T02:00:00</activationDate>
+							<endDate>2040-11-23T01:00:00</endDate>
+							<benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+							<benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+							<benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+							<benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+							<productCode>P90R</productCode>
+							<unit>Euro</unit>
+							<invoicedProduct />
+							<invoiceAmount>0.0</invoiceAmount>
+							<technicalCode />
+						</BenefitCharacteristic>
+					</BenefitCharacteristic>
+					<CompensationCharacteristic>
+						<CompensationCharacteristic>
+							<compensationCode>PJMP01</compensationCode>
+							<compensationShortName>Piece justificative
+							</compensationShortName>
+							<compensationDescription>Les lignes d'un groupe
+								Multi-Packs de SFR doivent &#234;tre d&#233;tenues par des
+								titulaires de m&#234;me nom et m&#234;me
+								adresse.&#160;T&#233;l&#233;chargez le formulaire correspondant
+								&#224; votre situation et renvoyez le, accompagn&#233; des
+								pi&#232;ces justificatives demand&#233;es.
+							</compensationDescription>
+							<expirationDate>2013-10-17T02:00:00
+							</expirationDate>
+							<status>En attente</status>
+							<evidenceTypeCode />
+							<evidenceTypeDescription />
+						</CompensationCharacteristic>
+					</CompensationCharacteristic>
+				</MemberCharacteristic>
+			</MemberCharacteristic>
+		</GroupCharacteristic>
+	</GroupCharacteristic>
+</n1:RestitutionAMEContenuOut>

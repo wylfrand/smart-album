@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1"
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+	<idAsc>ydl0dvv5538eOw7c</idAsc>
+	<idPortail>1330590345704</idPortail>
+	<utilisateurAsc>true</utilisateurAsc>
+	<statutBackend>COMPLET</statutBackend>
+	<civilite>MLLE</civilite>
+	<genre>FEMININ</genre>
+	<nom>MAISONNEUVE</nom>
+	<prenom>JOHANNA</prenom>
+	<telephoneFixeDeContact>+330178845890</telephoneFixeDeContact>
+	<emailDeSecours>dsi-gp-int-recettes@neufcegetel.fr</emailDeSecours>
+	<emailDeContact1>dsi-gp-int-recettes@neufcegetel.fr</emailDeContact1>
+	<stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+	<stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+	<personneFictive>false</personneFictive>
+	<logins>johanna.maisonneuve@sfr.fr</logins>
+	<lignesPrincipales>
+		<statutBackend>COMPLET</statutBackend>
+		<ligneFixe>
+			<statutBackend>COMPLET</statutBackend>
+			<label>0120304059/ADSL</label>
+			<typeCSU>ADSL</typeCSU>
+			<statutCSU>ACTIF</statutCSU>
+			<profilPsw>INTERNET_ADSL</profilPsw>
+			<creationSIGCExplicite>false</creationSIGCExplicite>
+			<idCompteClient>1-72NW70B</idCompteClient>
+			<adresseFacturation>
+				<adresse>62 RESIDENCE DU PARC</adresse>
+				<codePostal>91330</codePostal>
+				<localite>YERRES</localite>
+			</adresseFacturation>
+			<adresseClient>
+				<adresse>62 RESIDENCE DU PARC</adresse>
+				<codePostal>91330</codePostal>
+				<localite>YERRES</localite>
+			</adresseClient>
+			<numeroAccesFT>0120304059</numeroAccesFT>
+			<gamme>ADSL</gamme>
+			<segment>RESIDENTIEL</segment>
+			<libelleOffreSouscrite>neufbox de SFR jusqu'à 20 Méga + téléphonie illimitée + TV</libelleOffreSouscrite>
+			<crmId>1-72NW70B</crmId>
+			<emailRattacheAuNeufID>true</emailRattacheAuNeufID>
+			<facture>
+				<ssaFacturation>ARBOR</ssaFacturation>
+				<dateDerniereFacture>2011-11-14+01:00</dateDerniereFacture>
+				<montantDerniereFacture>31.9</montantDerniereFacture>
+			</facture>
+		</ligneFixe>
+	</lignesPrincipales>
+	<lignesSupplementaires>
+		<statutBackend>COMPLET</statutBackend>
+	</lignesSupplementaires>
+	<mailBoxes>
+		<email>johanna.maisonneuve@sfr.fr</email>
+		<type>FIXE</type>
+	</mailBoxes>
+	<services>
+		<type>CONTRAT-FIXE</type>
+		<identifiant>1-72NW70B</identifiant>
+	</services>
+	<dateDerniereConnexion>2012-03-01T09:25:45.703+01:00</dateDerniereConnexion>
+</ficheUtilisateur>

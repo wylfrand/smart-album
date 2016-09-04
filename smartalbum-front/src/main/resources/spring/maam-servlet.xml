@@ -1,0 +1,132 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:sec="http://www.springframework.org/schema/security" 
+       xmlns:p="http://www.springframework.org/schema/p" 
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/tx 
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/jee 
+                           http://www.springframework.org/schema/jee/spring-jee.xsd
+                           http://www.springframework.org/schema/security 
+                           http://www.springframework.org/schema/security/spring-security.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jdbc
+                           http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd
+                           http://www.springframework.org/schema/mvc 
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/util 
+                           http://www.springframework.org/schema/util/spring-util.xsd">  
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+           <list>
+               <value>classpath:config/maam.properties</value>
+               <value>classpath:config/ws-client-context.properties</value>
+               <value>file:///etc/conf-psw/applications/selfcare/maam/front/maam.properties</value>
+               <value>file:///etc/conf-psw/applications/selfcare/maam/front/sfr-authentication-client.properties</value>
+               <value>file:///etc/conf-psw/applications/sfr-authentication-client/sfr-authentication-client-global.properties</value>
+               <value>file:///etc/conf-psw/applications/selfcare/matrice_habilitation_multi_lignes.properties</value>
+           </list>
+        </property>
+        <property name="order" value="2" />
+        <property name="ignoreResourceNotFound" value="true" />
+        <property name="fileEncoding" value="UTF-8" />
+    </bean>
+    
+   <context:component-scan base-package="com.sfr.applications.maam.database.model,
+                                         com.sfr.applications.maam.database.dao,
+                                         com.sfr.applications.maam.database.service,
+                                         com.sfr.composants,
+                                         com.sfr.applications.maam.service,
+                                         com.sfr.applications.maam.front.controller,
+                                         com.sfr.applications.maam.front.utils,
+                                         com.sfr.applications.maam.front.service" />
+                                          
+    <context:annotation-config />
+
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+    
+    <mvc:annotation-driven />        
+         
+    <!-- Interceptors -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/groupe/**" />
+            <mvc:mapping path="/action/groupe/**" />
+            <bean class="com.sfr.applications.maam.front.interceptor.InitSfrUserInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+    
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**" />
+            <bean class="com.sfr.applications.maam.front.interceptor.ExtranetInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+                                                                        
+    <!-- i18n -->
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="classpath:config/messages" />
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="cacheSeconds" value="240" />
+    </bean>
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+        <property name="defaultLocale" value="fr"/>
+    </bean>
+
+
+    <bean id="exceptionResolver" class="com.sfr.applications.maam.front.utils.MappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <!-- Empeche d'accéder à une url sans passer par le bon endroit -->
+                <prop key="org.springframework.web.HttpRequestMethodNotSupportedException">redirect:/</prop>
+                <prop key="org.springframework.web.bind.MissingServletRequestParameterException">redirect:/</prop>
+            </props>
+        </property>
+        <property name="exceptionAttribute">
+            <value>exception</value>
+        </property>
+        <property name="defaultErrorView" value="error/service_indisponible" />
+    </bean>
+
+    
+    <!-- Bean gérant l'accès aux properties dans les pages jsp -->
+    <bean id="servletContextExporter" class="org.springframework.web.context.support.ServletContextAttributeExporter">
+        <property name="attributes">
+            <map>
+				<entry key="questionsReponses" value="${maam.voir.questions.reponses.url}" />
+				<entry key="offreMobile" value="${maam.changer.offre.mobile.url}" />
+				<entry key="toutesLesOffres" value="${maam.consulter.toutes.les.offres.url}" />
+				<entry key="souscrireLigneFixe" value="${maam.souscrire.ligne.fixe.url}" />
+				<entry key="souscrireLigneMobile" value="${maam.souscrire.ligne.mobile.url}" />
+				<entry key="espaceClientUrl" value="${web.mon.compte.url}" />
+				<entry key="longueurTitreForfaitMobile" value="${maam.longueur.chaine.forfait.titre.mobile}" />
+				<entry key="longueurTitreForfaitBox" value="${maam.longueur.chaine.forfait.titre.box}" />
+				<entry key="longueurFullName" value="${maam.longueur.chaine.full.name}" />
+				<entry key="enSavoirPlus" value="${maam.en.savoir.plus.url}" />
+			</map>
+        </property>
+    </bean>
+    
+ 
+    <!--
+        Ceci est le view resolver, il permet de définir la technologie de vue
+        utilisée et comment sélectionner une vue. Ici on prendra la solution
+        la plus simple elle permet de mapper le nom de la vue retournée avec
+        la sélection d'une jsp. Ex. si le nom de la vue retournée est "hello"
+        alors on utilisera le fichier WEB-INF/jsp/hello.jsp pour construire la
+        vue.
+    -->
+    <bean id="internalViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
+</beans>

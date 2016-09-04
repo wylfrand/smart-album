@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+      <idAsc>QKDPgeIijOBgLuOZ</idAsc>
+      <utilisateurAsc>true</utilisateurAsc>
+      <statutBackend>COMPLET</statutBackend>
+      <civilite>M</civilite>
+      <genre>MASCULIN</genre>
+      <nom>CDEUTITULAIRESVFDOUZE</nom>
+      <prenom>Svfdouze</prenom>
+      <emailDeSecours>cedric.baccei@sfrserviceclient.fr</emailDeSecours>
+      <emailDeContact1>cedric.baccei@sfrserviceclient.fr</emailDeContact1>
+      <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+      <compteurNPEIEmailDeContact1>0</compteurNPEIEmailDeContact1>
+      <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+      <personneFictive>false</personneFictive>
+      <logins>0614897596</logins>
+      <lignesPrincipales>
+        <statutBackend>COMPLET</statutBackend>
+        <ligneMobile>
+          <statutBackend>COMPLET</statutBackend>
+          <label>0614897596</label>
+          <typeCSU>MOBILE</typeCSU>
+          <statutCSU>ACTIF</statutCSU>
+          <profilPsw>MOBILE_ABONNE</profilPsw>
+          <roles>UTILISATEUR_PRINCIPAL_COMPLET</roles>
+          <roles>UTILISATEUR_PRINCIPAL_INTERMEDIAIRE</roles>
+          <roles>UTILISATEUR_PRINCIPAL_BASIQUE</roles>
+          <creationSIGCExplicite>false</creationSIGCExplicite>
+          <adresseFacturation>
+            <adresse>A L ATT DE P ABERGEL 1 PLACE CARPEAUX</adresse>
+            <codePostal>92915</codePostal>
+            <localite>LA DEFENSE CEDEX</localite>
+          </adresseFacturation>
+          <adresseClient>
+            <adresse>1 PLACE CARPEAUX</adresse>
+            <codePostal>92915</codePostal>
+            <localite>LA DEFENSE CEDEX</localite>
+          </adresseClient>
+          <idAem>ORI020004335204I986383</idAem>
+          <numeroContrat>M94994</numeroContrat>
+          <numeroContratOperateur>I986383</numeroContratOperateur>
+          <msisdn>0614897596</msisdn>
+          <vfCid>02L7695102</vfCid>
+          <categorie>RESIDENTIEL</categorie>
+          <gammeTarifaire>CARECONECT</gammeTarifaire>
+          <segment>02</segment>
+          <operateur>SFR</operateur>
+          <planTarifaire>sfrcarre_connect_3h_px_24___</planTarifaire>
+          <libelleForfait>Formule CarrÃ©e Connect 3H</libelleForfait>
+          <jourReinitialisationCompteurs>2013-10-12+02:00</jourReinitialisationCompteurs>
+          <factureDematerialisee>false</factureDematerialisee>
+          <optionsSouscrites>
+            <code>P14N</code>
+            <libelleCourt>Remise Multi-Packs de SFR</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P308</code>
+            <libelleCourt>Bilan Conso</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P62A</code>
+            <libelleCourt>SFR FEMTO 3G au prix de 49 EUR</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P79P</code>
+            <libelleCourt>Surveillance 500 mo</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P94A</code>
+            <libelleCourt>AN MOBILE 24M</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P97S</code>
+            <libelleCourt>Avantage fidÃ©litÃ© 24 mois</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P97U</code>
+            <libelleCourt>Remise engagement</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S175</code>
+            <libelleCourt>Enregistrement du RÃ©pertoire</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S19A</code>
+            <libelleCourt>Suivi Conso Internet International</libelleCourt>
+          </optionsSouscrites>
+          <controleParental>18+=-</controleParental>
+          <peutAcheter>false</peutAcheter>
+          <typeOffre>ABONNE</typeOffre>
+          <produitsSouscrits>HSDPA</produitsSouscrits>
+          <produitsSouscrits>P140</produitsSouscrits>
+          <produitsSouscrits>SFR Home 3G</produitsSouscrits>
+          <produitsSouscrits>SL2SFR</produitsSouscrits>
+          <produitsSouscrits>SN02</produitsSouscrits>
+          <produitsSouscrits>TV_CARRE_CONNECT</produitsSouscrits>
+          <derniereFacture>
+            <date>2013-08-13+02:00</date>
+            <montantTtcEnCentimes>3900</montantTtcEnCentimes>
+          </derniereFacture>
+          <garantieCarreRouge>
+            <soldeDePoints>10230</soldeDePoints>
+            <dateActualisation>2013-09-12T00:00:00+02:00</dateActualisation>
+          </garantieCarreRouge>
+          <telephoneMobile>
+            <imei>00000000000000</imei>
+            <tac>00000000</tac>
+          </telephoneMobile>
+        </ligneMobile>
+      </lignesPrincipales>
+      <services>
+        <type>SEGMT-CLI</type>
+        <identifiant>GP</identifiant>
+      </services>
+      <dateDerniereConnexion>2013-09-13T11:37:09.867+02:00</dateDerniereConnexion>
+    </ficheUtilisateur>

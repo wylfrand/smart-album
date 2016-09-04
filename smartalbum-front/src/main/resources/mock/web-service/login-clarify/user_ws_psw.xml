@@ -1,0 +1,6 @@
+<loginResponse xmlns="http://ws.ejb.common.igb.clarify.com" 
+		xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <loginReturn>thivolet_000035C8_E68175FB_0;MHjnuFxrL4c6ew414CC/hQC50myCTHY7sgsSe1NNqJGgiuCskBxnknwq0ToJxoraxUS..XrZAwnoc3VjpNaX.yPYq0ToJxoraxUUwn1Qde/onUjnKgL6aIRMYYgU4HKOeoRoWix.tYcKEQ.2SehnNTKWnUvcMgBQQm2TYdlBCVeA.4r6lpACouzE/q2qbgfQa669GkhGL3g8tEZ56QlXGFdlcZycfjjtBwhiOKQrzIsUKncY/YxrZO9.dnWMoNPuxffD8PCgBB56ExLkZ2AyIJXmTT3lrA620liSFyxuo2jpGeq13tf.YR0XvhdBVFoeVLu70qvfc.opPLHHcKbW2ZCxY0lzzxBEqLWi2bjjh16pQCZB35yo4o0dHFPFhlf/I6h1sMopVfo2Z.WYA4ttWNwTNvAw1xfohILNwhijW8MMIrzIsUKncY/YlL049O31zj2vg33qvrNceotpv6t/TOMz6HpnWh5mVLw2ofy0Qo0dmBUbfxP7pC/XN2kBfwEwmnFNs2g7RF9ZRQs..R2xwgqejT.Xmadw6l/dio</loginReturn>
+			</loginResponse>

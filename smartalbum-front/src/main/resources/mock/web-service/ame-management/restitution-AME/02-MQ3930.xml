@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:RestitutionAMEContenuOut xmlns:n1="http://cegetelsi/psg/amemanagement/4.0" 
+                             xmlns:n2="http://cegetelsi/psg/amemanagement/4.0/interface"
+                             xmlns="http://cegetelsi/psg/amemanagement/4.0/AMEManagementV40Response">
+        
+<GroupCharacteristic>
+          <GroupCharacteristic>
+            <classAME>AME_1</classAME>
+            <shortNameAME>Les Multi-Packs de SFR</shortNameAME>
+            <descriptionAME>Creez votre pack et realisez des economies</descriptionAME>
+            <benefitValueMinPerMonth>15.0</benefitValueMinPerMonth>
+            <benefitValueMaxPerMonth>15.0</benefitValueMaxPerMonth>
+            <benefitValueMinPerYear>180.0</benefitValueMinPerYear>
+            <benefitValueMaxPerYear>180.0</benefitValueMaxPerYear>
+            <status>Actif</status>
+            <availableLines>2</availableLines>
+            <groupID>28121715</groupID>
+            <groupName>Multi-Packs de FUT</groupName>
+            <manager>0120304060</manager>
+            <serviceType>THD</serviceType>
+            <deletionCause/>
+            <nom/>
+            <prenom/>
+            <civilite/>
+            <updateDate>2013-09-03T02:00:00</updateDate>
+            <MemberCharacteristic><MemberCharacteristic>
+              <csuID>06-15MX6X</csuID>
+              <status>Actif</status>
+              <csuStatus>Actif</csuStatus>
+              <lineIdentifier>0120304060</lineIdentifier>
+              <serviceType>THD</serviceType>
+              <nom/>
+              <prenom/>
+              <civilite/>
+              <lineID>31151652</lineID>
+              <cancelledCause/>
+              <updateDate>2013-09-03T02:00:00</updateDate>
+              <libellePTA>CARRE-1H CARRE-4GO</libellePTA>
+              <BenefitCharacteristic><BenefitCharacteristic>
+                <benefitCode>TMP01F1</benefitCode>
+                <benefitShortName>topage MP01 fixe</benefitShortName>
+                <benefitDescription>suivi soucription Multi-Pack de SFR pour la ligne fixe</benefitDescription>
+                <status>Actif</status>
+                <activationDate>2013-08-29T02:00:00</activationDate>
+                <endDate>2287-06-13T02:00:00</endDate>
+                <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                <productCode>AME0001</productCode>
+                <unit>Euro</unit>
+                <invoicedProduct/>
+                <invoiceAmount>0.0</invoiceAmount>
+                <technicalCode>AME0001</technicalCode>
+              </BenefitCharacteristic>
+              <BenefitCharacteristic>
+                <benefitCode>BMP01FR3</benefitCode>
+                <benefitShortName>-15,00 euro/m sur la box de SFR</benefitShortName>
+                <benefitDescription>remise  de 15 euro sur la box de SFR</benefitDescription>
+                <status>Actif</status>
+                <activationDate>2013-09-03T02:00:00</activationDate>
+                <endDate>2041-01-18T01:00:00</endDate>
+                <benefitValueMinPerMonth>15.0</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>15.0</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>180.0</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>180.0</benefitValueMaxPerYear>
+                <productCode>RVLAMP08</productCode>
+                <unit>Euro</unit>
+                <invoicedProduct/>
+                <invoiceAmount>0.0</invoiceAmount>
+                <technicalCode/>
+              </BenefitCharacteristic></BenefitCharacteristic>
+              <CompensationCharacteristic xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </MemberCharacteristic>
+            <MemberCharacteristic>
+              <csuID>01-FMBF60</csuID>
+              <status>Actif</status>
+              <csuStatus>Actif</csuStatus>
+              <lineIdentifier>0620304059</lineIdentifier>
+              <serviceType>MOB</serviceType>
+              <nom>SFR TESTS ADDAMS 7</nom>
+              <prenom>41199 F Delbecq</prenom>
+              <civilite>MR</civilite>
+              <lineID>31151653</lineID>
+              <cancelledCause/>
+              <updateDate>2013-08-30T02:00:00</updateDate>
+              <libellePTA>CARRE-1H CARRE-4GO</libellePTA>
+              <BenefitCharacteristic><BenefitCharacteristic>
+                <benefitCode>TMP01MS</benefitCode>
+                <benefitShortName>tracage souscription mobile</benefitShortName>
+                <benefitDescription>souscription en cluster small</benefitDescription>
+                <status>Actif</status>
+                <activationDate>2013-08-29T02:00:00</activationDate>
+                <endDate>2041-01-13T01:00:00</endDate>
+                <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                <productCode>P14N</productCode>
+                <unit>Euro</unit>
+                <invoicedProduct/>
+                <invoiceAmount>0.0</invoiceAmount>
+                <technicalCode>P14N</technicalCode>
+              </BenefitCharacteristic>
+              <BenefitCharacteristic>
+                <benefitCode>CMP01MS</benefitCode>
+                <benefitShortName>5</benefitShortName>
+                <benefitDescription>contribue a 15% de remise sur fixe</benefitDescription>
+                <status>Actif</status>
+                <activationDate>2013-08-29T02:00:00</activationDate>
+                <endDate>2041-01-13T01:00:00</endDate>
+                <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                <productCode>P90R</productCode>
+                <unit>Euro</unit>
+                <invoicedProduct/>
+                <invoiceAmount>0.0</invoiceAmount>
+                <technicalCode/>
+              </BenefitCharacteristic></BenefitCharacteristic>
+              <CompensationCharacteristic><CompensationCharacteristic>
+                <compensationCode>PJMP01</compensationCode>
+                <compensationShortName>Piece justificative</compensationShortName>
+                <compensationDescription>Les lignes d'un groupe Multi-Packs de SFR doivent &#234;tre d&#233;tenues par des titulaires de m&#234;me nom et m&#234;me adresse.&#160;T&#233;l&#233;chargez le formulaire correspondant &#224; votre situation et renvoyez le, accompagn&#233; des pi&#232;ces justificatives demand&#233;es.</compensationDescription>
+                <expirationDate>2013-12-07T01:00:00</expirationDate>
+                <status>R&#233;alis&#233;</status>
+                <evidenceTypeCode>PJMPFP</evidenceTypeCode>
+                <evidenceTypeDescription>PJMPFP</evidenceTypeDescription>
+              </CompensationCharacteristic></CompensationCharacteristic>
+            </MemberCharacteristic>
+            <MemberCharacteristic>
+              <csuID>01-FMCS33</csuID>
+              <status>Actif</status>
+              <csuStatus>Actif</csuStatus>
+              <lineIdentifier>0620304060</lineIdentifier>
+              <serviceType>MOB</serviceType>
+              <nom>SFR TESTS ADDAMS 79</nom>
+              <prenom>41199 F Delbecq</prenom>
+              <civilite>MR</civilite>
+              <lineID>31162681</lineID>
+              <cancelledCause/>
+              <updateDate>2013-09-03T02:00:00</updateDate>
+              <libellePTA>CARRE-1H CARRE-4GO</libellePTA>
+              <BenefitCharacteristic><BenefitCharacteristic>
+                <benefitCode>CMP01ML</benefitCode>
+                <benefitShortName>10</benefitShortName>
+                <benefitDescription>contribue a 30% de remise sur fixe</benefitDescription>
+                <status>Actif</status>
+                <activationDate>2013-08-30T02:00:00</activationDate>
+                <endDate>2041-01-14T01:00:00</endDate>
+                <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                <productCode>P90R</productCode>
+                <unit>Euro</unit>
+                <invoicedProduct/>
+                <invoiceAmount>0.0</invoiceAmount>
+                <technicalCode/>
+              </BenefitCharacteristic>
+              <BenefitCharacteristic>
+                <benefitCode>TMP01ML</benefitCode>
+                <benefitShortName>tracage souscription mobile</benefitShortName>
+                <benefitDescription>souscription en cluster large</benefitDescription>
+                <status>Actif</status>
+                <activationDate>2013-08-30T02:00:00</activationDate>
+                <endDate>2041-01-14T01:00:00</endDate>
+                <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                <productCode>P14N</productCode>
+                <unit>Euro</unit>
+                <invoicedProduct/>
+                <invoiceAmount>0.0</invoiceAmount>
+                <technicalCode>P14N</technicalCode>
+              </BenefitCharacteristic></BenefitCharacteristic>
+              <CompensationCharacteristic><CompensationCharacteristic>
+                <compensationCode>PJMP01</compensationCode>
+                <compensationShortName>Piece justificative</compensationShortName>
+                <compensationDescription>Les lignes d'un groupe Multi-Packs de SFR doivent &#234;tre d&#233;tenues par des titulaires de m&#234;me nom et m&#234;me adresse.&#160;T&#233;l&#233;chargez le formulaire correspondant &#224; votre situation et renvoyez le, accompagn&#233; des pi&#232;ces justificatives demand&#233;es.</compensationDescription>
+                <expirationDate>2013-12-08T01:00:00</expirationDate>
+                <status>R&#233;alis&#233;</status>
+                <evidenceTypeCode>PJMPFP</evidenceTypeCode>
+                <evidenceTypeDescription>PJMPFP</evidenceTypeDescription>
+              </CompensationCharacteristic></CompensationCharacteristic>
+            </MemberCharacteristic></MemberCharacteristic>
+          </GroupCharacteristic></GroupCharacteristic>
+          </n1:RestitutionAMEContenuOut>

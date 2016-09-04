@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/decorators">
+    <decorator name="maam" page="maam_decorator.jsp">
+		<pattern>/test.html</pattern>
+		<pattern>/groupe/creation/index.html</pattern>
+        <pattern>/select-ligne/first.html</pattern>
+        <pattern>/error/service_indisponible.html</pattern>
+        <pattern>/doc/formulaire/downloadManagerPiecesJustificatives.html</pattern>
+        <pattern>/error/ineligible.html</pattern>
+		<pattern>/groupe/affichage/index.html</pattern>
+        <pattern>/groupe/affichage/historique.html</pattern>
+		<pattern>/groupe/simulation.html</pattern>
+		<pattern>/groupe/suppression/confirmation.html</pattern>
+		<pattern>/groupe/souscription/simulation.html</pattern>
+		<pattern>/groupe/simulation/confirmation.html</pattern>
+        <pattern>/groupe/souscription/error.html</pattern>
+		<pattern>/groupe/modification/index/**.html</pattern>
+		<pattern>/groupe/modification/ajout/index**html</pattern>
+        <pattern>/groupe/modification/ajout/simulation.html</pattern>
+        <pattern>/groupe/modification/ajout/confirmation.html</pattern>
+        <pattern>/groupe/modification/suppression/index**html</pattern>
+        <pattern>/groupe/modification/suppression/simulation.html</pattern>
+        <pattern>/groupe/confirmation.html</pattern>
+	</decorator>
+</decorators>

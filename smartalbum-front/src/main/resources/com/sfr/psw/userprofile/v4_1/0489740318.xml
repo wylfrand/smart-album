@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+    <idAsc>lJtKuhsZ6rU6Vzgk</idAsc>
+    <idPortail>1331137318602</idPortail>
+    <utilisateurAsc>true</utilisateurAsc>
+    <statutBackend>COMPLET</statutBackend>
+    <civilite>M</civilite>
+    <genre>MASCULIN</genre>
+    <nom>DESJARDINS</nom>
+    <prenom>THIERRY</prenom>
+    <telephoneFixeDeContact>+330493208973</telephoneFixeDeContact>
+    <emailDeContact1>dsi-gp-int-recettes@neufcegetel.fr</emailDeContact1>
+    <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+    <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+    <personneFictive>false</personneFictive>
+    <logins>thierrydesjardins@neuf.fr</logins>
+    <lignesPrincipales>
+        <statutBackend>COMPLET</statutBackend>
+        <ligneFixe>
+            <statutBackend>COMPLET</statutBackend>
+            <label>0489740318/ADSL</label>
+            <typeCSU>ADSL</typeCSU>
+            <statutCSU>ACTIF</statutCSU>
+            <profilPsw>INTERNET_ADSL</profilPsw>
+            <creationSIGCExplicite>false</creationSIGCExplicite>
+            <idCompteClient>1-76LE-2485</idCompteClient>
+			<adresseFacturation>
+                <adresse>53 AVENUE DES ALPES</adresse>
+                <codePostal>06800</codePostal>
+                <localite>CAGNES SUR MER</localite>
+            </adresseFacturation>
+            <adresseClient>
+                <adresse>53 AVENUE DES ALPES</adresse>
+                <codePostal>06800</codePostal>
+                <localite>CAGNES SUR MER</localite>
+            </adresseClient>
+            <numeroAccesFT>0489740318
+            </numeroAccesFT>
+            <gamme>ADSL</gamme>
+            <segment>RESIDENTIEL</segment>
+            <libelleOffreSouscrite>neufbox de SFR jusqu'à 20 Méga + téléphonie illimitée</libelleOffreSouscrite>
+            <crmId>1-76LE-2485</crmId>
+            <emailRattacheAuNeufID>false</emailRattacheAuNeufID>
+            <facture>
+                <ssaFacturation>ARBOR</ssaFacturation>
+                <montantDerniereFacture>31.9</montantDerniereFacture>
+            </facture>
+        </ligneFixe>
+    </lignesPrincipales>
+    <lignesSupplementaires>
+        <statutBackend>COMPLET</statutBackend>
+    </lignesSupplementaires>
+    <mailBoxes>
+        <email>thierrydesjardins@neuf.fr</email>
+        <type>FIXE</type>
+    </mailBoxes>
+    <services>
+        <type>CONTRAT-FIXE</type>
+        <identifiant>1-76LE-2485</identifiant>
+    </services>
+    <dateDerniereConnexion>2012-03-07T17:21:58.602+01:00</dateDerniereConnexion>
+</ficheUtilisateur>

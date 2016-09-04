@@ -1,0 +1,24 @@
+<env:Envelope xmlns:env='http://schemas.xmlsoap.org/soap/envelope/'>
+    <env:Header/>
+    <env:Body>
+        <Reponse_Message_simulationAME xmlns='http://eliame.sfr.com'>
+            <idTransaction>GAE0392012061409401226500001</idTransaction>
+            <numeroFlux>FFLINT2572</numeroFlux>
+            <ssaEmetteur>PF_SFR</ssaEmetteur>
+            <versionFlux>01.00</versionFlux>
+            <dateEnvoi>2012-06-14T09:40:12</dateEnvoi>
+            <Reponse>
+                <Code-Retour>KO</Code-Retour>
+                <Code-Erreur>AME_003</Code-Erreur>
+                <Libelle-Erreur>SIGC : WS listerDonneesCompleteCSU indisponible</Libelle-Erreur>
+                <Reponse>
+                    <ID-reponse>95971R1</ID-reponse>
+                    <ListeProposition>
+                        <Nombre-Propositions>0</Nombre-Propositions>
+                    </ListeProposition>
+                </Reponse>
+            </Reponse>
+        </Reponse_Message_simulationAME>
+    </env:Body>
+</env:Envelope>
+

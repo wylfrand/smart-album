@@ -1,0 +1,189 @@
+<result xmlns="http://sigc.sfr.com/listerDonneesCompletesCSU">
+	<entete>
+		<idTransaction>0A87235820100820201330251002</idTransaction>
+		<ssaEmetteur>0A87</ssaEmetteur>
+		<ssaRecepteur>CLFY</ssaRecepteur>
+		<dateOrigineFlux>2010-08-20T20:13:30.251+02:00</dateOrigineFlux>
+		<versionFlux>01.00</versionFlux>
+		<numeroFlux>FFLINT2358</numeroFlux>
+		<dateTraitementFlux>2011-05-27T17:26:20.252+02:00</dateTraitementFlux>
+		<typeFlux>RU</typeFlux>
+	</entete>
+	<reponse>
+		<resultat>
+			<resultat>OK</resultat>
+			<codeErreur>0000</codeErreur>
+			<libelleErreur />
+		</resultat>
+		<csuComplet>
+			<csu>
+				<codeSIOffre>02</codeSIOffre>
+				<numeroSIOffre>FM2245_not_exist</numeroSIOffre>
+				<numeroLignePrincipaleVoix>0620304061</numeroLignePrincipaleVoix>
+				<numeroAccesFT>0620304061</numeroAccesFT>
+				<numeroVOIP>0620304061</numeroVOIP>
+				<idOffreAramis>1-FM2245_not_exist</idOffreAramis>
+				<typeCSU>MOBILE</typeCSU>
+				<statut>10</statut>
+				<dateCreation>2010-05-09+02:00</dateCreation>
+				<dateActivation>2007-12-05+01:00</dateActivation>
+			</csu>
+			<planTarifaire>
+				<code>MA002</code>
+				<libelle>neufbox Evolution (avec ligne) Dmgt</libelle>
+			</planTarifaire>
+			<segmentation>
+				<code>11</code>
+				<libelleCode>services Carrés</libelleCode>
+				<version>1</version>
+				<valeur>6</valeur>
+				<libelleValeur>gold</libelleValeur>
+			</segmentation>
+			<segmentation>
+				<code>12</code>
+				<libelleCode>Partenaire</libelleCode>
+				<version>1</version>
+				<valeur>0</valeur>
+				<libelleValeur>non attribué</libelleValeur>
+			</segmentation>
+			<segmentation>
+				<code>13</code>
+				<libelleCode>Flag PRO de la ligne</libelleCode>
+				<version>1</version>
+				<valeur>0</valeur>
+				<libelleValeur>FLAG PRO et non</libelleValeur>
+			</segmentation>
+		</csuComplet>
+		<structureTitulaire>
+			<documentContractuel>
+				<codeSCSORIAN>02</codeSCSORIAN>
+				<numeroContratSCSORIAN>FM2245_not_exist</numeroContratSCSORIAN>
+				<idFoncDocContractuel>02-FM2245_not_exist</idFoncDocContractuel>
+				<dateMiseEnService>2006-10-24+02:00</dateMiseEnService>
+				<numeroDistributeur>1031199</numeroDistributeur>
+				<groupeGrilleDegressivite />
+			</documentContractuel>
+			<compteClient>
+				<codeSCSORIAN>02</codeSCSORIAN>
+				<idFoncCompteClient>1-FM2245_not_exist</idFoncCompteClient>
+				<categorieClient>P</categorieClient>
+				<dateCreation>2010-05-09+02:00</dateCreation>
+				<jj>7</jj>
+				<migreSIGC>10</migreSIGC>
+				<fictif>false</fictif>
+				<clientSIOffre>2</clientSIOffre>
+				<scoreSolvabilite>1080</scoreSolvabilite>
+				<regimeFiscal>R2</regimeFiscal>
+			</compteClient>
+			<idFoncPersonne>2222</idFoncPersonne>
+		</structureTitulaire>
+		<structurePayeur>
+			<compteFacturation>
+				<codeSCSORIAN>02</codeSCSORIAN>
+				<idFoncCompteFacturation>1-FM2245_not_exist</idFoncCompteFacturation>
+				<mediaPrefere>Courrier</mediaPrefere>
+				<factureGroupee>false</factureGroupee>
+				<contentieux>false</contentieux>
+				<statut>ACTIF</statut>
+				<categorie>0</categorie>
+				<dateCreation>2010-05-09+02:00</dateCreation>
+				<cycleFacturation>0</cycleFacturation>
+			</compteFacturation>
+			<moyenPaiementCompte>
+				<titulaireCompte>BENICHOU BENJAMIN</titulaireCompte>
+				<codeEtablissement>18206</codeEtablissement>
+				<codeGuichet>00007</codeGuichet>
+				<numeroCompte>42685082001</numeroCompte>
+				<cle>15</cle>
+				<iban>FR761820600007XXXXXXXXXXXXX</iban>
+				<bic>AGRIFRPP882</bic>
+				<nomEtablissement>CREDIT AGRICOLE ILE-DE-FRANCE</nomEtablissement>
+			</moyenPaiementCompte>
+			<compteClient>
+				<codeSCSORIAN>02</codeSCSORIAN>
+				<idFoncCompteClient>1-FM2245_not_exist</idFoncCompteClient>
+				<categorieClient>P</categorieClient>
+				<dateCreation>2013-06-13+02:00</dateCreation>
+				<jj>7</jj>
+				<migreSIGC>10</migreSIGC>
+				<fictif>false</fictif>
+				<clientSIOffre>2</clientSIOffre>
+				<scoreSolvabilite>1080</scoreSolvabilite>
+				<regimeFiscal>R2</regimeFiscal>
+			</compteClient>
+			<idFoncPersonne>168671544</idFoncPersonne>
+		</structurePayeur>
+		<structureUtilisateur>
+			<idFoncPersonne>168671544</idFoncPersonne>
+			<typeUtilisateur>Principal</typeUtilisateur>
+			<habilitation>0</habilitation>
+			<creationExplicite>false</creationExplicite>
+		</structureUtilisateur>
+		<personneComplet>
+			<personnePhysique>
+				<idFonctionnel>2222</idFonctionnel>
+				<civilite>MR</civilite>
+				<nom>AUGRAS</nom>
+				<prenom>CEDRIC</prenom>
+				<fictive>false</fictive>
+				<vip>false</vip>
+				<email1>tacha4@hotmail.fr</email1>
+				<compteurNPEI1>0</compteurNPEI1>
+				<stopMail1>false</stopMail1>
+				<email2 />
+				<stopMail2>true</stopMail2>
+				<indicatifTelephoneFixe/>
+				<numeroTelephoneFixe/>
+				<numeroTelephoneFax />
+				<indicatifTelephoneMobile/>
+				<numeroTelephoneMobile>0664108175</numeroTelephoneMobile>
+				<codeProfession>0</codeProfession>
+				<heureContactPrivilegiee1>HeureContact_01</heureContactPrivilegiee1>
+				<heureContactPrivilegiee2>HeureContact_01</heureContactPrivilegiee2>
+				<heureContactPrivilegiee3>HeureContact_01</heureContactPrivilegiee3>
+				<jourContactPrivilegie1>NON_RENSEIGNE</jourContactPrivilegie1>
+				<jourContactPrivilegie2>NON_RENSEIGNE</jourContactPrivilegie2>
+				<jourContactPrivilegie3>NON_RENSEIGNE</jourContactPrivilegie3>
+				<langueUsage>FR</langueUsage>
+				<motDePasse />
+				<niveauQualificationPro>01</niveauQualificationPro>
+			</personnePhysique>
+			<adresseUtilisation>
+				<complementIdentite />
+				<complementGeographique />
+				<numeroEtVoie>131 RUE MANIN</numeroEtVoie>
+				<lieuDitBoitePostale />
+				<ville>PARIS 19</ville>
+				<codePostal>75019</codePostal>
+				<codePaysISO>250</codePaysISO>
+				<pays>France</pays>
+				<etatNormalisation>N</etatNormalisation>
+				<utilisation>
+					<type>Titulaire</type>
+					<sousType />
+					<statut>ACTIF</statut>
+					<usage />
+				</utilisation>
+				<utilisation>
+					<type>Facturation</type>
+					<sousType />
+					<statut>ACTIF</statut>
+					<usage />
+				</utilisation>
+				<utilisation>
+					<type>Utilisateur</type>
+					<sousType />
+					<statut>ACTIF</statut>
+					<usage />
+				</utilisation>
+			</adresseUtilisation>
+			<segmentation>
+				<code>6</code>
+				<libelleCode>Ligne foyer</libelleCode>
+				<version>1</version>
+				<valeur>1</valeur>
+				<libelleValeur>Foyer Multilignes</libelleValeur>
+			</segmentation>
+		</personneComplet>
+	</reponse>
+</result>

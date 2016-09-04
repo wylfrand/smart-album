@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+      <idAsc>5lZayxVE32QnCxAF</idAsc>
+      <utilisateurAsc>true</utilisateurAsc>
+      <statutBackend>COMPLET</statutBackend>
+      <civilite>M</civilite>
+      <genre>MASCULIN</genre>
+      <nom>CDEUTITULAIRESVFVINTROI</nom>
+      <prenom>Svfvintroi</prenom>
+      <emailDeSecours>y.mesquida@libertysurf.fr</emailDeSecours>
+      <emailDeContact1>y.mesquida@libertysurf.fr</emailDeContact1>
+      <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+      <compteurNPEIEmailDeContact1>0</compteurNPEIEmailDeContact1>
+      <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+      <personneFictive>false</personneFictive>
+      <logins>0614898489</logins>
+      <lignesPrincipales>
+        <statutBackend>COMPLET</statutBackend>
+        <ligneMobile>
+          <statutBackend>COMPLET</statutBackend>
+          <label>0614898489</label>
+          <typeCSU>MOBILE</typeCSU>
+          <statutCSU>ACTIF</statutCSU>
+          <profilPsw>MOBILE_ABONNE</profilPsw>
+          <roles>UTILISATEUR_PRINCIPAL_COMPLET</roles>
+          <roles>UTILISATEUR_PRINCIPAL_INTERMEDIAIRE</roles>
+          <roles>UTILISATEUR_PRINCIPAL_BASIQUE</roles>
+          <creationSIGCExplicite>false</creationSIGCExplicite>
+          <adresseFacturation>
+            <adresse>A L ATT DE P ABERGEL 1 PLACE CARPEAUX</adresse>
+            <codePostal>92915</codePostal>
+            <localite>LA DEFENSE CEDEX</localite>
+          </adresseFacturation>
+          <adresseClient>
+            <adresse>1 PLACE CARPEAUX</adresse>
+            <codePostal>92915</codePostal>
+            <localite>LA DEFENSE CEDEX</localite>
+          </adresseClient>
+          <idAem>ORI020004335671I986958</idAem>
+          <numeroContrat>M95461</numeroContrat>
+          <numeroContratOperateur>I986958</numeroContratOperateur>
+          <msisdn>0614898489</msisdn>
+          <vfCid>02L7697201</vfCid>
+          <categorie>RESIDENTIEL</categorie>
+          <gammeTarifaire>PERSO AVTG</gammeTarifaire>
+          <segment>02</segment>
+          <operateur>SFR</operateur>
+          <planTarifaire>sfr_perso_avantage_2h____</planTarifaire>
+          <libelleForfait>La Formule SFR Perso Avantage 2H</libelleForfait>
+          <jourReinitialisationCompteurs>2013-09-23+02:00</jourReinitialisationCompteurs>
+          <factureDematerialisee>false</factureDematerialisee>
+          <optionsSouscrites>
+            <code>P14N</code>
+            <libelleCourt>Remise Multi-Packs de SFR</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P308</code>
+            <libelleCourt>Bilan Conso</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S175</code>
+            <libelleCourt>Enregistrement du RÃ©pertoire</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S19A</code>
+            <libelleCourt>Suivi Conso Internet International</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S520</code>
+            <libelleCourt>Wap GPRS</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S523</code>
+            <libelleCourt>Option MMS</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S940</code>
+            <libelleCourt>Programme GCR</libelleCourt>
+          </optionsSouscrites>
+          <controleParental>18+=-</controleParental>
+          <peutAcheter>false</peutAcheter>
+          <typeOffre>ABONNE</typeOffre>
+          <produitsSouscrits>MMS</produitsSouscrits>
+          <produitsSouscrits>SN07</produitsSouscrits>
+          <derniereFacture>
+            <date>2013-08-23+02:00</date>
+            <montantTtcEnCentimes>2800</montantTtcEnCentimes>
+          </derniereFacture>
+          <garantieCarreRouge>
+            <soldeDePoints>17580</soldeDePoints>
+            <dateActualisation>2013-09-12T00:00:00+02:00</dateActualisation>
+          </garantieCarreRouge>
+          <telephoneMobile>
+            <imei>00000000000000</imei>
+            <tac>00000000</tac>
+          </telephoneMobile>
+        </ligneMobile>
+      </lignesPrincipales>
+      <services>
+        <type>SEGMT-CLI</type>
+        <identifiant>GP</identifiant>
+      </services>
+      <dateDerniereConnexion>2013-09-13T11:36:48.567+02:00</dateDerniereConnexion>
+    </ficheUtilisateur>

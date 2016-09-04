@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1"
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+                <idAsc>HIj86fQq1jqy4BFI</idAsc>
+                <utilisateurAsc>true</utilisateurAsc>
+                <statutBackend>COMPLET</statutBackend>
+                <civilite>M</civilite>
+                <genre>MASCULIN</genre>
+                <nom>A L'ATT.DE J. B. JOUS</nom>
+                <stopMailEmailDeContact1>true</stopMailEmailDeContact1>
+                <stopMailEmailDeContact2>true</stopMailEmailDeContact2>
+                <personneFictive>false</personneFictive>
+                <logins>0620304056</logins>
+				<idPersonne>2222</idPersonne>
+                <lignesPrincipales>
+                    <statutBackend>COMPLET</statutBackend>
+                    <ligneMobile>
+                        <statutBackend>COMPLET</statutBackend>
+                        <label>0620304056</label>
+                        <typeCSU>MOBILE</typeCSU>
+                        <statutCSU>ACTIF</statutCSU>
+                        <profilPsw>MOBILE_ABONNE</profilPsw>
+                        <roles>UTILISATEUR_PRINCIPAL_COMPLET</roles>
+                        <roles>UTILISATEUR_PRINCIPAL_INTERMEDIAIRE</roles>
+                        <roles>UTILISATEUR_PRINCIPAL_BASIQUE</roles>
+                        <creationSIGCExplicite>false</creationSIGCExplicite>
+                        <adresseFacturation>
+                            <adresse>TOUR SEQUOIA 23 EME TAGE 1 PLACE CARPEAUX</adresse>
+                            <codePostal>92915</codePostal>
+                            <localite>PARIS LA DEFENSE CEDEX</localite>
+                        </adresseFacturation>
+                        <adresseClient>
+                            <adresse>TOUR SEQUOIA 23 EME TAGE 1 PLACE CARPEAUX</adresse>
+                            <codePostal>92915</codePostal>
+                            <localite>PARIS LA DEFENSE CEDEX</localite>
+                        </adresseClient>
+                        <idAem>ORI020007641144AJ97638</idAem>
+                        <numeroContrat>BR2639</numeroContrat>
+                        <numeroContratOperateur>AJ97638</numeroContratOperateur>
+                        <msisdn>0620304056</msisdn>
+                        <vfCid>02BA742201</vfCid>
+                        <categorie>RESIDENTIEL</categorie>
+                        <gammeTarifaire>CARECONECT</gammeTarifaire>
+                        <segment>02</segment>
+                        <operateur>SFR</operateur>
+                        <planTarifaire>sfrcarre_connect_2h__px_24__</planTarifaire>
+                        <libelleForfait>Formule Carrée Connect 2H</libelleForfait>
+                        <jourReinitialisationCompteurs>2012-06-06+02:00</jourReinitialisationCompteurs>
+                        <factureDematerialisee>false</factureDematerialisee>
+                        <optionsSouscrites>
+                            <code>P308</code>
+                            <libelleCourt>Bilan Conso</libelleCourt>
+                        </optionsSouscrites>
+                        <optionsSouscrites>
+                            <code>P79O</code>
+                            <libelleCourt>Surveillance 250 mo</libelleCourt>
+                        </optionsSouscrites>
+                        <optionsSouscrites>
+                            <code>P84A</code>
+                            <libelleCourt>Prix mobile 24M</libelleCourt>
+                        </optionsSouscrites>
+                        <optionsSouscrites>
+                            <code>P97S</code>
+                            <libelleCourt>Avantage fidélité 24 mois</libelleCourt>
+                        </optionsSouscrites>
+                        <optionsSouscrites>
+                            <code>P97U</code>
+                            <libelleCourt>Remise engagement</libelleCourt>
+                        </optionsSouscrites>
+                        <optionsSouscrites>
+                            <code>S112</code>
+                            <libelleCourt>Interdiction appels international</libelleCourt>
+                        </optionsSouscrites>
+                        <optionsSouscrites>
+                            <code>S113</code>
+                            <libelleCourt>Interdiction appels international</libelleCourt>
+                        </optionsSouscrites>
+                        <optionsSouscrites>
+                            <code>S175</code>
+                            <libelleCourt>Enregistrement du Répertoire</libelleCourt>
+                        </optionsSouscrites>
+                        <controleParental>18+=-</controleParental>
+                        <peutAcheter>false</peutAcheter>
+                        <typeOffre>ABONNE</typeOffre>
+                        <produitsSouscrits>EXCLUSION_FICUS</produitsSouscrits>
+                        <produitsSouscrits>HSDPA</produitsSouscrits>
+                        <produitsSouscrits>TV_CARRE_CONNECT</produitsSouscrits>
+                        <derniereFacture>
+                            <date>2012-05-07+02:00</date>
+                            <montantTtcEnCentimes>2600</montantTtcEnCentimes>
+                        </derniereFacture>
+                        <garantieCarreRouge>
+                            <soldeDePoints>31980</soldeDePoints>
+                            <dateActualisation>2012-05-19</dateActualisation>
+                        </garantieCarreRouge>
+                        <telephoneMobile>
+                            <imei>35519500228937</imei>
+                            <tac>35519500</tac>
+                            <idBacarat>5406</idBacarat>
+                            <properties>
+                                <key>ACTIF</key>
+                                <value>0</value>
+                            </properties>
+                        </telephoneMobile>
+                    </ligneMobile>
+                </lignesPrincipales>
+                <services>
+                    <type>SEGMT-CLI</type>
+                    <identifiant>GP</identifiant>
+                </services>
+                <dateDerniereConnexion>2012-05-23</dateDerniereConnexion>
+            </ficheUtilisateur>

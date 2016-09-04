@@ -1,0 +1,8 @@
+.footer-cols .col .box-t { height: 236px; }
+#slider #prev,
+.project-slider #prev3 { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/slider-1-prev.png', sizingMethod='image');}
+#slider #next,
+.project-slider #next3 { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/slider-1-next.png', sizingMethod='image');}
+
+.warning { background-image: none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/ico-warning.png', sizingMethod='crop');}
+

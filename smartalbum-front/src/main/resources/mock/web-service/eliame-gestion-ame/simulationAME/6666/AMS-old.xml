@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reponse xmlns="http://eliame.sfr.com/types">
+    <Code-Retour>0</Code-Retour>
+    <Code-Erreur></Code-Erreur>
+    <Libelle-Erreur></Libelle-Erreur>
+				<Reponse>
+					<ID-reponse>329637R1</ID-reponse>
+					<ListeProposition>
+						<Nombre-Propositions>1</Nombre-Propositions>
+						<Proposition>
+							<ID-Proposition>329637R1P11</ID-Proposition>
+							<Libelle />
+							<ListeGroupe>
+								<Nombre-Groupes>1</Nombre-Groupes>
+								<Groupe>
+									<Categorie>AME_1</Categorie>
+									<Offre-Groupe>ADDAMS-L</Offre-Groupe>
+									<Nbr-ligne-min>2</Nbr-ligne-min>
+									<Nbr-ligne-max>5</Nbr-ligne-max>
+									<Libelle>Les Multi-Packs de SFR</Libelle>
+									<Description>Creez votre pack et realisez des economies
+									</Description>
+									<Administrateur>0237328892</Administrateur>
+									<Segment-Ligne-Adm>GP</Segment-Ligne-Adm>
+									<Nature-Ligne-Adm>DSL</Nature-Ligne-Adm>
+									<Canal>WB</Canal>
+									<Sous-Canal />
+									<Contexte>SOUS-AME</Contexte>
+									<Acte-de-gestion>AMS</Acte-de-gestion>
+									<Code-pdv>9802270</Code-pdv>
+									<Code-Action>I</Code-Action>
+									<ListeLignes>
+										<Nombre-Lignes>2</Nombre-Lignes>
+										<Ligne>
+											<ID-Ligne />
+											<ID-CSU>06-0BS691</ID-CSU>
+											<ID-Compte>1+41T+2763</ID-Compte>
+											<Segment-Ligne>GP</Segment-Ligne>
+											<TypeLigne>PARC</TypeLigne>
+											<Nature-Ligne>DSL</Nature-Ligne>
+											<Num-Ligne>0237328892</Num-Ligne>
+											<Num-Ligne-VOIP>0237328892</Num-Ligne-VOIP>
+											<Num-Ligne-Reseau>0237328892</Num-Ligne-Reseau>
+											<Code-Action>I</Code-Action>
+											<Statut-Ligne>A2</Statut-Ligne>
+											<Canal>WB</Canal>
+											<Sous-Canal />
+											<Contexte>SOUS-AME</Contexte>
+											<Acte-de-gestion>AMS</Acte-de-gestion>
+											<Code-pdv>9802270</Code-pdv>
+											<ListeBenefice>
+												<Nombre-Benefices>2</Nombre-Benefices>
+												<Benefice>
+													<Code-Action>I</Code-Action>
+													<Code-Benefice>BMP01FR2</Code-Benefice>
+													<Nature-Benefice>REM</Nature-Benefice>
+													<Libelle>remise residentiel 10</Libelle>
+													<Description>remise de 10 euro sur la box de SFR
+													</Description>
+													<Code-produit>RVLAMP07</Code-produit>
+													<Statut>Actif</Statut>
+													<Unite>Euro</Unite>
+													<Valeur-min>10</Valeur-min>
+													<Valeur-max>10</Valeur-max>
+													<Duree>9999</Duree>
+													<ListePRA>
+														<PTA>10455</PTA>
+														<Montant>10</Montant>
+													</ListePRA>
+												</Benefice>
+												<Benefice>
+													<Code-Action>I</Code-Action>
+													<Code-Benefice>TMP01F1</Code-Benefice>
+													<Nature-Benefice>TECH</Nature-Benefice>
+													<Libelle>topage MP01 fixe</Libelle>
+													<Description>suivi soucription Multi-Pack de SFR pour la
+														ligne fixe</Description>
+													<Code-produit>AME0001</Code-produit>
+													<Statut>Actif</Statut>
+													<Unite>Euro</Unite>
+													<Valeur-min>0</Valeur-min>
+													<Valeur-max>0</Valeur-max>
+													<Duree>99999</Duree>
+													<ListePRA>
+														<PTA>10455</PTA>
+														<Montant>0</Montant>
+													</ListePRA>
+												</Benefice>
+											</ListeBenefice>
+											<ListeContrepartie>
+												<Nombre-Contreparties>0</Nombre-Contreparties>
+											</ListeContrepartie>
+										</Ligne>
+										<Ligne>
+											<ID-Ligne />
+											<ID-CSU>01-VVA383</ID-CSU>
+											<Segment-Ligne>GP</Segment-Ligne>
+											<TypeLigne>PARC</TypeLigne>
+											<Nature-Ligne>MOB</Nature-Ligne>
+											<Num-Ligne>0610156373</Num-Ligne>
+											<Code-Action>I</Code-Action>
+											<Statut-Ligne>10</Statut-Ligne>
+											<Canal>WB</Canal>
+											<Sous-Canal />
+											<Contexte>SOUS-AME</Contexte>
+											<Acte-de-gestion>AMS</Acte-de-gestion>
+											<Code-pdv>9802270</Code-pdv>
+											<ListeBenefice>
+												<Nombre-Benefices>2</Nombre-Benefices>
+												<Benefice>
+													<Code-Action>I</Code-Action>
+													<Code-Benefice>CMP01ML</Code-Benefice>
+													<Nature-Benefice>REM</Nature-Benefice>
+													<Libelle>10</Libelle>
+													<Description>contribue a 30% de remise sur fixe
+													</Description>
+													<Code-produit>P90R</Code-produit>
+													<Statut>Actif</Statut>
+													<Unite>Euro</Unite>
+													<Valeur-min>0</Valeur-min>
+													<Valeur-max>0</Valeur-max>
+													<Duree>9999</Duree>
+													<ListePRA>
+														<PTA>OZW</PTA>
+														<Montant>0</Montant>
+													</ListePRA>
+												</Benefice>
+												<Benefice>
+													<Code-Action>I</Code-Action>
+													<Code-Benefice>TMP01ML</Code-Benefice>
+													<Nature-Benefice>TECH</Nature-Benefice>
+													<Libelle>tracage souscription mobile</Libelle>
+													<Description>souscription en cluster large</Description>
+													<Code-produit>P14N</Code-produit>
+													<Statut>Actif</Statut>
+													<Unite>Euro</Unite>
+													<Valeur-min>0</Valeur-min>
+													<Valeur-max>0</Valeur-max>
+													<Duree>9999</Duree>
+													<ListePRA>
+														<PTA>OZW</PTA>
+														<Montant>0</Montant>
+													</ListePRA>
+												</Benefice>
+											</ListeBenefice>
+											<ListeContrepartie>
+												<Nombre-Contreparties>1</Nombre-Contreparties>
+												<Contrepartie>
+													<Code-Action>I</Code-Action>
+													<Code>PJMP01</Code>
+													<Libelle>fourniture de pi&#232;ce justificative</Libelle>
+													<Description>Les lignes d'un groupe Multi-Packs de SFR
+														doivent &#234;tre d&#233;tenues par des titulaires de
+														m&#234;me nom et m&#234;me
+														adresse.&#160;T&#233;l&#233;chargez le formulaire
+														correspondant &#224; votre situation&#160; et renvoyez le,
+														accompagn&#233; des pi&#232;ces justificatives
+														demand&#233;es.</Description>
+													<Statut>En attente</Statut>
+													<Duree>50</Duree>
+													<Nature-contrepartie>ADM</Nature-contrepartie>
+												</Contrepartie>
+											</ListeContrepartie>
+										</Ligne>
+									</ListeLignes>
+								</Groupe>
+							</ListeGroupe>
+						</Proposition>
+					</ListeProposition>
+				</Reponse>
+			</Reponse>

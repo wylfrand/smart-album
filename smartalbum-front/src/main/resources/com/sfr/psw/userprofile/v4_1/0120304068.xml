@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur>
+	<ns2:idAsc>rLt3lWFBoAOF63E9</ns2:idAsc>
+	<ns2:utilisateurAsc>true</ns2:utilisateurAsc>
+	<ns2:statutBackend>COMPLET</ns2:statutBackend>
+	<ns2:civilite>MME</ns2:civilite>
+	<ns2:genre>FEMININ</ns2:genre>
+	<ns2:nom>JKRTFUOSG</ns2:nom>
+	<ns2:prenom>Ogrjfurj</ns2:prenom>
+	<ns2:telephoneFixeDeContact>0237320499</ns2:telephoneFixeDeContact>
+	<ns2:telephoneMobileDeContact>0677853070</ns2:telephoneMobileDeContact>
+	<ns2:emailDeSecours>dsi-gp-int-recettes@neufcegetel.fr</ns2:emailDeSecours>
+	<ns2:emailDeContact1>jkrtfuosg.mhslkqnk@ufdl.hx</ns2:emailDeContact1>
+	<ns2:stopMailEmailDeContact1>false</ns2:stopMailEmailDeContact1>
+	<ns2:compteurNPEIEmailDeContact1>0</ns2:compteurNPEIEmailDeContact1>
+	<ns2:stopMailEmailDeContact2>false</ns2:stopMailEmailDeContact2>
+	<ns2:personneFictive>false</ns2:personneFictive>
+	<ns2:logins>hermeline.marcelle@neuf.fr</ns2:logins>
+	<ns2:lignesPrincipales>
+		<ns2:statutBackend>COMPLET</ns2:statutBackend>
+		<ns2:ligneFixe>
+			<ns2:statutBackend>COMPLET</ns2:statutBackend>
+			<ns2:label>0237328892/ADSL</ns2:label>
+			<ns2:typeCSU>ADSL</ns2:typeCSU>
+			<ns2:statutCSU>ACTIF</ns2:statutCSU>
+			<ns2:profilPsw>INTERNET_ADSL</ns2:profilPsw>
+			<ns2:creationSIGCExplicite>false</ns2:creationSIGCExplicite>
+			<ns2:idCompteClient>1+41T+2763</ns2:idCompteClient>
+			<ns2:adresseFacturation>
+				<ns2:adresse>31 RUE DE LA MAIRIE</ns2:adresse>
+				<ns2:codePostal>28300</ns2:codePostal>
+				<ns2:localite>CINTRAY</ns2:localite>
+			</ns2:adresseFacturation>
+			<ns2:adresseClient>
+				<ns2:adresse>31 RUE DE LA MAIRIE</ns2:adresse>
+				<ns2:codePostal>28300</ns2:codePostal>
+				<ns2:localite>CINTRAY</ns2:localite>
+			</ns2:adresseClient>
+			<ns2:numeroAccesFT>0237328892</ns2:numeroAccesFT>
+			<ns2:gamme>ADSL</ns2:gamme>
+			<ns2:segment>RESIDENTIEL</ns2:segment>
+			<ns2:libelleOffreSouscrite>neufbox de SFR jusqu'à 8 Méga</ns2:libelleOffreSouscrite>
+			<ns2:crmId>1+41T+2763</ns2:crmId>
+			<ns2:emailRattacheAuNeufID>false</ns2:emailRattacheAuNeufID>
+			<ns2:facture>
+				<ns2:ssaFacturation>ARBOR</ns2:ssaFacturation>
+				<ns2:dateDerniereFacture>2012-11-21+01:00</ns2:dateDerniereFacture>
+				<ns2:montantDerniereFacture>39.9</ns2:montantDerniereFacture>
+			</ns2:facture>
+		</ns2:ligneFixe>
+	</ns2:lignesPrincipales>
+	<ns2:mailBoxes>
+		<ns2:email>hermeline.marcelle@neuf.fr</ns2:email>
+		<ns2:type>FIXE</ns2:type>
+	</ns2:mailBoxes>
+	<ns2:services>
+		<ns2:type>CONTRAT-FIXE</ns2:type>
+		<ns2:identifiant>1+41T+2763</ns2:identifiant>
+	</ns2:services>
+	<ns2:dateDerniereConnexion>2013-07-09T08:49:08.619+02:00</ns2:dateDerniereConnexion>
+</ficheUtilisateur>

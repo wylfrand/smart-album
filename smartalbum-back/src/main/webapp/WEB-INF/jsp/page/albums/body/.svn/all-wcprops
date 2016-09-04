@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/richfaces/!svn/ver/15557/branches/community/3.3.X/examples/photoalbum/source/web/src/main/webapp/includes/album
+END
+albumInfo.xhtml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/richfaces/!svn/ver/14394/branches/community/3.3.X/examples/photoalbum/source/web/src/main/webapp/includes/album/albumInfo.xhtml
+END
+albumsList.xhtml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/richfaces/!svn/ver/14242/branches/community/3.3.X/examples/photoalbum/source/web/src/main/webapp/includes/album/albumsList.xhtml
+END
+createAlbum.xhtml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/richfaces/!svn/ver/14664/branches/community/3.3.X/examples/photoalbum/source/web/src/main/webapp/includes/album/createAlbum.xhtml
+END
+albumEditInfo.xhtml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/richfaces/!svn/ver/15557/branches/community/3.3.X/examples/photoalbum/source/web/src/main/webapp/includes/album/albumEditInfo.xhtml
+END

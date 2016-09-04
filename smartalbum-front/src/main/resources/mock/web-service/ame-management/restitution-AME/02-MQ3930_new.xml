@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:RestitutionAMEContenuOut xmlns:n1="http://cegetelsi/psg/amemanagement/3.0"
+ xmlns:n5="http://cegetelsi/psg/amemanagement/3.0/interface"
+ xmlns="http://cegetelsi/psg/amemanagement/3.0/AMEManagementV30Response">
+    <GroupCharacteristic>
+        <GroupCharacteristic>
+            <classAME>AME_1</classAME>
+            <shortNameAME>Les Multi-Packs de SFR</shortNameAME>
+            <descriptionAME>Cr?ez votre pack et r?alisez des ?conomies</descriptionAME>
+            <benefitValueMinPerMonth>15.0</benefitValueMinPerMonth>
+            <benefitValueMaxPerMonth>15.0</benefitValueMaxPerMonth>
+            <benefitValueMinPerYear>180.0</benefitValueMinPerYear>
+            <benefitValueMaxPerYear>180.0</benefitValueMaxPerYear>
+            <status>En construction</status>
+            <availableLines>1</availableLines>
+            <groupID>1078</groupID>
+            <groupName>Multi-Packs</groupName>
+            <manager>0620304059</manager>
+            <serviceType>MOB</serviceType>
+            <nom>SFR LIGNES TEST EPP</nom>
+            <prenom>19483 Beurel P-m</prenom>
+            <civilite>MR</civilite>
+            <updateDate>2012-06-19T00:00:00+02:00</updateDate>
+            <MemberCharacteristic>
+                <MemberCharacteristic>
+                    <csuID>01-IZZ302</csuID>
+                    <status>Actif</status>
+                    <csuStatus>Actif</csuStatus>
+                    <lineIdentifier>0620304059</lineIdentifier>
+                    <serviceType>MOB</serviceType>
+                    <nom>SFR LIGNES TEST EPP</nom>
+                    <prenom>19483 Beurel P-m</prenom>
+                    <civilite>MR</civilite>
+                    <lineID>1118</lineID>
+                    <cancelledCause>45326073</cancelledCause>
+                    <updateDate>2012-06-19T00:00:00+02:00</updateDate>
+                    <libellePTA>WEB 5H  PX 24</libellePTA>
+                    <BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>BMP01M2</benefitCode>
+                            <benefitShortName>remise 345 MP01 mobile</benefitShortName>
+                            <benefitDescription>remise Multi-Packs pour la ligne mobile suppl&#233;mentaire</benefitDescription>
+                            <status>Actif</status>
+                            <activationDate>2012-06-19T00:00:00+02:00</activationDate>
+                            <endDate>2286-04-03T00:00:00+02:00</endDate>
+                            <benefitValueMinPerMonth>5.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>5.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>60.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>60.0</benefitValueMaxPerYear>
+                            <productCode>P90M</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                        </BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>BMP01M1</benefitCode>
+                            <benefitShortName>remise  MP01 mobile</benefitShortName>
+                            <benefitDescription>remise Multi-Packs pour les lignes mobiles</benefitDescription>
+                            <status>Supprim&#233;</status>
+                            <activationDate>2012-03-19T00:00:00+01:00</activationDate>
+                            <endDate>2286-01-01T00:00:00+01:00</endDate>
+                            <benefitValueMinPerMonth>5.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>5.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>60.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>60.0</benefitValueMaxPerYear>
+                            <productCode>P90M</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                        </BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>TMP01M1</benefitCode>
+                            <benefitShortName>topage MP01 mobile</benefitShortName>
+                            <benefitDescription>suivi soucription Multi-Pack de SFR pour la ligne mobile</benefitDescription>
+                            <status>Actif</status>
+                            <activationDate>2012-03-19T00:00:00+01:00</activationDate>
+                            <endDate>2286-01-01T00:00:00+01:00</endDate>
+                            <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                            <productCode>P14N</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                            <technicalCode>P14N</technicalCode>
+                        </BenefitCharacteristic>
+                    </BenefitCharacteristic>
+                </MemberCharacteristic>
+                <MemberCharacteristic>
+                    <csuID>01-DCL272</csuID>
+                    <status>Actif</status>
+                    <csuStatus>Actif</csuStatus>
+                    <lineIdentifier>0620304060</lineIdentifier>
+                    <serviceType>MOB</serviceType>
+                    <nom>CEGETEL LOT ZERO</nom>
+                    <prenom>Titu Vingt-Quatre</prenom>
+                    <civilite>MR</civilite>
+                    <lineID>1119</lineID>
+                    <cancelledCause>48622017</cancelledCause>
+                    <updateDate>2012-06-19T00:00:00+02:00</updateDate>
+                    <libellePTA>WEB 2H  PX 24</libellePTA>
+                    <BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>BMP01M1</benefitCode>
+                            <benefitShortName>remise  MP01 mobile</benefitShortName>
+                            <benefitDescription>remise Multi-Packs pour les lignes mobiles</benefitDescription>
+                            <status>Supprim&#233;</status>
+                            <activationDate>2012-03-19T00:00:00+01:00</activationDate>
+                            <endDate>2286-01-01T00:00:00+01:00</endDate>
+                            <benefitValueMinPerMonth>5.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>5.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>60.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>60.0</benefitValueMaxPerYear>
+                            <productCode>P90M</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                        </BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>TMP01M1</benefitCode>
+                            <benefitShortName>topage MP01 mobile</benefitShortName>
+                            <benefitDescription>suivi soucription Multi-Pack de SFR pour la ligne mobile</benefitDescription>
+                            <status>Actif</status>
+                            <activationDate>2012-03-19T00:00:00+01:00</activationDate>
+                            <endDate>2286-01-01T00:00:00+01:00</endDate>
+                            <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                            <productCode>P14N</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                            <technicalCode>P14N</technicalCode>
+                        </BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>BMP01M2</benefitCode>
+                            <benefitShortName>remise 345 MP01 mobile</benefitShortName>
+                            <benefitDescription>remise Multi-Packs pour la ligne mobile suppl&#233;mentaire</benefitDescription>
+                            <status>Actif</status>
+                            <activationDate>2012-06-19T00:00:00+02:00</activationDate>
+                            <endDate>2286-04-03T00:00:00+02:00</endDate>
+                            <benefitValueMinPerMonth>5.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>5.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>60.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>60.0</benefitValueMaxPerYear>
+                            <productCode>P90M</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                        </BenefitCharacteristic>
+                    </BenefitCharacteristic>
+                </MemberCharacteristic>
+                <MemberCharacteristic>
+                    <csuID>02-BR8623</csuID>
+                    <status>En attente</status>
+                    <csuStatus>Actif</csuStatus>
+                    <lineIdentifier>0120304060</lineIdentifier>
+                    <serviceType>DSL</serviceType>
+                    <nom>EVA</nom>
+                    <prenom>Martial</prenom>
+                    <civilite>MR</civilite>
+                    <lineID>1258</lineID>
+                    <cancelledCause>48509900</cancelledCause>
+                    <updateDate>2012-06-01T00:00:00+02:00</updateDate>
+                    <libellePTA>SFR PERSO 2H</libellePTA>
+                    <BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>BMP01M1</benefitCode>
+                            <benefitShortName>remise  MP01 mobile</benefitShortName>
+                            <benefitDescription>remise Multi-Packs pour les lignes mobiles</benefitDescription>
+                            <status>En attente</status>
+                            <activationDate>2012-04-27T00:00:00+02:00</activationDate>
+                            <endDate>2012-07-26T00:00:00+02:00</endDate>
+                            <benefitValueMinPerMonth>2.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>12.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>24.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>144.0</benefitValueMaxPerYear>
+                            <productCode>P90M</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                        </BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>TMP01M1</benefitCode>
+                            <benefitShortName>topage MP01 mobile</benefitShortName>
+                            <benefitDescription>suivi soucription Multi-Pack de SFR pour la ligne mobile</benefitDescription>
+                            <status>En attente</status>
+                            <activationDate>2012-04-27T00:00:00+02:00</activationDate>
+                            <endDate>2012-07-26T00:00:00+02:00</endDate>
+                            <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                            <productCode>P14N</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                            <technicalCode>P14N</technicalCode>
+                        </BenefitCharacteristic>
+                    </BenefitCharacteristic>
+                    <CompensationCharacteristic>
+                        <CompensationCharacteristic>
+                            <compensationCode>MIGMP01</compensationCode>
+                            <compensationShortName>Migration PTA</compensationShortName>
+                            <compensationDescription>Pour b&#233;n&#233;ficier de vos remises vous devez passer &#224; un forfait compatible Multi-Packs dans le mois suivant la cr&#233;ation du groupe</compensationDescription>
+                            <expirationDate>2012-06-20T00:00:00+02:00</expirationDate>
+                            <status>En attente</status>
+                        </CompensationCharacteristic>
+                    </CompensationCharacteristic>
+                </MemberCharacteristic>
+                <MemberCharacteristic>
+                    <csuID>06-14OGTM</csuID>
+                    <status>En attente</status>
+                    <csuStatus>Actif</csuStatus>
+                    <lineIdentifier>0620304061</lineIdentifier>
+                    <serviceType>MOB</serviceType>
+                    <nom>EVA</nom>
+                    <prenom>Martial</prenom>
+                    <civilite>MR</civilite>
+                    <lineID>1399</lineID>
+                    <cancelledCause>48509900</cancelledCause>
+                    <updateDate>2012-06-19T00:00:00+02:00</updateDate>
+                    <libellePTA>100% NeufBox (avec Ligne)</libellePTA>
+                    <BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>TMP01F1</benefitCode>
+                            <benefitShortName>topage MP01 fixe</benefitShortName>
+                            <benefitDescription>suivi soucription Multi-Pack de SFR pour la ligne fixe</benefitDescription>
+                            <status>Actif</status>
+                            <activationDate>2012-06-19T00:00:00+02:00</activationDate>
+                            <endDate>2286-04-03T00:00:00+02:00</endDate>
+                            <benefitValueMinPerMonth>0.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>0.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>0.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>0.0</benefitValueMaxPerYear>
+                            <productCode>AME0001</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                            <technicalCode>AME0001</technicalCode>
+                        </BenefitCharacteristic>
+                        <BenefitCharacteristic>
+                            <benefitCode>BMP01F1</benefitCode>
+                            <benefitShortName>remise DUO MP01 fixe</benefitShortName>
+                            <benefitDescription>remise Multi-Packs de 5&#8364; pour la ligne fixe</benefitDescription>
+                            <status>Actif</status>
+                            <activationDate>2012-06-19T00:00:00+02:00</activationDate>
+                            <endDate>2286-04-03T00:00:00+02:00</endDate>
+                            <benefitValueMinPerMonth>5.0</benefitValueMinPerMonth>
+                            <benefitValueMaxPerMonth>5.0</benefitValueMaxPerMonth>
+                            <benefitValueMinPerYear>60.0</benefitValueMinPerYear>
+                            <benefitValueMaxPerYear>60.0</benefitValueMaxPerYear>
+                            <productCode>RVLAMP02</productCode>
+                            <unit>Euro</unit>
+                            <invoiceAmount>0.0</invoiceAmount>
+                        </BenefitCharacteristic>
+                    </BenefitCharacteristic>
+                    <CompensationCharacteristic>
+                        <CompensationCharacteristic>
+                            <compensationCode>PJMP01</compensationCode>
+                            <compensationShortName>Piece justificative</compensationShortName>
+                            <compensationDescription>Les lignes d'un groupe Multi-Packs de SFR doivent &#234;tre d&#233;tenues par des titulaires de m&#234;me nom et m&#234;me adresse.&#160;T&#233;l&#233;chargez le formulaire correspondant &#224; votre situation et renvoyez le, accompagn&#233; des pi&#232;ces justificatives demand&#233;es.</compensationDescription>
+                            <expirationDate>2012-08-08T00:00:00+02:00</expirationDate>
+                            <status>En attente</status>
+                            <evidenceTypeCode>PJMPF</evidenceTypeCode>
+                            <evidenceTypeDescription>PJMPF</evidenceTypeDescription>
+                        </CompensationCharacteristic>
+                    </CompensationCharacteristic>
+                </MemberCharacteristic>
+            </MemberCharacteristic>
+        </GroupCharacteristic>
+    </GroupCharacteristic>
+</n1:RestitutionAMEContenuOut>

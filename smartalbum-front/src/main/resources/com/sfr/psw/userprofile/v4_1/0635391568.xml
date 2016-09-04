@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+	  <idAsc>FFjgxb9UbaoZg8l4</idAsc>
+      <utilisateurAsc>true</utilisateurAsc>
+      <statutBackend>COMPLET</statutBackend>
+      <civilite>M</civilite>
+      <genre>MASCULIN</genre>
+      <nom>SFR TESTS ADDAMS 9</nom>
+      <prenom>41199 F Delbecq</prenom>
+      <dateNaissance>1973-01-09+01:00</dateNaissance>
+      <telephoneFixeDeContact>0811907676</telephoneFixeDeContact>
+      <emailDeSecours>fut_addams@yahoo.fr</emailDeSecours>
+      <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+      <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+      <personneFictive>false</personneFictive>
+      <logins>0635391568</logins>
+      <lignesPrincipales>
+        <statutBackend>COMPLET</statutBackend>
+        <ligneMobile>
+          <statutBackend>COMPLET</statutBackend>
+          <label>0635391568</label>
+          <typeCSU>MOBILE</typeCSU>
+          <statutCSU>ACTIF</statutCSU>
+          <profilPsw>MOBILE_ABONNE</profilPsw>
+          <roles>UTILISATEUR_PRINCIPAL_COMPLET</roles>
+          <roles>UTILISATEUR_PRINCIPAL_INTERMEDIAIRE</roles>
+          <roles>UTILISATEUR_PRINCIPAL_BASIQUE</roles>
+          <roles>PAYEUR</roles>
+          <roles>TITULAIRE</roles>
+          <roles>UTILISATEUR_DELEGUE_COMPLET</roles>
+          <roles>UTILISATEUR_DELEGUE_INTERMEDIAIRE</roles>
+          <roles>UTILISATEUR_DELEGUE_BASIQUE</roles>
+          <creationSIGCExplicite>false</creationSIGCExplicite>
+          <adresseFacturation>
+            <adresse>1 PLACE CARPEAUX</adresse>
+            <codePostal>92915</codePostal>
+            <localite>PARIS LA DEFENSE</localite>
+          </adresseFacturation>
+          <adresseClient>
+            <adresse>1 PLACE CARPEAUX</adresse>
+            <codePostal>92915</codePostal>
+            <localite>PARIS LA DEFENSE</localite>
+          </adresseClient>
+          <idAem>64848370</idAem>
+          <numeroContrat>FMBF75</numeroContrat>
+          <numeroContratOperateur>VP66903</numeroContratOperateur>
+          <msisdn>0635391568</msisdn>
+          <vfCid>01TER50601</vfCid>
+          <categorie>RESIDENTIEL</categorie>
+          <gammeTarifaire>CAR 1H2H24</gammeTarifaire>
+          <segment>01</segment>
+          <operateur>SFR</operateur>
+          <planTarifaire>sfrcarre-1h_________________</planTarifaire>
+          <libelleForfait>Formule CarrÃ©e 1h</libelleForfait>
+          <jourReinitialisationCompteurs>2013-09-25+02:00</jourReinitialisationCompteurs>
+          <factureDematerialisee>false</factureDematerialisee>
+          <optionsSouscrites>
+            <code>P14N</code>
+            <libelleCourt>Remise Multi-Packs de SFR</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P28W</code>
+            <libelleCourt>RÃ©pondeur Visuel +</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>P40K</code>
+            <libelleCourt>REMISE ECO</libelleCourt>
+          </optionsSouscrites>
+          <optionsSouscrites>
+            <code>S15E</code>
+            <libelleCourt>Tarif Jour Internet Monde</libelleCourt>
+          </optionsSouscrites>
+          <controleParental>18+=-</controleParental>
+          <peutAcheter>false</peutAcheter>
+          <typeOffre>ABONNE</typeOffre>
+          <produitsSouscrits>PRD DROIT VVM</produitsSouscrits>
+          <produitsSouscrits>SN02</produitsSouscrits>
+          <produitsSouscrits>TV_CARRE2012_1</produitsSouscrits>
+          <derniereFacture>
+            <date>2013-08-25+02:00</date>
+            <montantTtcEnCentimes>1664</montantTtcEnCentimes>
+          </derniereFacture>
+          <garantieCarreRouge>
+            <soldeDePoints>0</soldeDePoints>
+            <dateActualisation>2013-09-12T00:00:00+02:00</dateActualisation>
+          </garantieCarreRouge>
+          <telephoneMobile>
+            <imei>00000000000000</imei>
+            <tac>00000000</tac>
+          </telephoneMobile>
+        </ligneMobile>
+      </lignesPrincipales>
+      <services>
+        <type>SEGMT-CLI</type>
+        <identifiant>GP</identifiant>
+      </services>
+      <dateDerniereConnexion>2013-09-13T18:04:40.532+02:00</dateDerniereConnexion>
+    </ficheUtilisateur>

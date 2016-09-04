@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GEna_History_Response xmlns="http://refservices/gena/GEna_History/1.0">
+	<histoResponseBloc>
+		<returnBloc>
+			<returnCode>0</returnCode>
+			<returnLabel>Aucun probl&#232;me</returnLabel>
+		</returnBloc>
+		<eventList>
+			<idTransaction>GAE0472012030217524850500000</idTransaction>
+			<date>2012-03-02T17:52:50.368+01:00</date>
+			<channel>WB</channel>
+			<subChannel xsi:nil="true"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+			<idPos>9802270</idPos>
+			<login xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+			<groupHisto>
+				<idGroup>15073</idGroup>
+				<typeAct>Creation</typeAct>
+				<groupName>Multi-Packs</groupName>
+				<managementAct>AMS</managementAct>
+				<status>En construction</status>
+				<deletionCause xsi:nil="true"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<manager>0611138505</manager>
+			</groupHisto>
+			<memberHisto>
+				<memberId>15197</memberId>
+				<typeAct>Creation</typeAct>
+				<CSUId>01-DA7926</CSUId>
+				<lineSegment>GP</lineSegment>
+				<lineIdentifier>0611137692</lineIdentifier>
+				<typeOfService>MOB</typeOfService>
+				<status>En attente</status>
+				<managementAct xsi:nil="true"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<deletionCause xsi:nil="true"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<detailHisto>
+					<compensationId xsi:nil="true"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+					<benefitId>15393</benefitId>
+					<detailValue>remise Multi-Packs pour la ligne mobile du DUO
+					</detailValue>
+					<typeAct>Creation</typeAct>
+					<status>En attente</status>
+				</detailHisto>
+				<detailHisto>
+					<compensationId xsi:nil="true"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+					<benefitId>15394</benefitId>
+					<detailValue>suivi soucription Multi-Pack de SFR pour la ligne
+						mobile</detailValue>
+					<typeAct>Creation</typeAct>
+					<status>Actif</status>
+				</detailHisto>
+				<detailHisto>
+					<compensationId>15098</compensationId>
+					<benefitId xsi:nil="true"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+					<detailValue>Migration vers WebPhone</detailValue>
+					<typeAct>Creation</typeAct>
+					<status>En attente</status>
+				</detailHisto>
+			</memberHisto>
+			<memberHisto>
+				<memberId>15198</memberId>
+				<typeAct>Creation</typeAct>
+				<CSUId>01-DA5029</CSUId>
+				<lineSegment>GP</lineSegment>
+				<lineIdentifier>0611138505</lineIdentifier>
+				<typeOfService>MOB</typeOfService>
+				<status>En attente</status>
+				<managementAct xsi:nil="true"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<deletionCause xsi:nil="true"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+				<detailHisto>
+					<compensationId xsi:nil="true"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+					<benefitId>15395</benefitId>
+					<detailValue>remise Multi-Packs pour la ligne mobile du DUO
+					</detailValue>
+					<typeAct>Creation</typeAct>
+					<status>En attente</status>
+				</detailHisto>
+				<detailHisto>
+					<compensationId xsi:nil="true"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+					<benefitId>15396</benefitId>
+					<detailValue>suivi soucription Multi-Pack de SFR pour la ligne
+						mobile</detailValue>
+					<typeAct>Creation</typeAct>
+					<status>Actif</status>
+				</detailHisto>
+				<detailHisto>
+					<compensationId>15099</compensationId>
+					<benefitId xsi:nil="true"
+						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+					<detailValue>Migration vers WebPhone</detailValue>
+					<typeAct>Creation</typeAct>
+					<status>En attente</status>
+				</detailHisto>
+			</memberHisto>
+		</eventList>
+	</histoResponseBloc>
+</GEna_History_Response>

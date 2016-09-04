@@ -1,0 +1,7 @@
+.login .remember-me { width: 195px; }
+#navigation ul li .dd-holder .dd-holder .pointer { left: -29px; }
+.box-blog .box-t { height: 455px; }
+
+.slider1-nav ul li a { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/slider1-nav.png', sizingMethod='image');}
+.slider1-nav ul li a:hover,
+.slider1-nav ul li a.active { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/slider1-nav-hover.png', sizingMethod='image');}

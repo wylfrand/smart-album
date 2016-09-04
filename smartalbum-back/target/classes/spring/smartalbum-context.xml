@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:sec="http://www.springframework.org/schema/security" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/tx 
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/jee 
+                           http://www.springframework.org/schema/jee/spring-jee.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jdbc
+                           http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+                           http://www.springframework.org/schema/security 
+                           http://www.springframework.org/schema/security/spring-security.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd
+                           http://www.springframework.org/schema/mvc
+    					   http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/util 
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<context:property-placeholder
+		location="classpath:config/smartalbum.properties,
+    										classpath:config/aui-dev.properties,
+    										classpath:config/prod.properties"
+		order="2" ignore-resource-not-found="false" />
+
+	<context:annotation-config />
+
+	<context:component-scan
+		base-package="com.mycompany.smartalbum,
+    									  com.mycompany.database,
+    									  com.mycompany.filesystem.service,
+    									  com.mycompany.services.utils" />
+
+	<import resource="classpath:spring/security-context.xml" />
+	<import resource="classpath:spring/smartalbum-service-context.xml" />
+	<import resource="classpath:spring/mail-service-context.xml" />
+	<context:annotation-config />
+	<jee:jndi-lookup id="smartalbumJndiDataSource"
+		jndi-name="${smartalbum.db.jndi.url:java:comp/env/jdbc/smartalbum}"
+		expected-type="javax.sql.DataSource" lookup-on-startup="false" />
+		
+	<!-- Velocity engine -->
+    <bean id="smartAlbumVelocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+        <property name="velocityProperties">
+            <value>
+                resource.loader=class
+                class.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+            </value>
+        </property>
+    </bean>
+</beans>

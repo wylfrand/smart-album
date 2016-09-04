@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+       <idAsc>0HR6bM7kn6U7NHwg</idAsc>
+       <utilisateurAsc>true</utilisateurAsc>
+       <civilite>M</civilite>
+       <genre>MASCULIN</genre>
+       <nom>AUGRAS</nom>
+       <prenom>CEDRIC</prenom>
+       <dateNaissance>1973-06-22+01:00</dateNaissance>
+       <emailDeSecours>tacha4@hotmail.fr</emailDeSecours>
+       <emailDeContact1>tacha4@hotmail.fr</emailDeContact1>
+       <stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+       <stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+       <personneFictive>false</personneFictive>
+       <logins>0620304063</logins>
+       <logins>0620304063@sfr.fr</logins>
+       <logins>sfr.bouchon@sfr.fr</logins>
+       <idPersonne>2223</idPersonne>
+       <services>
+           <type>FUT-SFCU</type>
+           <identifiant>FUT-SFCU</identifiant>
+       </services>
+       <lignesPrincipales>
+           <ligneMobile>
+               <statutBackend>COMPLET</statutBackend>
+               <profilPsw>MOBILE_ABONNE</profilPsw>
+               <idAem>ORI020008893617FJ35127</idAem>
+               <msisdn>0620304063</msisdn>
+               <label>0620304063</label>
+               <roles>TITULAIRE</roles>
+		       <adresseClient>
+		           <adresse>14 F QUARTIER DE L ESTEL</adresse>
+		           <codePostal>30210</codePostal>
+		           <localite>CASTILLON DU GARD</localite>
+		       </adresseClient>
+               <numeroContrat>MQ3931</numeroContrat>
+               <numeroContratOperateur>FJ35127</numeroContratOperateur>
+               <segment>02</segment>
+               <operateur>SFR</operateur>
+               <planTarifaire>sfrsl_illimythics_absolu____</planTarifaire> 
+               <libelleForfait>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libelleForfait>
+               <jourReinitialisationCompteurs>2010-08-31+02:00</jourReinitialisationCompteurs>
+               <factureDematerialisee>true</factureDematerialisee>
+               <optionsSouscrites>
+                   <code>P107</code>
+                   <libelleCourt>Facture sur Internet</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>P112</code>
+                   <libelleCourt>Parution sans recherche inversée</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>P153</code>
+                   <libelleCourt>Assurance Protect Intégrale</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>P28W</code>
+                   <libelleCourt>Répondeur Visuel</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S035</code>
+                   <libelleCourt>Fact. à la seconde (dès 1e min.)</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S100</code>
+                   <libelleCourt>Visio</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S108</code>
+                   <libelleCourt>SFR Monde</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S131</code>
+                   <libelleCourt>Présentation du numéro</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S13F</code>
+                   <libelleCourt>Option Modem Internet 3G+ Ajustable</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S13V</code>
+                   <libelleCourt>Pack Jour Internet Europe et USA</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S160</code>
+                   <libelleCourt>Double Appel</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S175</code>
+                   <libelleCourt>Enregistrement du Répertoire </libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S190</code>
+                   <libelleCourt>Minutes reportables</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S20A</code>
+                   <libelleCourt>SFR Messagerie</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S68E</code>
+                   <libelleCourt>Avantage Pack SFR Absolu</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S76H</code>
+                   <libelleCourt>Tarif Internet 3G+ spécial abonné SFR mobile</libelleCourt>
+               </optionsSouscrites>
+               <optionsSouscrites>
+                   <code>S78I</code>
+                   <libelleCourt>Option webphone pour iPhone</libelleCourt>
+               </optionsSouscrites>
+               <typeOffre>ABONNE</typeOffre>
+           </ligneMobile>
+       </lignesPrincipales>
+       <lignesSupplementaires>
+       </lignesSupplementaires>
+       <mailBoxes>
+           <email>@sfr.fr</email>
+           <type>MOBILE</type>
+       </mailBoxes>
+       <mailBoxes>
+           <email>cedric.augras@sfr.fr</email>
+           <type>FIXE</type>
+       </mailBoxes>
+       <dateDerniereConnexion>2011-01-12T00:00:00+01:00</dateDerniereConnexion>
+</ficheUtilisateur>

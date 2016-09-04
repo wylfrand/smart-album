@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GEna_History_Response xmlns="http://refservices/gena/GEna_History/1.0">
+    <histoResponseBloc>
+		<returnBloc>
+			<returnCode>00</returnCode>
+			<returnLabel>Ok</returnLabel>
+		</returnBloc>
+		<eventList>
+			<idTransaction>HIS0472012022210445259000001</idTransaction>
+			<date>2012-02-15T10:56:39.532+01:00</date>
+			<channel>WB</channel>
+			<idPos>9802270</idPos>
+			<subChannel xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+			<login>0620304059</login>
+			<groupHisto>
+				<idGroup>1010</idGroup>
+				<typeAct>création</typeAct>
+				<groupName>Multi-Pack</groupName>
+				<managementAct>AMS</managementAct>
+				<status>Actif</status>
+				<deletionCause>cause</deletionCause>
+				<manager>0620304059</manager>
+			</groupHisto>
+			<memberHisto>
+				<memberId>2020</memberId>
+				<typeAct></typeAct>
+				<CSUId>02-CZ3521</CSUId>
+				<lineSegment>GP</lineSegment>
+				<lineIdentifier>0620304059</lineIdentifier>
+				<typeOfService>MOB</typeOfService>
+				<status>Actif</status>
+				<managementAct>AMS</managementAct>
+				<deletionCause>cause</deletionCause>
+			</memberHisto>
+			<memberHisto>
+				<memberId>2121</memberId>
+				<typeAct></typeAct>
+				<CSUId>02-CZ3521</CSUId>
+				<lineSegment>GP</lineSegment>
+				<lineIdentifier>0620304060</lineIdentifier>
+				<typeOfService>MOB</typeOfService>
+				<status>Actif</status>
+				<managementAct>AMS</managementAct>
+				<deletionCause>cause</deletionCause>
+				<detailHisto>
+					<benefitId>3030</benefitId>
+					<detailValue>Remise 5€ sur chaque ligne</detailValue>
+					<typeAct>Reward 1</typeAct>
+					<status>Actif</status>
+				</detailHisto>
+				<detailHisto>
+					<compensationId>3131</compensationId>
+					<detailValue>Envoi de Pièces Justificatives</detailValue>
+					<typeAct>PJMPF 1</typeAct>
+					<status>Realisé</status>
+				</detailHisto>
+			</memberHisto>
+			<memberHisto>
+				<memberId>2222</memberId>
+				<typeAct></typeAct>
+				<CSUId>02-CZ3521</CSUId>
+				<lineSegment>GP</lineSegment>
+				<lineIdentifier>0620304061</lineIdentifier>
+				<typeOfService>MOB</typeOfService>
+				<status>Actif</status>
+				<managementAct>AMS</managementAct>
+				<deletionCause>cause</deletionCause>
+				<detailHisto>
+					<benefitId>3232</benefitId>
+					<detailValue>Remise 10€ sur chaque ligne</detailValue>
+					<typeAct>Reward 2</typeAct>
+					<status>Actif</status>
+				</detailHisto>
+				<detailHisto>
+					<benefitId>3333</benefitId>
+					<detailValue>Remise 15€ sur chaque ligne</detailValue>
+					<typeAct>Reward 3</typeAct>
+					<status>En attente</status>
+				</detailHisto>
+				<detailHisto>
+					<compensationId>3434</compensationId>
+					<detailValue>Envoi de Pièces Justificatives</detailValue>
+					<typeAct>PJMPF 2</typeAct>
+					<status>Realisé</status>
+				</detailHisto>
+				<detailHisto>
+					<compensationId>3535</compensationId>
+					<detailValue>Migration de PTA vers gamme Carré Web</detailValue>
+					<typeAct>PJMPF 3</typeAct>
+					<status>En attente</status>
+				</detailHisto>
+			</memberHisto>
+		</eventList>
+	</histoResponseBloc>
+</GEna_History_Response>

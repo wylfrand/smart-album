@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ficheUtilisateur xmlns:ns2="http://www.sfr.com/ws/psw/profile/v4_1"
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.sfr.com/xml/psw/profile/v4_1">
+	<idAsc>rLt3lWFBoAOF63E9</idAsc>
+	<utilisateurAsc>true</utilisateurAsc>
+	<statutBackend>COMPLET</statutBackend>
+	<civilite>MME</civilite>
+	<genre>FEMININ</genre>
+	<nom>JKRTFUOSG</nom>
+	<prenom>Ogrjfurj</prenom>
+	<telephoneFixeDeContact>0237320499</telephoneFixeDeContact>
+	<telephoneMobileDeContact>0677853070</telephoneMobileDeContact>
+	<emailDeSecours>dsi-gp-int-recettes@neufcegetel.fr</emailDeSecours>
+	<emailDeContact1>jkrtfuosg.mhslkqnk@ufdl.hx</emailDeContact1>
+	<stopMailEmailDeContact1>false</stopMailEmailDeContact1>
+	<compteurNPEIEmailDeContact1>0</compteurNPEIEmailDeContact1>
+	<stopMailEmailDeContact2>false</stopMailEmailDeContact2>
+	<personneFictive>false</personneFictive>
+	<logins>hermeline.marcelle@neuf.fr</logins>
+	<lignesPrincipales>
+		<statutBackend>COMPLET</statutBackend>
+		<ligneFixe>
+			<statutBackend>COMPLET</statutBackend>
+			<label>0237328892/ADSL</label>
+			<typeCSU>ADSL</typeCSU>
+			<statutCSU>ACTIF</statutCSU>
+			<profilPsw>INTERNET_ADSL</profilPsw>
+			<creationSIGCExplicite>false</creationSIGCExplicite>
+			<idCompteClient>1+41T+2763</idCompteClient>
+			<adresseFacturation>
+				<adresse>31 RUE DE LA MAIRIE</adresse>
+				<codePostal>28300</codePostal>
+				<localite>CINTRAY</localite>
+			</adresseFacturation>
+			<adresseClient>
+				<adresse>31 RUE DE LA MAIRIE</adresse>
+				<codePostal>28300</codePostal>
+				<localite>CINTRAY</localite>
+			</adresseClient>
+			<numeroAccesFT>0237328892</numeroAccesFT>
+			<gamme>ADSL</gamme>
+			<segment>02</segment>
+			<libelleOffreSouscrite>neufbox de SFR jusqu'à 8 Méga</libelleOffreSouscrite>
+			<crmId>1+41T+2763</crmId>
+			<emailRattacheAuNeufID>false</emailRattacheAuNeufID>
+			<facture>
+				<ssaFacturation>ARBOR</ssaFacturation>
+				<dateDerniereFacture>2012-11-21+01:00</dateDerniereFacture>
+				<montantDerniereFacture>39.9</montantDerniereFacture>
+			</facture>
+		</ligneFixe>
+	</lignesPrincipales>
+	<mailBoxes>
+		<email>hermeline.marcelle@neuf.fr</email>
+		<type>FIXE</type>
+	</mailBoxes>
+	<services>
+		<type>CONTRAT-FIXE</type>
+		<identifiant>1+41T+2763</identifiant>
+	</services>
+	<dateDerniereConnexion>2013-07-09T08:49:08.619+02:00</dateDerniereConnexion>
+</ficheUtilisateur>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:RestitutionAMEContenuOut xmlns:n1="http://cegetelsi/psg/amemanagement/4.0" 
+                             xmlns:n2="http://cegetelsi/psg/amemanagement/4.0/interface"
+                             xmlns="http://cegetelsi/psg/amemanagement/4.0/AMEManagementV40Response">
+        <GroupCharacteristic>
+            <GroupCharacteristic>
+                <classAME>AME_1</classAME>
+                <shortNameAME>Les Multi-Packs de SFR</shortNameAME>
+                <descriptionAME>Plus vous prenez d'abonnements, plus vous avez de réductions</descriptionAME>
+                <benefitValueMinPerMonth>60</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>120</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>720</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>1200</benefitValueMaxPerYear>
+                <status>Actif</status>
+                <availableLines>1</availableLines>
+                <groupID>1</groupID>
+                <groupName>multi-pack-group-test-1</groupName>
+                <manager>0620304067</manager>
+                <serviceType>CMD-MOB</serviceType>
+                <deletionCause></deletionCause>
+                <nom>Martin</nom>
+                <prenom>Gregory</prenom>
+                <updateDate>2009-10-10</updateDate>
+                <MemberCharacteristic>
+                    <MemberCharacteristic>
+                        <csuID>1111</csuID>
+                        <status>Actif</status>
+                        <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                        <csuStatus>en cours d’activation</csuStatus>
+                        <lineIdentifier>0620304061</lineIdentifier>
+                        <serviceType>MOB</serviceType>
+                        <nom>Martin</nom>
+                        <prenom>Gregory</prenom>
+                        <lineID>1</lineID>
+                        <cancelledCause></cancelledCause>
+                        <updateDate>2009-10-10</updateDate>
+                        <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>BMP01M1</benefitCode>
+                                <benefitShortName>benef1</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>0</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>0</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>120</benefitValueMaxPerYear>
+                                <productCode>c001</productCode>
+                                <unit>1</unit>
+                                <invoicedProduct>i001</invoicedProduct>
+                                <invoiceAmount>1</invoiceAmount>
+                                <technicalCode>001</technicalCode>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                         <CompensationCharacteristic>
+                             <CompensationCharacteristic>
+                                   <compensationCode>PTA</compensationCode>
+                                   <compensationShortName>Migration PTA</compensationShortName>
+                                   <compensationDescription>Cette ligne n'est pas compatible avec les remises Multi-Packs. Vous disposez d'un mois pour passer à un forfait compatible.</compensationDescription>
+                                   <expirationDate>2011-08-10</expirationDate>
+                                   <status>Actif</status>
+                                   <evidenceTypeCode>PJMPF</evidenceTypeCode>
+                                   <evidenceTypeDescription>relation familiale</evidenceTypeDescription>
+                             </CompensationCharacteristic>
+                             <CompensationCharacteristic>
+                                   <compensationCode>ADM</compensationCode>
+                                   <compensationShortName>Piece justificative</compensationShortName>
+                                   <compensationDescription>Téléchargez le formulaire correspondant à votre situation et renvoyez le, accompagné des pièces justificatives demandées.</compensationDescription>
+                                   <expirationDate>2011-06-15</expirationDate>
+                                   <status>Actif</status>
+                                   <evidenceTypeCode>PJMPFP</evidenceTypeCode>
+                             </CompensationCharacteristic>
+                             <CompensationCharacteristic>
+                                   <compensationCode>ACT</compensationCode>
+                                   <compensationShortName>Activation</compensationShortName>
+                                   <compensationDescription>Cette ligne doit être activée pour bénéficier de sa remise</compensationDescription>
+                                   <expirationDate>2010-06-15</expirationDate>
+                                   <status>Actif</status>
+                             </CompensationCharacteristic>     
+                             <CompensationCharacteristic>
+                                   <compensationCode>FIX</compensationCode>
+                                   <compensationShortName>Contrepartie fixe</compensationShortName>
+                                   <compensationDescription>Cette ligne possède l'avantage - de 26 ans qui n'est pas cumulable avec les remises Multi-Packs. Si vous confirmez la création de votre groupe, cet avantage sera perdu.</compensationDescription>
+                                   <expirationDate>2010-06-15</expirationDate>
+                                   <status>Actif</status>
+                             </CompensationCharacteristic>     
+                         </CompensationCharacteristic>
+                    </MemberCharacteristic>
+                    <MemberCharacteristic>
+                        <csuID>2222</csuID>
+                        <status>Actif</status>
+                        <csuStatus>actif</csuStatus>
+                        <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                        <lineIdentifier>0620304060</lineIdentifier>
+                        <serviceType>MOB</serviceType>
+                        <nom>Bob</nom>
+                        <prenom>Roger</prenom>
+                        <lineID>2</lineID>
+                        <cancelledCause></cancelledCause>
+                        <updateDate>2010-10-10</updateDate>
+                        <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>B001</benefitCode>
+                                <benefitShortName>benef1</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>5</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>5</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>120</benefitValueMaxPerYear>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                         <CompensationCharacteristic>
+                             <CompensationCharacteristic>
+                                   <compensationCode>MIGUPMP01</compensationCode>
+                                   <compensationShortName>Migration PTA</compensationShortName>
+                                   <compensationDescription>Cette ligne n'est pas compatible avec les remises Multi-Packs. Vous disposez d'un mois pour passer à un forfait compatible.</compensationDescription>
+                                   <expirationDate>2011-08-10</expirationDate>
+                                   <status>Actif</status>
+                                   <evidenceTypeCode>PJMPF</evidenceTypeCode>
+                                   <evidenceTypeDescription>relation familiale</evidenceTypeDescription>
+                             </CompensationCharacteristic>
+                             <CompensationCharacteristic>
+                                   <compensationCode>ADM</compensationCode>
+                                   <compensationShortName>Piece justificative</compensationShortName>
+                                   <compensationDescription>Téléchargez le formulaire correspondant à votre situation et renvoyez le, accompagné des pièces justificatives demandées.</compensationDescription>
+                                   <expirationDate>2011-06-15</expirationDate>
+                                   <status>Actif</status>
+                                   <evidenceTypeCode>PJMPFP</evidenceTypeCode>
+                             </CompensationCharacteristic>
+                         </CompensationCharacteristic>
+                    </MemberCharacteristic>
+                    <MemberCharacteristic>
+                        <csuID>3333</csuID>
+                        <status>Actif</status>
+                        <csuStatus>actif</csuStatus>
+                        <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                        <lineIdentifier>0120304060</lineIdentifier>
+                        <serviceType>DSL</serviceType>
+                        <nom>Benoit</nom>
+                        <prenom>Denis</prenom>
+                        <lineID>2</lineID>
+                        <cancelledCause></cancelledCause>
+                        <updateDate>2010-10-10</updateDate>
+                        <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>B001</benefitCode>
+                                <benefitShortName>benef1</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>5</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>5</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>120</benefitValueMaxPerYear>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                    </MemberCharacteristic>
+                    <MemberCharacteristic>
+                        <csuID>4444</csuID>
+                        <status>Actif</status>
+                        <csuStatus>actif</csuStatus>
+                        <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                        <lineIdentifier>0620304067</lineIdentifier>
+                        <serviceType>MOB</serviceType>
+                        <nom>REN</nom>
+                        <prenom>François</prenom>
+                        <lineID>2</lineID>
+                        <cancelledCause></cancelledCause>
+                        <updateDate>2010-10-10</updateDate>
+                        <BenefitCharacteristic>
+                            <BenefitCharacteristic>
+                                <benefitCode>B001</benefitCode>
+                                <benefitShortName>benef1</benefitShortName>
+                                <benefitDescription>benef1</benefitDescription>
+                                <status>Actif</status>
+                                <activationDate>2009-10-10</activationDate>
+                                <endDate>2009-10-10</endDate>
+                                <benefitValueMinPerMonth>10</benefitValueMinPerMonth>
+                                <benefitValueMaxPerMonth>10</benefitValueMaxPerMonth>
+                                <benefitValueMinPerYear>60</benefitValueMinPerYear>
+                                <benefitValueMaxPerYear>120</benefitValueMaxPerYear>
+                             </BenefitCharacteristic>
+                         </BenefitCharacteristic>
+                    </MemberCharacteristic>
+                </MemberCharacteristic>
+            </GroupCharacteristic>
+            <GroupCharacteristic>
+                <classAME>AME_2</classAME>
+                <shortNameAME>Les Re-mixes de SFR</shortNameAME>
+                <descriptionAME>Plus vous prenez d'abonnements, plus vous avez de réductions</descriptionAME>
+                <benefitValueMinPerMonth>20</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>140</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>620</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>1200</benefitValueMaxPerYear>
+                <status>Deleted</status>
+                <availableLines>0</availableLines>
+                <groupID>2</groupID>
+                <groupName>re-mixes-group-test-1</groupName>
+                <manager>0620304067</manager>
+                <serviceType>MOB</serviceType>
+                <deletionCause>02</deletionCause>
+                <nom>Martin</nom>
+                <prenom>Gregory</prenom>
+                <updateDate>2009-10-10</updateDate>
+                <MemberCharacteristic>
+                    <MemberCharacteristic>
+                         <csuID>1111</csuID>
+                         <status>Deleted</status>
+                         <libellePTA>Edition Spéciale Illimythics Absolu 24h/24h tous opérateurs</libellePTA>
+                         <csuStatus></csuStatus>
+                         <lineIdentifier>0620304067</lineIdentifier>
+                         <serviceType>MOB</serviceType>
+                         <nom>Bob</nom>
+                         <prenom>Roger</prenom>
+                         <lineID>2</lineID>
+                         <cancelledCause>05</cancelledCause>
+                         <updateDate>2010-10-10</updateDate>
+                    </MemberCharacteristic>
+					<MemberCharacteristic>
+                         <csuID>2222</csuID>
+                         <status>Deleted</status>
+                         <csuStatus></csuStatus>
+                         <lineIdentifier>0620304058</lineIdentifier>
+                         <serviceType>CMD-MOB</serviceType>                         
+                         <lineID>2</lineID>
+                         <updateDate>2010-10-10</updateDate>
+                    </MemberCharacteristic>
+                </MemberCharacteristic>   
+           </GroupCharacteristic>
+            <GroupCharacteristic>
+                <classAME>AME_3</classAME>
+                <shortNameAME>Le super groupe de SFR</shortNameAME>
+                <descriptionAME>Plus vous prenez d'abonnements, plus vous avez de réductions</descriptionAME>
+                <benefitValueMinPerMonth>20</benefitValueMinPerMonth>
+                <benefitValueMaxPerMonth>140</benefitValueMaxPerMonth>
+                <benefitValueMinPerYear>620</benefitValueMinPerYear>
+                <benefitValueMaxPerYear>1200</benefitValueMaxPerYear>
+                <status>Actif</status>
+                <availableLines>3</availableLines>
+                <groupID>3</groupID>
+                <groupName>super-group-test-1</groupName>
+                <manager>0620304067</manager>
+                <serviceType>MOB</serviceType>
+                <deletionCause></deletionCause>
+                <nom>Martin</nom>
+                <prenom>Gregory</prenom>
+                <updateDate>2009-10-10</updateDate>
+                <MemberCharacteristic>
+                    <MemberCharacteristic>
+                         <csuID>1111</csuID>
+                         <status>Deleted</status>
+                         <csuStatus></csuStatus>
+                         <libellePTA></libellePTA>
+                         <lineIdentifier>0620304067</lineIdentifier>
+                         <serviceType>MOB</serviceType>
+                         <nom>Bob</nom>
+                         <prenom>Roger</prenom>
+                         <lineID>2</lineID>
+                         <cancelledCause>01</cancelledCause>
+                         <updateDate>2010-10-10</updateDate>
+                    </MemberCharacteristic>
+                </MemberCharacteristic>
+           </GroupCharacteristic>
+    </GroupCharacteristic>
+</n1:RestitutionAMEContenuOut>
