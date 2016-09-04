@@ -1,4 +1,5 @@
 # Comment
-**/target/
+target
+target/
 *.log
 *.zip
