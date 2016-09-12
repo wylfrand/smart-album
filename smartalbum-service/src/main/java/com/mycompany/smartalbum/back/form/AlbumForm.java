@@ -51,7 +51,7 @@ public class AlbumForm implements Serializable {
 	
 	private Set<ShelfVO> publicShelves;
 	
-	private List<ShelfVO> userShelves;
+	private List<ShelfInfos> userShelves;
 	
 	private Set<ShelfInfos> userShelvesInfos;
 	
@@ -208,7 +208,7 @@ public class AlbumForm implements Serializable {
 	/**
 	 * @return the userShelves
 	 */
-	public List<ShelfVO> getUserShelves() {
+	public List<ShelfInfos> getUserShelves() {
 	    if(userShelves == null)
             {
 	        userShelves = new ArrayList<>();
@@ -230,7 +230,7 @@ public class AlbumForm implements Serializable {
 	/**
 	 * @param userShelves the userShelves to set
 	 */
-	public void setUserShelves(List<ShelfVO> userShelves) {
+	public void setUserShelves(List<ShelfInfos> userShelves) {
 		this.userShelves = userShelves;
 	}
 

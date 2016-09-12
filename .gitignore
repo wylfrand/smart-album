@@ -3,3 +3,7 @@ target
 target/
 *.log
 *.zip
+*.class
+*.jar
+*.war
+smartalbum-database/target

@@ -40,6 +40,8 @@ public interface IShelfDao {
 	void editShelf(Shelf shelf) throws PhotoAlbumException;
 	
 	List<Shelf> getPredefinedShelves();
+	
+	List<Shelf> getUserShelves(final Long userId);
 
 	List<Shelf> findAll();
 	

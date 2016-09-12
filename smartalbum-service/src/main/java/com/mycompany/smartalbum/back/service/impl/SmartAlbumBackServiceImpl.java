@@ -61,9 +61,9 @@ import com.mycompany.filesystem.service.FileUploadService;
 import com.mycompany.filesystem.service.ImageDimension;
 import com.mycompany.filesystem.utils.FileFilter;
 import com.mycompany.services.model.commun.enumeration.ApplicationsEnum;
+import com.mycompany.services.smartalbum.infos.UserInfos;
 import com.mycompany.services.smartalbum.vo.AlbumVO;
 import com.mycompany.services.smartalbum.vo.ShelfVO;
-import com.mycompany.services.smartalbum.vo.UserVO;
 import com.mycompany.services.smartalbum.vo.form.AlbumVOForm;
 import com.mycompany.services.utils.Constant;
 import com.mycompany.services.utils.ErrorHandlerBean;
@@ -395,7 +395,7 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 		Album currentAlbum = null;
 		List<String> existingFilesNames = new ArrayList<>();
 		if (currentObject == null) {
-			List<Image> images = getCurrentUser(true).getImages();
+			List<Image> images = getCurrentUser(false).getImages();
 			for(Image img : images){
 				existingFilesNames.add(img.getName());
 			}
@@ -415,7 +415,7 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 					if(currentAlbum != null){
 						currentImage = currentAlbum.getImageByName(imageName);
 					}else{
-						currentImage = getCurrentUser(true).getImageByName(imageName);
+						currentImage = getCurrentUser(false).getImageByName(imageName);
 					}
 					if(currentImage!=null){
 						file = new CheckedFile(imageName,currentImage.getId());
@@ -528,29 +528,20 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 	 * getCurrentUser()
 	 */
 	@Override
-	public UserVO findCurrentUserVO(boolean fromCache) {
+	public UserInfos findCurrentUserInfos(boolean fromCache) {
 		Object person = cacheManager.getObjectFromCache(Constant.SMARTALBUM_CURRENT_USER_VO);
-		UserVO currentUser = (UserVO) person;
+		UserInfos currentUser = (UserInfos) person;
 		if (fromCache && currentUser!=null) {
 			return currentUser;
 		} else {
 			User currentUserDB = getCurrentUser(false);
-			currentUser = mapper.map(currentUserDB, UserVO.class);
+			currentUser = mapper.map(currentUserDB, UserInfos.class);
+			currentUser.update();
 			cacheManager.putObjectInCache(Constant.SMARTALBUM_CURRENT_USER_VO, currentUser);
 		}
 		return currentUser;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.mycompany.smartalbum.back.service.impl.SmartAlbumBackService#
-	 * getAbsoluteIndexOfImageInTmp(int, int)
-	 */
-	@Override
-	public int getAbsoluteIndexOfImageInTmp(int page, int position) {
-		return Constant.PAGE_SIZE * page + position;
-	}
 
 	/*
 	 * (non-Javadoc)
@@ -1061,6 +1052,25 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
         }
         return result;
     }
+	
+
+	/**
+     * This method used to populate 'pre-defined shelves' tree
+     * 
+     * @return List of predefined shelves
+     */
+	@Override
+    public List<ShelfVO> getUserShelvesVO() {
+        List<Shelf> shelfdb = shelfDBService.getUserShelves(getCurrentUser(true).getId());
+        List<ShelfVO> result = new ArrayList<>();
+        for(Shelf currentShelf : shelfdb){
+        	result.add(mapper.map(currentShelf, ShelfVO.class));
+        }
+        return result;
+    }
+	
+	
+	
 
 
 	/*

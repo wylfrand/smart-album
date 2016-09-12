@@ -34,11 +34,8 @@ import com.mycompany.database.smartalbum.search.options.SearchOptionByUser;
 import com.mycompany.database.smartalbum.services.ISearchOption;
 import com.mycompany.database.smartalbum.services.IUserDao;
 import com.mycompany.filesystem.utils.HashUtils;
-import com.mycompany.services.smartalbum.vo.UserVO;
 import com.mycompany.services.utils.Constant;
-import com.mycompany.smartalbum.back.form.AlbumForm;
 import com.mycompany.smartalbum.back.form.SearchForm;
-import com.mycompany.smartalbum.back.form.ShelfForm;
 import com.mycompany.smartalbum.back.service.SmartAlbumBackService;
 
 import opiam.admin.applis.demo.beans.Person;
@@ -366,38 +363,7 @@ public class SmartAlbumAuthProvider implements AuthenticationProvider, Serializa
 
 	}
 
-	private void initAlbumForm() {
-		Object albumFormObj = backService.getCacheManager().getObjectFromCache(
-				Constant.SMARTALBUM_ALBUM_FORM);
-		AlbumForm form = null;
-		if (albumFormObj == null) {
-			form = new AlbumForm();
-			form.setDefaultPicturePath("/default/noimage_small200.jpg");
-			form.setPublicShelves(backService.getPredefinedShelvesVO());
-			UserVO currentUser = backService.findCurrentUserVO(false);
-			if (currentUser != null) {
-				form.setUserShelves(currentUser.getShelves());
-
-			}
-			backService.getCacheManager().putObjectInCache(
-					Constant.SMARTALBUM_ALBUM_FORM, form);
-		}
-	}
-
-	private void initShelfForm() {
-		Object shelfFormObj = backService.getCacheManager().getObjectFromCache(
-				Constant.SMARTALBUM_SHELF_FORM);
-		ShelfForm form = null;
-		if (shelfFormObj == null) {
-			form = new ShelfForm();
-			form.setName("");
-			form.setDescription("");
-			form.setShared(true);
-			backService.getCacheManager().putObjectInCache(
-					Constant.SMARTALBUM_SHELF_FORM, form);
-		}
-
-	}
+	
 
 	private void initCurrentUserInSession(User user) {
 		backService.getCacheManager().putObjectInCache(

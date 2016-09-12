@@ -139,7 +139,7 @@ public class User extends ABuisnessObject<Long> implements Serializable {
 	private List<Shelf> shelves = new ArrayList<Shelf>();
 	
 	@OneToMany(mappedBy = "user", orphanRemoval = true)
-	@Fetch(FetchMode.SUBSELECT)
+	@Fetch(FetchMode.SELECT)
 	private List<Image> images = new ArrayList<Image>();
 
 	private boolean preDefined;

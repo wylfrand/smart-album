@@ -15,5 +15,10 @@ public interface IShelfJpaRepository extends JpaRepository<Shelf, Long>{
 	Shelf findShelfByName(@Param("name") String name);
 	
 	@Query("select distinct s from Shelf s where (s.shared = true and s.owner.preDefined = true) order by s.name")
-	List<Shelf> queryUserShelves();
+	List<Shelf> queryPublicShelves();
+	
+	@Query("select distinct s from Shelf s where (s.owner.id = :userId) order by s.name")
+	List<Shelf> queryUserShelves(@Param("userId") Long userId);
+	
+	
 }

@@ -28,9 +28,9 @@ import com.mycompany.filesystem.model.CheckedFile;
 import com.mycompany.filesystem.service.FileService;
 import com.mycompany.filesystem.service.FileUploadService;
 import com.mycompany.filesystem.service.ImageDimension;
+import com.mycompany.services.smartalbum.infos.UserInfos;
 import com.mycompany.services.smartalbum.vo.AlbumVO;
 import com.mycompany.services.smartalbum.vo.ShelfVO;
-import com.mycompany.services.smartalbum.vo.UserVO;
 import com.mycompany.services.smartalbum.vo.form.AlbumVOForm;
 import com.mycompany.services.utils.ErrorHandlerBean;
 import com.mycompany.services.utils.HttpSessionCacheManager;
@@ -59,8 +59,6 @@ import com.mycompany.smartalbum.back.form.ShelfForm;
      void removeAllFilesFromTmpByName() throws PhotoAlbumException;
     
      User getCurrentUser(boolean fromCache);
-    
-     int getAbsoluteIndexOfImageInTmp(int page, int position);
     
      BufferedImage rotatePerfectSquares(BufferedImage image, int _thetaInDegrees);
     
@@ -176,9 +174,10 @@ import com.mycompany.smartalbum.back.form.ShelfForm;
 
 	AlbumVOForm findAlbumFormById(String albumId);
 
-	UserVO findCurrentUserVO(boolean fromCache);
+	UserInfos findCurrentUserInfos(boolean fromCache);
 
 	Set<ShelfVO> getPredefinedShelvesVO();
+	List<ShelfVO> getUserShelvesVO();
 
 	MessageHTML initHTMLMessageInEntity(String message, MessageHTMLTypes type, String login) throws PhotoAlbumException;
 

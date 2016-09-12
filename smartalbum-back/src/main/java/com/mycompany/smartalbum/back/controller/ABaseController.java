@@ -203,19 +203,6 @@ public abstract class ABaseController {
 	}
 
 	/**
-	 * Retourne un objet {@link AlbumForm} créé é partir d'un objet
-	 * {@link Album}
-	 * 
-	 * @param Album
-	 *            , L'objet contenant les infos base de données d'un Album
-	 * @return un objet {@link AlbumForm} représentant le formulaire d'un Album
-	 */
-	protected AlbumForm initAlbumForm(Album album) {
-
-		return null;
-	}
-
-	/**
 	 * Retourne un objet {@link ImageForm} créé é partir d'un objet
 	 * {@link Image}
 	 * 

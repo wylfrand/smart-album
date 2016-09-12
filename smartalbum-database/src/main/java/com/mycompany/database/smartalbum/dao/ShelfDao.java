@@ -74,8 +74,14 @@ public class ShelfDao extends AbastractDao<Shelf, Long> implements IShelfDao {
      * @param shelf - shelf to Synchronize
      */
     public List<Shelf> getPredefinedShelves() {
-    	return shelfJpaDBService.queryUserShelves();
+    	return shelfJpaDBService.queryPublicShelves();
     }
+    
+	@Override
+	public List<Shelf> getUserShelves(Long userId) {
+		return shelfJpaDBService.queryUserShelves(userId);
+	}
+    
     
     @Override
     protected Class<Shelf> getBoClass() {
@@ -107,5 +113,7 @@ public class ShelfDao extends AbastractDao<Shelf, Long> implements IShelfDao {
 	public List<Shelf> findAll() {
 		return shelfJpaDBService.findAll();
 	}
+
+
 
 }
