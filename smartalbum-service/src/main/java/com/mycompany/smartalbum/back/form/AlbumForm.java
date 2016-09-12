@@ -11,6 +11,7 @@ import com.google.common.collect.Sets;
 import com.mycompany.database.smartalbum.model.Image;
 import com.mycompany.database.smartalbum.model.Shelf;
 import com.mycompany.database.smartalbum.model.User;
+import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.smartalbum.vo.ImageVO;
 import com.mycompany.services.smartalbum.vo.ShelfVO;
 
@@ -50,7 +51,7 @@ public class AlbumForm implements Serializable {
 	
 	private Set<ShelfVO> publicShelves;
 	
-	private Set<ShelfVO> userShelves;
+	private List<ShelfVO> userShelves;
 	
 	private Set<ShelfInfos> userShelvesInfos;
 	
@@ -207,10 +208,10 @@ public class AlbumForm implements Serializable {
 	/**
 	 * @return the userShelves
 	 */
-	public Set<ShelfVO> getUserShelves() {
+	public List<ShelfVO> getUserShelves() {
 	    if(userShelves == null)
             {
-	        userShelves = Sets.newHashSet();
+	        userShelves = new ArrayList<>();
             }
 		return userShelves;
 	}
@@ -229,7 +230,7 @@ public class AlbumForm implements Serializable {
 	/**
 	 * @param userShelves the userShelves to set
 	 */
-	public void setUserShelves(Set<ShelfVO> userShelves) {
+	public void setUserShelves(List<ShelfVO> userShelves) {
 		this.userShelves = userShelves;
 	}
 

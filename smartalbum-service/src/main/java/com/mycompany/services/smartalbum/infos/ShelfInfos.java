@@ -4,12 +4,10 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
-public class ShelfInfos implements Serializable {
+public class ShelfInfos extends AbstractInfos<UserInfos> implements Serializable {
 
 	private static final long serialVersionUID = -7042878411608396483L;
 
@@ -18,10 +16,10 @@ public class ShelfInfos implements Serializable {
 	private String name;
 
 	private String description;
+	
+	private UserInfos parent;
 
-	private UserInfos owner = new UserInfos();
-
-	private Set<AlbumInfos> albums = new HashSet<AlbumInfos>();
+	private List<AlbumInfos> albums = new ArrayList<AlbumInfos>();
 
 	private boolean shared;
 
@@ -66,16 +64,23 @@ public class ShelfInfos implements Serializable {
 		this.description = description;
 	}
 
-	public Set<AlbumInfos> getAlbums() {
+	public List<AlbumInfos> getAlbums() {
 		return albums;
+	}
+	
+	/**
+	 * @param albums the albums to set
+	 */
+	public void setAlbums(List<AlbumInfos> albums) {
+		this.albums = albums;
+	}
+
+	public void getAlbums(List<AlbumInfos> albums) {
+		this.albums = albums;
 	}
 
 	public UserInfos getOwner() {
-		return owner;
-	}
-
-	public void setOwner(UserInfos owner) {
-		this.owner = owner;
+		return getParent();
 	}
 
 	public boolean isOwner(UserInfos user) {
@@ -118,9 +123,7 @@ public class ShelfInfos implements Serializable {
 	 */
 	public List<ImageInfos> getUnvisitedImages() {
 		final List<ImageInfos> unvisitedImages = new ArrayList<ImageInfos>();
-		for (AlbumInfos a : getAlbums()) {
-			unvisitedImages.addAll(a.getUnvisitedImages());
-		}
+		
 		return unvisitedImages;
 	}
 
@@ -129,9 +132,7 @@ public class ShelfInfos implements Serializable {
 	 */
 	public List<ImageInfos> getImages() {
 		final List<ImageInfos> images = new ArrayList<ImageInfos>();
-		for (AlbumInfos a : getAlbums()) {
-			images.addAll(a.getImages());
-		}
+		
 		return images;
 	}
 
@@ -150,7 +151,7 @@ public class ShelfInfos implements Serializable {
 				&& !album.getShelf().getAlbums().contains(this)) {
 			// remove from previous shelf
 			album.getShelf().removeAlbum(album);
-			album.setShelf(this);
+			album.setEtagere(this);
 			albums.add(album);
 		}
 	}
@@ -172,7 +173,7 @@ public class ShelfInfos implements Serializable {
 		}
 
 		albums.remove(album);
-		album.setShelf(null);
+		album.setEtagere(null);
 	}
 
 	/**
@@ -217,7 +218,7 @@ public class ShelfInfos implements Serializable {
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((owner == null) ? 0 : owner.hashCode());
+		result = prime * result + ((getOwner() == null) ? 0 : getOwner().hashCode());
 		return result;
 	}
 
@@ -261,11 +262,35 @@ public class ShelfInfos implements Serializable {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
-		if (owner == null) {
-			if (other.owner != null)
+		if (getOwner() == null) {
+			if (other.getOwner() != null)
 				return false;
-		} else if (!owner.equals(other.owner))
+		} else if (!getOwner().equals(other.getOwner()))
 			return false;
 		return true;
+	}
+
+	/**
+	 * @return the proprietaire
+	 */
+	public UserInfos getParent() {
+		return parent;
+	}
+
+	/**
+	 * @param proprietaire the proprietaire to set
+	 */
+	public void setParent(UserInfos proprietaire) {
+		this.parent = proprietaire;
+	}
+
+	@Override
+	public void update(UserInfos user) {
+		this.parent = user;
+		for(AlbumInfos album : albums)
+		{
+			album.update(this);
+		}
+		
 	}
 }

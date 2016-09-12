@@ -43,6 +43,10 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.OrderBy;
@@ -75,8 +79,10 @@ public class Shelf extends ABuisnessObject<Long> implements Serializable {
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	private User owner = new User();
 
-	@OneToMany(fetch = FetchType.EAGER,mappedBy = "shelf",  cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH},orphanRemoval = true)
+	@OneToMany(mappedBy = "shelf",  cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH},orphanRemoval = true)
 	@OrderBy(clause = "NAME asc")
+	//@LazyCollection(LazyCollectionOption.EXTRA)
+	@Fetch(FetchMode.SUBSELECT)
 	private List<Album> albums = new ArrayList<Album>();
 
 	@NotNull

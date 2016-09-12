@@ -139,8 +139,8 @@ public class Image extends ABuisnessObject<Long> implements Serializable, Clonea
 	private Date created;
 
 	/** Chaque ligne contient une partie du message **/
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "image", cascade = { CascadeType.ALL})
-	@Fetch(FetchMode.SELECT)
+	@OneToMany(mappedBy = "image", cascade = { CascadeType.REMOVE,CascadeType.PERSIST,CascadeType.MERGE})
+	@Fetch(FetchMode.SUBSELECT)
 	private List<MessageHTML> messagesHTML = new ArrayList<MessageHTML>();
 
 	@NotNull

@@ -4,10 +4,8 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 public class ShelfVO implements Serializable {
 
@@ -21,7 +19,7 @@ public class ShelfVO implements Serializable {
 
 	private UserVO owner = new UserVO();
 
-	private Set<AlbumVO> albums = new HashSet<AlbumVO>();
+	private List<AlbumVO> albums = new ArrayList<AlbumVO>();
 
 	private boolean shared;
 
@@ -66,7 +64,7 @@ public class ShelfVO implements Serializable {
 		this.description = description;
 	}
 
-	public Set<AlbumVO> getAlbums() {
+	public List<AlbumVO> getAlbums() {
 		return albums;
 	}
 
@@ -153,6 +151,13 @@ public class ShelfVO implements Serializable {
 			album.setShelf(this);
 			albums.add(album);
 		}
+	}
+
+	/**
+	 * @param albums the albums to set
+	 */
+	public void setAlbums(List<AlbumVO> albums) {
+		this.albums = albums;
 	}
 
 	/**

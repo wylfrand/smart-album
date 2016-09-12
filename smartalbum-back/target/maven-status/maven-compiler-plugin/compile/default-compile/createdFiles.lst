@@ -1,10 +1,13 @@
 com/mycompany/smartalbum/back/form/validator/constraint/EmailValidator.class
 com/mycompany/smartalbum/back/form/validator/ImageFormValidator.class
+com/mycompany/smartalbum/back/helper/SmartAlbumAuthProvider$6.class
 com/mycompany/smartalbum/back/chat/EchoEndpoint$EchoMessageHandler.class
 com/mycompany/smartalbum/back/controller/UsersController.class
+com/mycompany/smartalbum/back/helper/SmartAlbumAuthProvider$2.class
 com/mycompany/smartalbum/back/commun/enumeration/SearchOptionEnum.class
 com/mycompany/smartalbum/back/helper/MenuItemsEnum.class
 com/mycompany/smartalbum/back/controller/restCalls/AlbumsControllerRestCalls.class
+com/mycompany/smartalbum/back/helper/SmartAlbumAuthProvider$1.class
 com/mycompany/smartalbum/back/controller/restCalls/UsersControllerRest.class
 com/mycompany/smartalbum/back/chat/EchoEndpointAnnotation$1.class
 com/mycompany/smartalbum/back/helper/DataTableFactoryHelper.class
@@ -13,6 +16,7 @@ com/mycompany/smartalbum/back/controller/ImageController.class
 com/mycompany/smartalbum/back/form/validator/PasswordFormValidator.class
 com/mycompany/smartalbum/back/chat/EndpointApplicationConfig.class
 com/mycompany/smartalbum/back/chat/EchoEndpointAnnotation$EchoMessageHandler.class
+com/mycompany/smartalbum/back/helper/SmartAlbumAuthProvider$5.class
 com/mycompany/smartalbum/back/form/validator/UserFormValidator.class
 com/mycompany/smartalbum/back/chat/messages/JoinMessage.class
 com/mycompany/smartalbum/back/helper/CustomAuthenticationFailureHandler.class
@@ -35,6 +39,7 @@ com/mycompany/smartalbum/back/form/validator/constraint/Password.class
 com/mycompany/smartalbum/back/controller/MessagesHTMLController.class
 com/mycompany/smartalbum/back/controller/AuthentificationController.class
 com/mycompany/smartalbum/back/form/validator/constraint/Email.class
+com/mycompany/smartalbum/back/helper/SmartAlbumAuthProvider$3.class
 com/mycompany/smartalbum/back/chat/messages/Message.class
 com/mycompany/smartalbum/back/utils/FileBucket.class
 com/mycompany/smartalbum/back/controller/FileUploadController2.class
@@ -63,6 +68,7 @@ com/mycompany/smartalbum/back/helper/velosity/TemplateEnum.class
 com/mycompany/smartalbum/back/controller/FileUploadController.class
 com/mycompany/smartalbum/back/helper/LdapHelper.class
 com/mycompany/smartalbum/back/form/validator/AlbumFormValidator.class
+com/mycompany/smartalbum/back/helper/SmartAlbumAuthProvider$4.class
 com/mycompany/smartalbum/back/form/validator/constraint/PasswordValidator.class
 com/mycompany/smartalbum/back/controller/ChatController.class
 com/mycompany/smartalbum/back/controller/FileUploadController$1.class

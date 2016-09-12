@@ -9,7 +9,7 @@ private static final long serialVersionUID = 3429270322123226071L;
     
     private Long id;
     
-    private UserInfos author;
+    private UserInfos authorMessage;
     
     private Date date;
     
@@ -29,11 +29,7 @@ private static final long serialVersionUID = 3429270322123226071L;
     }
     
     public UserInfos getAuthor() {
-        return author;
-    }
-    
-    public void setAuthor(UserInfos author) {
-        this.author = author;
+        return authorMessage;
     }
     
     public String getMessage() {
@@ -51,7 +47,7 @@ private static final long serialVersionUID = 3429270322123226071L;
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((author == null) ? 0 : author.hashCode());
+		result = prime * result + ((authorMessage == null) ? 0 : authorMessage.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((message == null) ? 0 : message.hashCode());
 		return result;
@@ -69,10 +65,10 @@ private static final long serialVersionUID = 3429270322123226071L;
 		if (getClass() != obj.getClass())
 			return false;
 		CommentBaseInfos other = (CommentBaseInfos) obj;
-		if (author == null) {
-			if (other.author != null)
+		if (authorMessage == null) {
+			if (other.authorMessage != null)
 				return false;
-		} else if (!author.equals(other.author))
+		} else if (!authorMessage.equals(other.authorMessage))
 			return false;
 		if (id == null) {
 			if (other.id != null)

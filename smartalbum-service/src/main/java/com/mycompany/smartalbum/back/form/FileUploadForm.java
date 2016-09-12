@@ -5,6 +5,7 @@ import java.util.Set;
 
 import com.google.common.collect.Sets;
 import com.mycompany.filesystem.model.CheckedFile;
+import com.mycompany.services.smartalbum.infos.ShelfInfos;
 
 public class FileUploadForm implements Serializable{
 

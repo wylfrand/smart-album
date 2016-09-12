@@ -11,7 +11,7 @@ import java.util.Set;
 import com.google.common.collect.Sets;
 import com.mycompany.database.smartalbum.transaction.CommitTransaction;
 import com.mycompany.filesystem.model.CheckedFile;
-import com.mycompany.smartalbum.back.form.ShelfInfos;
+import com.mycompany.services.smartalbum.infos.ShelfInfos;
 
 public class AlbumVOForm implements Serializable{
 

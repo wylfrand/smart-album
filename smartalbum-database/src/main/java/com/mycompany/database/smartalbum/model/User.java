@@ -29,7 +29,6 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
@@ -44,8 +43,6 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.OrderBy;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
@@ -137,11 +134,12 @@ public class User extends ABuisnessObject<Long> implements Serializable {
 
 	@OrderBy(clause = "NAME asc")
 	@OneToMany(mappedBy = "owner", cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH})
-	@LazyCollection(LazyCollectionOption.EXTRA)
+	//@LazyCollection(LazyCollectionOption.EXTRA)
+	@Fetch(FetchMode.SUBSELECT)
 	private List<Shelf> shelves = new ArrayList<Shelf>();
 	
 	@OneToMany(mappedBy = "user", orphanRemoval = true)
-	@Fetch(FetchMode.SELECT)
+	@Fetch(FetchMode.SUBSELECT)
 	private List<Image> images = new ArrayList<Image>();
 
 	private boolean preDefined;

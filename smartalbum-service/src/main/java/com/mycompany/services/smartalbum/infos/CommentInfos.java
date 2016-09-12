@@ -9,11 +9,11 @@ private static final long serialVersionUID = 3429270322123226071L;
     
     private Long id;
     
-    private ImageInfos image;
+    private ImageInfos imageParent;
     
-    private AlbumInfos album;
+    private AlbumInfos albumParent;
     
-    private UserInfos author;
+    private UserInfos authorParent;
     
     private Date date;
     
@@ -42,11 +42,7 @@ private static final long serialVersionUID = 3429270322123226071L;
     }
     
     public UserInfos getAuthor() {
-        return author;
-    }
-    
-    public void setAuthor(UserInfos author) {
-        this.author = author;
+        return authorParent;
     }
     
     public String getMessage() {
@@ -58,11 +54,7 @@ private static final long serialVersionUID = 3429270322123226071L;
     }
     
     public ImageInfos getImage() {
-        return image;
-    }
-    
-    public void setImage(ImageInfos image) {
-        this.image = image;
+        return imageParent;
     }
     
     /* (non-Javadoc)
@@ -73,7 +65,7 @@ private static final long serialVersionUID = 3429270322123226071L;
         final int prime = 31;
         int result = 1;
         result = prime * result + ((id == null) ? 0 : id.hashCode());
-        result = prime * result + ((image == null) ? 0 : image.hashCode());
+        result = prime * result + ((imageParent == null) ? 0 : imageParent.hashCode());
         return result;
     }
 
@@ -94,10 +86,10 @@ private static final long serialVersionUID = 3429270322123226071L;
                 return false;
         } else if (!id.equals(other.id))
             return false;
-        if (image == null) {
-            if (other.image != null)
+        if (imageParent == null) {
+            if (other.imageParent != null)
                 return false;
-        } else if (!image.equals(other.image))
+        } else if (!imageParent.equals(other.imageParent))
             return false;
         return true;
     }
@@ -106,14 +98,7 @@ private static final long serialVersionUID = 3429270322123226071L;
 	 * @return the album
 	 */
 	public AlbumInfos getAlbum() {
-		return album;
-	}
-
-	/**
-	 * @param album the album to set
-	 */
-	public void setAlbum(AlbumInfos album) {
-		this.album = album;
+		return albumParent;
 	}
 
 }

@@ -70,8 +70,7 @@ public class Album extends ABuisnessObject<Long> implements Serializable, Clonea
 	@GeneratedValue
 	private Long id = null;
 
-	@OneToMany(fetch = FetchType.EAGER,mappedBy = "album", cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH}, orphanRemoval = true)
-	//@Fetch(FetchMode.SELECT)
+	@OneToMany(mappedBy = "album", cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH}, orphanRemoval = true)
 	private List<Image> images = new ArrayList<Image>();
 
 	@NotNull
@@ -81,7 +80,7 @@ public class Album extends ABuisnessObject<Long> implements Serializable, Clonea
 	private Shelf shelf;
 
 	@OneToMany(mappedBy = "album", cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH})
-	@Fetch(FetchMode.SELECT)
+	@Fetch(FetchMode.SUBSELECT)
 	private List<MessageHTML> messagesHTML = new ArrayList<>();
 
 	@OneToOne(cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH})

@@ -4,9 +4,7 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import com.mycompany.database.smartalbum.model.Sex;
 
@@ -32,7 +30,7 @@ public class UserInfos implements Serializable{
 
 	private Boolean hasAvatar;
 
-	private Set<ShelfInfos> shelves = new HashSet<ShelfInfos>();
+	private List<ShelfInfos> shelves = new ArrayList<ShelfInfos>();
 
 	private boolean preDefined;
 
@@ -97,8 +95,12 @@ public class UserInfos implements Serializable{
 		return id;
 	}
 
-	public Set<ShelfInfos> getShelves() {
+	public List<ShelfInfos> getShelves() {
 		return shelves;
+	}
+	
+	public void setShelves(List<ShelfInfos> shelves) {
+		this.shelves = shelves;
 	}
 
 	public Sex getSex() {
@@ -130,7 +132,7 @@ public class UserInfos implements Serializable{
 			throw new IllegalArgumentException("Null shelf!");
 		}
 		if (!shelves.contains(shelf)) {
-			shelf.setOwner(this);
+			shelf.setParent(this);
 			shelves.add(shelf);
 		}
 	}
@@ -146,7 +148,7 @@ public class UserInfos implements Serializable{
 			throw new IllegalArgumentException("Null shelf");
 		}
 		if (shelf.getOwner().getLogin().equals(this.getLogin())) {
-			shelf.setOwner(null);
+			shelf.setParent(null);
 			shelves.remove(shelf);
 		} else {
 			throw new IllegalArgumentException("ShelfVO not belongs to this user!");
@@ -201,7 +203,7 @@ public class UserInfos implements Serializable{
 				continue;
 			}
 			for (AlbumInfos a : s.getAlbums()) {
-				images.addAll(a.getImages());
+				//images.addAll(a.getImages());
 			}
 		}
 		return images;
@@ -260,11 +262,11 @@ public class UserInfos implements Serializable{
 	 * @return boolean value, that indicate if image with the same name exist
 	 */
 	public boolean hasImageWithName(ImageInfos image) {
-		for(ImageInfos i : image.getAlbum().getImages()){
-			if(!i.equals(image) &&  i.getName().equals(image.getName())){
-				return true;
-			}
-		}
+//		for(ImageInfos i : image.getAlbum().getImages()){
+//			if(!i.equals(image) &&  i.getName().equals(image.getName())){
+//				return true;
+//			}
+//		}
 		return false;
 	}
 	
@@ -289,6 +291,15 @@ public class UserInfos implements Serializable{
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	
+	public void update()
+	{
+		for(ShelfInfos shelf : shelves)
+		{
+			shelf.update(this);
+		}
 	}
 
 }

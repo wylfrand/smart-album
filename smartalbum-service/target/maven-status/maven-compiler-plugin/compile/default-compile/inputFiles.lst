@@ -44,7 +44,7 @@
 /Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/services/smartalbum/vo/CommentVO.java
 /Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/smartalbum/back/service/impl/SmartAlbumBackServiceImpl.java
 /Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/services/smartalbum/infos/CommentInfos.java
-/Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/smartalbum/back/form/ShelfInfos.java
+/Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/services/smartalbum/infos/AbstractInfos.java
 /Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/services/smartalbum/infos/MessagePartInfos.java
 /Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/services/smartalbum/vo/form/AlbumVOForm.java
 /Users/aristidemvou/Documents/workspace_smart/smartalbum-parent/smartalbum-service/src/main/java/com/mycompany/services/model/commun/RecursiveToStringStyle.java

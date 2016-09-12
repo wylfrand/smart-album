@@ -321,8 +321,8 @@ public class SmartAlbumAuthProvider implements AuthenticationProvider, Serializa
 
 				initCurrentUserInSession(user);
 				initSearchForm();
-				initAlbumForm();
-				initShelfForm();
+				//initAlbumForm();
+				//initShelfForm();
 				initCurrentControllerForUpload();
 				backService.getFileSystemService().createTmpDirectoryForUser(
 						user.getLogin());

@@ -41,10 +41,6 @@ public class MetaTagInfos implements Serializable{
 		return images;
 	}
 
-	public void setImages(List<ImageInfos> images) {
-		this.images = images;
-	}
-
 	public void addImage(ImageInfos image) {
 		images.add(image);
 	}

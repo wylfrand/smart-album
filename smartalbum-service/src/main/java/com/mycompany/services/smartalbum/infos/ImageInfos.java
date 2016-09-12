@@ -7,11 +7,9 @@ import java.util.List;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
-import com.mycompany.database.smartalbum.model.Comment;
 import com.mycompany.database.smartalbum.utils.ActionTools;
-import com.mycompany.services.smartalbum.vo.MessageHTMLVO;
 
-public class ImageInfos implements Serializable{
+public class ImageInfos extends AbstractInfos<AlbumInfos>  implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
@@ -21,7 +19,7 @@ public class ImageInfos implements Serializable{
 
 	private Set<CommentInfos> comments = Sets.newHashSet();
 
-	private AlbumInfos album;
+	private AlbumInfos parent;
 
 	private String name;
 
@@ -55,7 +53,7 @@ public class ImageInfos implements Serializable{
 	
 	private boolean checked;
 	
-	private List<MessageHTMLVO> messagesHTML = new ArrayList<>();
+	private List<MessageHTMLInfos> messagesHTML = new ArrayList<>();
 
 	/**
 	 * Getter for property preDefined
@@ -127,11 +125,7 @@ public class ImageInfos implements Serializable{
 	}
 
 	public AlbumInfos getAlbum() {
-		return album;
-	}
-
-	public void setAlbum(AlbumInfos album) {
-		this.album = album;
+		return parent;
 	}
 
 	public List<MetaTagInfos> getImageTags() {
@@ -294,39 +288,7 @@ public class ImageInfos implements Serializable{
 
 	// ---------------------------Business methods
 
-	/**
-	 * Add comment to this image.
-	 * 
-	 * @param comment
-	 *            - comment to add
-	 */
-	public void addComment(CommentInfos comment) {
-		if (comment == null) {
-			throw new IllegalArgumentException("Null comment!");
-		}
-		comment.setImage(this);
-		comments.add(comment);
-	}
-
-	/**
-	 * Remove comment from list of comments, belongs to that image.
-	 * 
-	 * @param comment
-	 *            - comment to delete
-	 */
-	public void removeComment(Comment comment) {
-		if (comment == null) {
-			throw new IllegalArgumentException("Null comment");
-		}
-		if (comment.getImage().equals(this)) {
-			comment.setImage(null);
-			comments.remove(comment);
-		} else {
-			throw new IllegalArgumentException(
-					"Comment not belongs to this image");
-		}
-	}
-
+	
 	/**
 	 * Add metatag to this image.
 	 * 
@@ -422,10 +384,10 @@ public class ImageInfos implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		ImageInfos other = (ImageInfos) obj;
-		if (album == null) {
-			if (other.album != null)
+		if (getAlbum() == null) {
+			if (other.getAlbum() != null)
 				return false;
-		} else if (!album.equals(other.album))
+		} else if (!getAlbum().equals(other.getAlbum()))
 			return false;
 		if (id == null) {
 			if (other.id != null)
@@ -452,7 +414,7 @@ public class ImageInfos implements Serializable{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((album == null) ? 0 : album.hashCode());
+		result = prime * result + ((getAlbum() == null) ? 0 : getAlbum().hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((path == null) ? 0 : path.hashCode());
 		long temp;
@@ -511,7 +473,7 @@ public class ImageInfos implements Serializable{
 	/**
 	 * @return the messagesHTML
 	 */
-	public List<MessageHTMLVO> getMessagesHTML() {
+	public List<MessageHTMLInfos> getMessagesHTML() {
 		if(messagesHTML == null)
 		{
 			messagesHTML = new ArrayList<>();
@@ -522,8 +484,27 @@ public class ImageInfos implements Serializable{
 	/**
 	 * @param messagesHTML the messagesHTML to set
 	 */
-	public void setMessagesHTML(List<MessageHTMLVO> messagesHTML) {
+	public void setMessagesHTML(List<MessageHTMLInfos> messagesHTML) {
 		this.messagesHTML = messagesHTML;
+	}
+
+	@Override
+	public void update(AlbumInfos entity) {
+		this.parent = entity;
+	}
+
+	/**
+	 * @return the parent
+	 */
+	public AlbumInfos getParent() {
+		return parent;
+	}
+
+	/**
+	 * @param parent the parent to set
+	 */
+	public void setParent(AlbumInfos parent) {
+		this.parent = parent;
 	}
 
 }

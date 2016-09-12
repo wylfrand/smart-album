@@ -4,11 +4,10 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import com.mycompany.database.smartalbum.model.Sex;
+import com.mycompany.database.smartalbum.model.Shelf;
 
 public class UserVO implements Serializable{
 
@@ -32,7 +31,7 @@ public class UserVO implements Serializable{
 
 	private Boolean hasAvatar;
 
-	private Set<ShelfVO> shelves = new HashSet<ShelfVO>();
+	private List<ShelfVO> shelves = new ArrayList<ShelfVO>();
 
 	private boolean preDefined;
 
@@ -97,8 +96,12 @@ public class UserVO implements Serializable{
 		return id;
 	}
 
-	public Set<ShelfVO> getShelves() {
+	public List<ShelfVO> getShelves() {
 		return shelves;
+	}
+	
+	public void setShelves(List<ShelfVO> aShelfList) {
+		this.shelves=aShelfList;
 	}
 
 	public Sex getSex() {
