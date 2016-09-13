@@ -196,14 +196,23 @@ public class AlbumsControllerRestCalls extends ABaseController {
 		MultipartFile mpf = null;
 		String userLogin = backService.getCurrentUser(true).getLogin();
 		int nbFiles = 0;
+		Album albumToUseForNewFile = null;
+		Object obj = backService.getCacheManager().getObjectFromCache(
+				Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM);
+		if(obj!=null){
+			Album anAlbum = (Album)obj;
+			albumToUseForNewFile = backService.getAlbumDBService().findAlbumById(anAlbum.getId());
+		}
 
 		// 2. get each file
-		while (itr.hasNext()) {
-			// 2.1 get next MultipartFile
-			mpf = request.getFile(itr.next());
-			LOG.debug(mpf.getOriginalFilename() + " uploaded! " + mpf.getSize());
-			// 2.2 if files > 10 remove the first from the list
-			nbFiles = classifyNewImage(mpf, userLogin, nbFiles);
+		if(albumToUseForNewFile!=null){
+			while (itr.hasNext()) {
+				// 2.1 get next MultipartFile
+				mpf = request.getFile(itr.next());
+				LOG.debug(mpf.getOriginalFilename() + " uploaded! " + mpf.getSize());
+				// 2.2 if files > 10 remove the first from the list
+				nbFiles = classifyNewImage(mpf, userLogin, nbFiles, albumToUseForNewFile);
+			}
 		}
 		// result will be like this
 		// [{"fileName":"app_engine-85x77.png","fileSize":"8 Kb","fileType":"image/png"},...]
@@ -215,7 +224,7 @@ public class AlbumsControllerRestCalls extends ABaseController {
 
 	}
 
-	private synchronized int classifyNewImage(MultipartFile mpf, String userLogin, int nbFiles) {
+	private synchronized int classifyNewImage(MultipartFile mpf, String userLogin, int nbFiles, Album anAlbum) {
 		// 2.3 create new fileMeta
 		FileMeta fileMeta = backService.getFileUploadService().computeFileMetaBeforeSavingOriginal(
 				mpf, userLogin, true);
@@ -225,29 +234,23 @@ public class AlbumsControllerRestCalls extends ABaseController {
 		try {
 			User currentUser = backService.getCurrentUser(true);
 			Image image = backService.getFileUploadService().constructImage(fileMeta);
+			image.setAlbum(backService.getAlbumDBService().findAlbumById(anAlbum.getId()));
+			image.setUser(null);
+			String tmpPath = Constants.TMP_DIR
+					+ File.separator + userLogin + File.separator;
+			String relativePath = fileMeta.getFileName();
+			fileMeta.setRelativePath(relativePath);
+			// On rajoute un message court
+			backService.addHTMLMessageInClassifiedImage(currentUser.getLogin(), image, MessageHTMLTypes.SHORTDESCRIPTION, "NON INITIALISER");
 			
-			Object obj = backService.getCacheManager().getObjectFromCache(
-					Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM);
-			if(obj!=null){
-				Album anAlbum = (Album)obj;
-				image.setAlbum(anAlbum);
-				image.setUser(null);
-				String tmpPath = Constants.TMP_DIR
-						+ File.separator + userLogin + File.separator;
-				String relativePath = fileMeta.getFileName();
-				fileMeta.setRelativePath(relativePath);
-				// On rajoute un message court
-				backService.addHTMLMessageInClassifiedImage(currentUser.getLogin(), image, MessageHTMLTypes.SHORTDESCRIPTION, "NON INITIALISER");
-				
-				// On rajoute un message long
-				backService.addHTMLMessageInClassifiedImage(currentUser.getLogin(), image, MessageHTMLTypes.LONGDESCRIPTION, "DESCRIPTION LONGUE NON INITIALISEE");
-				fileMeta.setBytes(null);
-				tmpFilesToUpload.add(fileMeta);
-				backService.getCacheManager().putObjectInCache(Constant.SMARTALBUM_TMP_UPLOADEDPICTURES,tmpFilesToUpload);
-				if (!backService.getFileSystemService().addImage(
-						picturesRootPath+image.getFullPath(),
-						tmpPath + File.separator + fileMeta.getFileName(), false)) {
-				}
+			// On rajoute un message long
+			backService.addHTMLMessageInClassifiedImage(currentUser.getLogin(), image, MessageHTMLTypes.LONGDESCRIPTION, "DESCRIPTION LONGUE NON INITIALISEE");
+			fileMeta.setBytes(null);
+			tmpFilesToUpload.add(fileMeta);
+			backService.getCacheManager().putObjectInCache(Constant.SMARTALBUM_TMP_UPLOADEDPICTURES,tmpFilesToUpload);
+			if (!backService.getFileSystemService().addImage(
+					picturesRootPath+image.getFullPath(),
+					tmpPath + File.separator + fileMeta.getFileName(), false)) {
 			}
 		} catch (PhotoAlbumException e) {
 			LOG.error("Une erreur est survenue pendant la sauvegarde de l'image",e);
