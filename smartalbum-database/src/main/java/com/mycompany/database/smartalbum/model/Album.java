@@ -71,6 +71,7 @@ public class Album extends ABuisnessObject<Long> implements Serializable, Clonea
 	private Long id = null;
 
 	@OneToMany(mappedBy = "album", cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH}, orphanRemoval = true)
+	@Fetch(FetchMode.SUBSELECT)
 	private List<Image> images = new ArrayList<Image>();
 
 	@NotNull
