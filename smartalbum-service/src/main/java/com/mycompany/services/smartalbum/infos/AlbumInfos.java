@@ -7,7 +7,7 @@ import java.util.Set;
 
 import com.google.common.collect.Sets;
 
-public class AlbumInfos extends AbstractInfos<ShelfInfos> implements Serializable{
+public class AlbumInfos implements MappingInfos<ShelfInfos>,  Serializable{
 
 	private static final long serialVersionUID = -7042878411608396483L;
 
@@ -37,7 +37,7 @@ public class AlbumInfos extends AbstractInfos<ShelfInfos> implements Serializabl
 	 * @return ShelfVO object, that contains this album
 	 */
 	public ShelfInfos getShelf() {
-		return parent;
+		return getParent();
 	}
 
 	public Long getId() {
@@ -232,9 +232,12 @@ public class AlbumInfos extends AbstractInfos<ShelfInfos> implements Serializabl
 	}
 
 	@Override
-	public void update(ShelfInfos entity) {
-		// TODO Auto-generated method stub
-		
+	public void update(ShelfInfos entity, MappingOptions options) {
+		parent = entity;
+		if (options == null || options.isLoadingAlbumsImagesParent()) {
+			for (ImageInfos image : entity.getImages()) {
+				image.update(this, options);
+			}
+		}
 	}
-
 }

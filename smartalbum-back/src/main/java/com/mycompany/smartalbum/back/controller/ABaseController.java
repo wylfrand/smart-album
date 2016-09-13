@@ -34,6 +34,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.ui.ModelMap;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -66,10 +67,8 @@ import com.mycompany.services.utils.Constant;
 import com.mycompany.services.utils.HttpSessionCacheManager;
 import com.mycompany.smartalbum.back.form.AlbumForm;
 import com.mycompany.smartalbum.back.form.FileUploadForm;
-import com.mycompany.smartalbum.back.form.ImageForm;
 import com.mycompany.smartalbum.back.form.SearchForm;
 import com.mycompany.smartalbum.back.form.ShelfForm;
-import com.mycompany.smartalbum.back.form.UserForm;
 import com.mycompany.smartalbum.back.form.validator.AlbumFormValidator;
 import com.mycompany.smartalbum.back.form.validator.ImageFormValidator;
 import com.mycompany.smartalbum.back.form.validator.PasswordFormValidator;
@@ -148,72 +147,6 @@ public abstract class ABaseController {
 	protected HttpSessionCacheManager cacheManager;
 
 	protected SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
-
-	/**
-	 * Retourne un objet {@link User} créé é partir d'un objet {@link UserForm}
-	 * 
-	 * @param UserForm
-	 *            , L'objet contenant les infos du formulaire permettant de
-	 *            créer ou modifier un User
-	 * @return un objet {@link User} représentant le user Base de données d'un
-	 *         User
-	 */
-	protected User initUser(UserForm userForm) {
-
-		return null;
-	}
-
-	/**
-	 * Retourne un objet {@link Shelf} créé é partir d'un objet
-	 * {@link ShelfForm}
-	 * 
-	 * @param shelfForm
-	 *            , L'objet représentant le formulaire d'une étagére
-	 * @return un objet {@link Shelf} contenant les infos base de donnée d'une
-	 *         étagére
-	 */
-	protected Shelf initShelf(ShelfForm shelfForm) {
-
-		return null;
-	}
-
-	/**
-	 * Retourne un objet {@link UserForm} créé é partir d'un objet {@link User}
-	 * 
-	 * @param user
-	 *            , L'objet contenant les infos base de données d'un User
-	 * @return un objet {@link UserForm} représentant le formulaire d'un User
-	 */
-	protected UserForm initUserForm(User user) {
-
-		return null;
-	}
-
-	/**
-	 * Retourne un objet {@link ShelfForm} créé é partir d'un objet
-	 * {@link Shelf}
-	 * 
-	 * @param Shelf
-	 *            , L'objet contenant les infos base de données d'un Shelf
-	 * @return un objet {@link ShelfForm} représentant le formulaire d'un Shelf
-	 */
-	protected ShelfForm initShelfConfigurationForm(Shelf shelf) {
-
-		return null;
-	}
-
-	/**
-	 * Retourne un objet {@link ImageForm} créé é partir d'un objet
-	 * {@link Image}
-	 * 
-	 * @param Image
-	 *            , L'objet contenant les infos base de données d'un Image
-	 * @return un objet {@link ImageForm} représentant le formulaire d'un Image
-	 */
-	protected ImageForm initImgeForm(Image image) {
-
-		return null;
-	}
 
 	/**
 	 * @return the files
@@ -410,7 +343,7 @@ public abstract class ABaseController {
 		aFileUploadForm.setSelectedFilesSize(form.getImages().size());
 		form.setSelectedPicturesOptions(options.toString());
 		aFileUploadForm.setSelectedPicturesOptions(options.toString());
-		Set<ShelfInfos> shelvesInfos = convertToListInfos(backService.getCurrentUser(false).getShelves());
+		List<ShelfInfos> shelvesInfos = backService.getUserShelvesInfos();
 		form.getUserShelvesInfos().addAll(shelvesInfos);
 		aFileUploadForm.getUserShelvesInfos().addAll(shelvesInfos);
 		aFileUploadForm.setSelectedPicturesOptions(options.toString());
@@ -471,7 +404,7 @@ public abstract class ABaseController {
 		}
 		
 		form.setSelectedPicturesOptions(options.toString());
-		form.getUserShelvesInfos().addAll(convertToListInfos(user.getShelves()));
+		form.getUserShelvesInfos().addAll(backService.getUserShelvesInfos());
 		aFileUploadForm.setSelectedPicturesOptions(options.toString());
 		
 		return aFileUploadForm;
@@ -505,17 +438,6 @@ public abstract class ABaseController {
 				result = true;
 				break;
 			}
-		}
-		return result;
-	}
-	
-	protected static Set<ShelfInfos> convertToListInfos(List<Shelf> shelves)
-	{
-		Set<ShelfInfos> result = new HashSet<>();
-		for(Shelf shelf : shelves){
-			ShelfInfos currentShelfInfos = mapper.map(shelf, ShelfInfos.class);
-			if(!result.contains(currentShelfInfos))
-				result.add(currentShelfInfos);
 		}
 		return result;
 	}
@@ -561,5 +483,25 @@ public abstract class ABaseController {
 		String jsonInString = mapper.writeValueAsString(obj);
 		
 		return jsonInString;
+	}
+	
+	protected AlbumForm initAlbumForm(final ModelMap model) {
+		Object albumFormObj = backService.getCacheManager().getObjectFromCache(
+				Constant.SMARTALBUM_ALBUM_FORM);
+		AlbumForm form = null;
+		if (albumFormObj == null) {
+			form = new AlbumForm();
+			form.setDefaultPicturePath("/default/noimage_small200.jpg");
+			form.setPublicShelves(backService.getPublicShelvesInfos());
+			form.setUserShelves(backService.getUserShelvesInfos());
+			backService.getCacheManager().putObjectInCache(
+					Constant.SMARTALBUM_ALBUM_FORM, form);
+		}
+		else
+		{
+			form = (AlbumForm)albumFormObj;
+		}
+		model.put(Constant.SMARTALBUM_ALBUM_FORM, form);
+		return form;
 	}
 }

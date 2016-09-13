@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import com.mycompany.database.smartalbum.exception.PhotoAlbumException;
 import com.mycompany.database.smartalbum.model.Album;
@@ -28,9 +27,9 @@ import com.mycompany.filesystem.model.CheckedFile;
 import com.mycompany.filesystem.service.FileService;
 import com.mycompany.filesystem.service.FileUploadService;
 import com.mycompany.filesystem.service.ImageDimension;
+import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.smartalbum.infos.UserInfos;
 import com.mycompany.services.smartalbum.vo.AlbumVO;
-import com.mycompany.services.smartalbum.vo.ShelfVO;
 import com.mycompany.services.smartalbum.vo.form.AlbumVOForm;
 import com.mycompany.services.utils.ErrorHandlerBean;
 import com.mycompany.services.utils.HttpSessionCacheManager;
@@ -164,8 +163,11 @@ import com.mycompany.smartalbum.back.form.ShelfForm;
 
 	String getCoveringNameFromPageAndPosition(int page, int position,
 			String albumPath);
+	
 	boolean renameImageInAlbum(Long imageId, String newImageName, Boolean isTmpImage, String imageOldName);
+	
 	AlbumVO findAlbumVOById(String albumId);
+	
 	SearchDataTableResponse<Album> findAlbumBySearchRequest(SearchDataTableRequest request) throws PhotoAlbumException;
 
 	void removeAllPicturesFromCurrentAlbum() throws PhotoAlbumException;
@@ -176,8 +178,9 @@ import com.mycompany.smartalbum.back.form.ShelfForm;
 
 	UserInfos findCurrentUserInfos(boolean fromCache);
 
-	Set<ShelfVO> getPredefinedShelvesVO();
-	List<ShelfVO> getUserShelvesVO();
+	List<ShelfInfos> getPublicShelvesInfos();
+	
+	List<ShelfInfos> getUserShelvesInfos();
 
 	MessageHTML initHTMLMessageInEntity(String message, MessageHTMLTypes type, String login) throws PhotoAlbumException;
 

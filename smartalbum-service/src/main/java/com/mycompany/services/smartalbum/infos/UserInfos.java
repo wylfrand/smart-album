@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.mycompany.database.smartalbum.model.Sex;
 
-public class UserInfos implements Serializable{
+public class UserInfos implements MappingInfos<UserInfos>, Serializable{
 
 	private static final long serialVersionUID = 1L;
 
@@ -256,6 +256,22 @@ public class UserInfos implements Serializable{
 	}
 	
 	/**
+	 * This method check, if parent shelf contain album with the same name as given album
+	 * 
+	 * @param album - album to check
+	 * @return boolean value, that indicate if album with the same name exist
+	 */
+	public ShelfInfos getShelfWithId(Long shelfId) {
+		ShelfInfos result = null;
+		for(ShelfInfos aShelf : getShelves()){
+			if(aShelf.getId().equals(shelfId)){
+				result =  aShelf;
+			}
+		}
+		return result;
+	}
+	
+	/**
 	 * This method check, if containing album already have image with the same name
 	 * 
 	 * @param image - image to check
@@ -293,13 +309,19 @@ public class UserInfos implements Serializable{
 		this.id = id;
 	}
 	
-	
-	public void update()
-	{
-		for(ShelfInfos shelf : shelves)
-		{
-			shelf.update(this);
+
+
+	@Override
+	public void update(UserInfos entity, MappingOptions options) {
+		if (options.isLoadingShelvesParent()) {
+			for (ShelfInfos shelf : shelves) {
+				shelf.update(this, options);
+			}
 		}
+	}
+	
+	public void updateUser(final MappingOptions options){
+		update(this, options);
 	}
 
 }

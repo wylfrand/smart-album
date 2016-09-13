@@ -1,13 +1,16 @@
 package com.mycompany.services.smartalbum.infos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.google.common.collect.Lists;
 
-public class MessageHTMLInfos extends MessageHTMLBaseInfos{
+public class MessageHTMLInfos extends MessageHTMLBaseInfos implements MappingInfos<ImageInfos>, Serializable {
 	
 	private static final long serialVersionUID = 1L;
+	
+	private ImageInfos parent;
 	
 	
 	private String title;
@@ -48,6 +51,25 @@ public class MessageHTMLInfos extends MessageHTMLBaseInfos{
 	 */
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	/**
+	 * @return the parent
+	 */
+	public ImageInfos getParent() {
+		return parent;
+	}
+
+	/**
+	 * @param parent the parent to set
+	 */
+	public void setParent(ImageInfos parent) {
+		this.parent = parent;
+	}
+	
+	@Override
+	public void update(ImageInfos entity, MappingOptions options) {
+		parent = entity;
 	}
 
 }

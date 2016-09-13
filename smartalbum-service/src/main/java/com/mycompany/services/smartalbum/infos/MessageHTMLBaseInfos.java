@@ -76,24 +76,6 @@ public abstract class MessageHTMLBaseInfos implements Serializable{
 	}
 	
 	/**
-	 * This method remove image from collection of images of album
-	 * 
-	 * @param image
-	 *            - image to remove
-	 */
-	public void removePart(MessagePartInfos part) {
-		if (part == null) {
-			throw new IllegalArgumentException("Null part");
-		}
-		if (!part.getMessageHTML().equals(this)) {
-			throw new IllegalArgumentException(
-					"This MessageHTML does not contain this part!");
-		}
-		part.setMessageHTML(null);
-		getMessageLinesBase().remove(part);
-	}
-
-	/**
 	 * @return the app_code
 	 */
 	public String getApp_code() {

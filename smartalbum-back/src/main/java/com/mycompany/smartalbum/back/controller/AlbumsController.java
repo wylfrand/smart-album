@@ -3,7 +3,7 @@ package com.mycompany.smartalbum.back.controller;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -69,11 +69,12 @@ public class AlbumsController extends ABaseController {
 	public String editAlbum(
 			final HttpServletResponse response,
 			@PathVariable("albumId") final Long albumId,
-			@ModelAttribute(Constant.SMARTALBUM_ALBUM_FORM) final AlbumForm albumForm,
 			final ModelMap model) {
+		
+		AlbumForm albumForm = initAlbumForm(model);
 
 		Album album = backService.getAlbumDBService().findAlbumById(albumId);
-		Set<ShelfInfos> shelvesInfos = convertToListInfos(backService.getCurrentUser(false).getShelves());
+		List<ShelfInfos> shelvesInfos = backService.getUserShelvesInfos();
 		albumForm.getUserShelvesInfos().addAll(shelvesInfos);
 		
 		model.put(Constant.SMARTALBUM_PHOTOS_CONTROLLER,Constant.SMARTALBUM_PHOTOS_ALBUMCONTROLLER);

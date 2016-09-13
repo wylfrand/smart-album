@@ -49,7 +49,7 @@ public class AlbumForm implements Serializable {
 	
 	private String description;
 	
-	private Set<ShelfVO> publicShelves;
+	private List<ShelfInfos> publicShelves;
 	
 	private List<ShelfInfos> userShelves;
 	
@@ -190,10 +190,10 @@ public class AlbumForm implements Serializable {
 	/**
 	 * @return the publicShelves
 	 */
-	public Set<ShelfVO> getPublicShelves() {
+	public List<ShelfInfos> getPublicShelves() {
 	    if(publicShelves == null)
 	    {
-	        publicShelves = Sets.newHashSet();
+	        publicShelves = Lists.newArrayList();
 	    }
 		return publicShelves;
 	}
@@ -201,7 +201,7 @@ public class AlbumForm implements Serializable {
 	/**
 	 * @param publicShelves the publicShelves to set
 	 */
-	public void setPublicShelves(Set<ShelfVO> publicShelves) {
+	public void setPublicShelves(List<ShelfInfos> publicShelves) {
 		this.publicShelves = publicShelves;
 	}
 

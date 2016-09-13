@@ -11,8 +11,6 @@ public class ImageVOForm implements Serializable{
 
 	private Long id;
 
-	private AlbumVOForm album;
-
 	private String name;
 
 	private boolean covering;
@@ -103,14 +101,6 @@ public class ImageVOForm implements Serializable{
 
 	public void setCreated(Date created) {
 		this.created = created;
-	}
-
-	public AlbumVOForm getAlbum() {
-		return album;
-	}
-
-	public void setAlbum(AlbumVOForm album) {
-		this.album = album;
 	}
 
 	/**
@@ -261,19 +251,6 @@ public class ImageVOForm implements Serializable{
 			return this.getUploaded().after(ActionTools.getRecentlyDate());
 		}
 		return false;
-	}
-
-	// ---------------------------Business methods
-	/**
-	 * Return relative path of this image in file-system(relative to uploadRoot
-	 * parameter)
-	 */
-	public String getFullPath() {
-		if (getAlbum().getPath() == null) {
-			return null;
-		}
-
-		return getAlbum().getPath() + this.path;
 	}
 
 	@Override

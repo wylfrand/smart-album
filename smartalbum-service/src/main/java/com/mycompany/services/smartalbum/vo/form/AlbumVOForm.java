@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
-import com.mycompany.database.smartalbum.transaction.CommitTransaction;
 import com.mycompany.filesystem.model.CheckedFile;
 import com.mycompany.services.smartalbum.infos.ShelfInfos;
 
@@ -123,73 +122,6 @@ public class AlbumVOForm implements Serializable{
 	}
 
 	// ********************** Business Methods ********************** //
-
-	/**
-	 * This method add image to collection of images of current album
-	 * 
-	 * @param image
-	 *            - image to add
-	 */
-	@CommitTransaction
-	public void addImage(ImageVOForm image) { // TODO
-		if (image == null) {
-			throw new IllegalArgumentException("Null image!");
-		}
-		if (this.getImages().contains(image)) {
-			// If album contain this image already
-			return;
-		}
-		if (image.getAlbum() != null && !this.equals(image.getAlbum())) {
-			// Remove from previous album
-			image.getAlbum().removeImage(image);
-		}
-		image.setAlbum(this);
-		images.add(image);
-	}
-
-	/**
-	 * This method remove image from collection of images of album
-	 * 
-	 * @param image
-	 *            - image to remove
-	 */
-	public void removeImage(ImageVOForm image) {
-		if (image == null) {
-			throw new IllegalArgumentException("Null image");
-		}
-		if (!image.getAlbum().equals(this)) {
-			throw new IllegalArgumentException(
-					"This album not contain this image!");
-		}
-
-		if (getCoveringImage().equals(image)) {
-			setCoveringImage(null);
-		}
-		images.remove(image);
-	}
-
-	/**
-	 * This method determine index of specified image in collection of images,
-	 * belongs to this album. Used in slideshow etc...
-	 * 
-	 * @return index of specified image
-	 */
-	public int getIndex(ImageVOForm image) {
-		if (isEmpty()) {
-			return -1;
-		}
-		 int index = 0;
-		for (Iterator<ImageVOForm> it = images.iterator(); it.hasNext(); ) {
-		    index++;
-		    ImageVOForm currentImage = it.next();
-		        if (currentImage.equals(image))
-		        {
-		            break;
-		        }
-		    }
-		return index;
-	}
-
 	/**
 	 * This method determine covering image of this album
 	 * 

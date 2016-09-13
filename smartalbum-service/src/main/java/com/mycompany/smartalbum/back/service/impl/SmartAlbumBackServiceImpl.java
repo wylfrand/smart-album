@@ -9,13 +9,11 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
 import javax.annotation.Resource;
 
@@ -61,9 +59,10 @@ import com.mycompany.filesystem.service.FileUploadService;
 import com.mycompany.filesystem.service.ImageDimension;
 import com.mycompany.filesystem.utils.FileFilter;
 import com.mycompany.services.model.commun.enumeration.ApplicationsEnum;
+import com.mycompany.services.smartalbum.infos.MappingOptions;
+import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.smartalbum.infos.UserInfos;
 import com.mycompany.services.smartalbum.vo.AlbumVO;
-import com.mycompany.services.smartalbum.vo.ShelfVO;
 import com.mycompany.services.smartalbum.vo.form.AlbumVOForm;
 import com.mycompany.services.utils.Constant;
 import com.mycompany.services.utils.ErrorHandlerBean;
@@ -536,7 +535,7 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 		} else {
 			User currentUserDB = getCurrentUser(false);
 			currentUser = mapper.map(currentUserDB, UserInfos.class);
-			currentUser.update();
+			currentUser.updateUser(new MappingOptions());
 			cacheManager.putObjectInCache(Constant.SMARTALBUM_CURRENT_USER_VO, currentUser);
 		}
 		return currentUser;
@@ -1044,11 +1043,23 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
      * @return List of predefined shelves
      */
 	@Override
-    public Set<ShelfVO> getPredefinedShelvesVO() {
-        List<Shelf> shelfdb = shelfDBService.getPredefinedShelves();
-        Set<ShelfVO> result = new HashSet<>();
-        for(Shelf currentShelf : shelfdb){
-        	result.add(mapper.map(currentShelf, ShelfVO.class));
+    public List<ShelfInfos> getPublicShelvesInfos() {
+        List<Shelf> shelfList = shelfDBService.getPredefinedShelves();
+        UserInfos userInfos = null;
+        ShelfInfos shelfInfos = null;
+        Map<Long,UserInfos> alreadyComputedUserInfos = new HashMap<>();
+        
+        List<ShelfInfos> result = new ArrayList<>();
+        for(Shelf currentShelf : shelfList){
+        	Long currentUserInfosId = currentShelf.getOwner().getId();
+        	userInfos = alreadyComputedUserInfos.get(currentUserInfosId);
+        	if(userInfos == null){
+	        	userInfos = mapper.map(currentShelf.getOwner(), UserInfos.class);
+	        	userInfos.updateUser(new MappingOptions());
+	        	alreadyComputedUserInfos.put(userInfos.getId(),userInfos);
+        	}
+        	shelfInfos = userInfos.getShelfWithId(currentShelf.getId());
+        	result.add(shelfInfos);
         }
         return result;
     }
@@ -1060,13 +1071,16 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
      * @return List of predefined shelves
      */
 	@Override
-    public List<ShelfVO> getUserShelvesVO() {
-        List<Shelf> shelfdb = shelfDBService.getUserShelves(getCurrentUser(true).getId());
-        List<ShelfVO> result = new ArrayList<>();
-        for(Shelf currentShelf : shelfdb){
-        	result.add(mapper.map(currentShelf, ShelfVO.class));
-        }
-        return result;
+    public List<ShelfInfos> getUserShelvesInfos() {
+		User currentUser = getCurrentUser(false);
+		UserInfos userInfos = mapper.map(currentUser, UserInfos.class);
+		MappingOptions options = new MappingOptions();
+//		options.setLoadingAlbumsImagesParent(true);
+//		options.setLoadingAlbumsParent(true);
+//		options.setLoadingShelvesParent(true);
+//		options.setLoadingUserImagesParent(true);
+		userInfos.updateUser(options);
+        return userInfos.getShelves();
     }
 	
 	

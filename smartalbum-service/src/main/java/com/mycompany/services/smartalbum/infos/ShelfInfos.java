@@ -7,7 +7,9 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-public class ShelfInfos extends AbstractInfos<UserInfos> implements Serializable {
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class ShelfInfos implements MappingInfos<UserInfos>, Serializable {
 
 	private static final long serialVersionUID = -7042878411608396483L;
 
@@ -273,6 +275,7 @@ public class ShelfInfos extends AbstractInfos<UserInfos> implements Serializable
 	/**
 	 * @return the proprietaire
 	 */
+	@JsonIgnore
 	public UserInfos getParent() {
 		return parent;
 	}
@@ -285,12 +288,12 @@ public class ShelfInfos extends AbstractInfos<UserInfos> implements Serializable
 	}
 
 	@Override
-	public void update(UserInfos user) {
+	public void update(UserInfos user, MappingOptions options) {
 		this.parent = user;
-		for(AlbumInfos album : albums)
-		{
-			album.update(this);
+		if (options == null || options.isLoadingAlbumsParent()) {
+			for (AlbumInfos album : albums) {
+				album.update(this,options);
+			}
 		}
-		
 	}
 }

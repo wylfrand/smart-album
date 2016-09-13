@@ -6,10 +6,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.collect.Sets;
 import com.mycompany.database.smartalbum.utils.ActionTools;
 
-public class ImageInfos extends AbstractInfos<AlbumInfos>  implements Serializable{
+public class ImageInfos implements MappingInfos<AlbumInfos>, Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
@@ -61,7 +62,7 @@ public class ImageInfos extends AbstractInfos<AlbumInfos>  implements Serializab
 	 * @return is this shelf is predefined
 	 */
 	public boolean isPreDefined() {
-		return getAlbum().isPreDefined();
+		return true;
 	}
 
 	// ********************** Accessor Methods ********************** //
@@ -362,6 +363,7 @@ public class ImageInfos extends AbstractInfos<AlbumInfos>  implements Serializab
 		return getAlbum().getPath() + this.path;
 	}
 
+	@JsonIgnore
 	public UserInfos getOwner() {
 		return getAlbum().getOwner();
 	}
@@ -488,11 +490,6 @@ public class ImageInfos extends AbstractInfos<AlbumInfos>  implements Serializab
 		this.messagesHTML = messagesHTML;
 	}
 
-	@Override
-	public void update(AlbumInfos entity) {
-		this.parent = entity;
-	}
-
 	/**
 	 * @return the parent
 	 */
@@ -505,6 +502,13 @@ public class ImageInfos extends AbstractInfos<AlbumInfos>  implements Serializab
 	 */
 	public void setParent(AlbumInfos parent) {
 		this.parent = parent;
+	}
+
+	@Override
+	public void update(AlbumInfos entity, MappingOptions options) {
+		this.parent = entity;
+		
+		
 	}
 
 }
