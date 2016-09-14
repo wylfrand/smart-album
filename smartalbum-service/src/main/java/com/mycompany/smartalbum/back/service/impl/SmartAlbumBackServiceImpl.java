@@ -318,19 +318,6 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 				// Remove from tmp file:
 				fileSystemService.deleteImage(userLogin + File.separator + image.getName(), false);
 			}
-		} else {
-			for (Image picture : anAlbum.getImages()) {
-				// Save to database
-				try {
-					if (picture.getId() < 0) {
-						imageDBService.addImage(picture);
-					} else {
-						imageDBService.updateImage(picture);
-					}
-				} catch (PhotoAlbumException e) {
-					LOG.error("Impossible de sauvegarder cette image en BDD,", e);
-				}
-			}
 		}
 		resetSelectedFiles();
 	}
@@ -1538,13 +1525,15 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 					String[] imageNameTab = imageName.split(File.separator);
 					imageName = imageNameTab[imageNameTab.length-1];
 				}
-				Image newCoveringImage = null;
+				Image newCoveringImage = currentAlbum.getCoveringImage();
 				// 1 - On modifie l'image de couverture si nécessaire
 				if (!currentAlbum.getCoveringImage().getName().equals(imageName)) {
 					newCoveringImage = getImageDBService().findImageByNameAndAlbumId(imageName,managedAlbumEntity.getId());
 					newCoveringImage.setCovering(true);
 					managedAlbumEntity.getCoveringImage().setCovering(false);
-					managedAlbumEntity.setCoveringImage(newCoveringImage);
+					managedAlbumEntity.setCoveringImage(newCoveringImage);}
+				else{
+					newCoveringImage = getImageDBService().findImageByNameAndAlbumId(imageName, currentAlbum.getId());
 				}
 				// 2 - On modifie la description et le nom de l'image
 				managedAlbumEntity.setDescription(anAlbumForm.getDescription());

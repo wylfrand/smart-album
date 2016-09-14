@@ -81,7 +81,7 @@ public class Image extends ABuisnessObject<Long> implements Serializable, Clonea
 	@GeneratedValue
 	private Long id;
 
-	@ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.ALL })
+	@ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.REMOVE,CascadeType.PERSIST })
 	private List<MetaTag> imageTags = new ArrayList<MetaTag>();
 
 	@OrderBy(clause = "date asc")
@@ -139,7 +139,7 @@ public class Image extends ABuisnessObject<Long> implements Serializable, Clonea
 	private Date created;
 
 	/** Chaque ligne contient une partie du message **/
-	@OneToMany(mappedBy = "image", cascade = { CascadeType.REMOVE,CascadeType.PERSIST,CascadeType.MERGE})
+	@OneToMany(mappedBy = "image", cascade = { CascadeType.REMOVE,CascadeType.PERSIST})
 	@Fetch(FetchMode.SUBSELECT)
 	private List<MessageHTML> messagesHTML = new ArrayList<MessageHTML>();
 

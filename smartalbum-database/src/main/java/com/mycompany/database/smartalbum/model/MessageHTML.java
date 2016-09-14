@@ -40,7 +40,7 @@ public class MessageHTML extends MessageHTMLBase {
 	private Album album;
 
 	/** Chaque ligne contient une partie du message **/
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "messageHTML")
+	@OneToMany(cascade = {CascadeType.REMOVE,CascadeType.PERSIST}, mappedBy = "messageHTML")
 	@Fetch(FetchMode.SUBSELECT)
 	private List<MessagePart> messageLines = new ArrayList<MessagePart>();
 	
