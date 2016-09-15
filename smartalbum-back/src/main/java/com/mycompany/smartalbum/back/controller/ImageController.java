@@ -31,7 +31,6 @@ import com.mycompany.database.smartalbum.model.MetaTag;
 import com.mycompany.database.smartalbum.model.User;
 import com.mycompany.database.smartalbum.utils.Constants;
 import com.mycompany.filesystem.model.FileMeta;
-import com.mycompany.services.smartalbum.vo.ImageVO;
 import com.mycompany.services.utils.CommentForm;
 import com.mycompany.services.utils.Constant;
 import com.mycompany.services.utils.RetourReponse;
@@ -46,22 +45,21 @@ public class ImageController extends ABaseController {
 			.getLogger(ImageController.class);
 	
 	@RequestMapping(value = "/showImageDetails/{albumId}/{pictureId}", method = RequestMethod.GET)
-	public String showAlbum(
+	public String showImageDetails(
 			@PathVariable("albumId") Long albumId,
 			@PathVariable("pictureId") Long pictureId,
 			@RequestParam(required = false, value = "pageNumber") String pageNumber,
 			ModelMap model) {
 
 		Image image = backService.getImageDBService().findImageById(pictureId);
-		ImageVO currentImage = convertImageToVO(image);
-		LOG.debug("Image à afficher : "+currentImage.getFullPath());
-		if (currentImage.getAlbum() != null) {
+		LOG.debug("Image à afficher : "+image.getFullPath());
+		if (image.getAlbum() != null) {
 			if (!backService.getFileSystemService().isDirectoryPresent(
-					currentImage.getAlbum().getPath())) {
+					image.getAlbum().getPath())) {
 				return ViewEnum.SMARTALBUM_VIEW_ERROR.getView();
 			}
 			// On affiche le détail d'un album
-			model.put(Constant.SMARTALBUM_PICTUREDETAIL, currentImage);
+			model.put(Constant.SMARTALBUM_PICTUREDETAIL, image);
 		}
 
 		return ViewEnum.IMAGE_DETAIL_VIEW.getView();

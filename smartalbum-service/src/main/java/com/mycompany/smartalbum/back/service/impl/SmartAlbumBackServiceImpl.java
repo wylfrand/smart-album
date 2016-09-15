@@ -384,30 +384,25 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 		Album currentAlbum = null;
 		List<ImageResume> imagesResumee = new ArrayList<>();
 		if (currentObject == null) {
-			List<Image> images = getCurrentUser(false).getImages();
+			// Cas de la création
+			User user = getCurrentUser(false);
+			List<Image> images = user.getImages();
 			for(Image img : images){
 				imagesResumee.add(new ImageResume(new BigInteger(img.getId().toString()),img.getName()));
 			}
 			
 		} else {
+			// Cas de la mise à jour
 			currentAlbum = (Album)currentObject;
 			imagesResumee = getImageDBService().findAllImageResumeByAlbumId(currentAlbum.getId());
 		}
+		
+		// Dans tous les cas, si au moins un fichier est coché ou si aucun fichier n'est coché, alors on coche tout
 		if (checkedPictures.size()>=0 && checkedPictures.size()<imagesResumee.size()) {
-			
 			CheckedFile file = null;
-			Image currentImage = null;
-			if(currentAlbum != null)
-			{
-				
-				currentAlbum = getAlbumDBService().findAlbumById(currentAlbum.getId());
-			}
-			for(ImageResume imageResume : imagesResumee)
-			{
-				if(currentImage!=null){
-					file = new CheckedFile(imageResume.getName(),currentImage.getId());
-					checkedPictures.put(imageResume.getName(), file);
-				}
+			for(ImageResume imageResume : imagesResumee){
+				file = new CheckedFile(imageResume.getName(),Long.parseLong(imageResume.getId().toString()));
+				checkedPictures.put(imageResume.getName(), file);
 			}
 		}
 		else{
