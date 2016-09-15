@@ -389,8 +389,6 @@ public abstract class ABaseController {
 				defaultSelectedImage.setImageName(defaultSelectedPicture.getName());
 				form.setDefaultSelectedPicture(defaultSelectedPicture);
 				aFileUploadForm.setDefaultSelectedPicture(defaultSelectedImage);
-				
-				
 			}
 		}
 		else{
