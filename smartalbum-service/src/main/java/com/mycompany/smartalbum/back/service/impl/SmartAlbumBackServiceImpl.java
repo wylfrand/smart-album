@@ -1702,8 +1702,6 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 		for(ABuisnessObject<Long> entity : imageDataTable.getData()){
 			album.getImages().add((Image)entity);
 		}
-		//final AlbumVO albumVO = mapper.map(album, AlbumVO.class);
-		
 		SearchDataTableResponse<Album> response = null;
 		if(album != null){
 			response = new SearchDataTableResponse<Album>();

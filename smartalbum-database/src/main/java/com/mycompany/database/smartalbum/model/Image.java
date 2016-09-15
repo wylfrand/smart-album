@@ -64,7 +64,6 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.mycompany.database.smartalbum.search.enums.MessageHTMLTypes;
 import com.mycompany.database.smartalbum.search.vo.ImageResume;
-import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 import com.mycompany.database.smartalbum.utils.ActionTools;
 
 @NamedQueries({

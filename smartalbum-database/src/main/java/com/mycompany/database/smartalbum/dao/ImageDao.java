@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -153,12 +154,21 @@ public class ImageDao extends AbastractDao<Image, Long> implements IImageDao {
 		
 		Pageable pageRequest = new PageRequest(request.getPageNumber(), request.getPageSize(), sortFilter);
 		if(shouldSearchInUser){
-			result = imageJpaDBService.queryfindImagesByUserIdAndSearchRequest(request.getUserId(), pageRequest);
+			if(StringUtils.isBlank(request.getSearchText())){
+				result = imageJpaDBService.queryfindImagesByUserIdAndSearchRequest(request.getUserId(), pageRequest);
+			}
+			else{
+				result = imageJpaDBService.queryfindImagesByUserIdAndSearchRequest(request.getUserId(), "%"+request.getSearchText()+"%",pageRequest);
+			}
 		}
 		else{
-			result = imageJpaDBService.queryfindImagesByAlbumIdAndSearchRequest(request.getEntityId(), pageRequest);
+			if(StringUtils.isBlank(request.getSearchText())){
+				result = imageJpaDBService.queryfindImagesByAlbumIdAndSearchRequest(request.getEntityId(), pageRequest);
+			}
+			else{
+				result = imageJpaDBService.queryfindImagesByAlbumIdAndSearchRequest(request.getEntityId(), "%"+request.getSearchText()+"%",pageRequest);
+			}
 		}
-		
 		response.setData(result.getContent());
 		response.setDraw(request.getDraw());
 		response.setRecordsTotal(Integer.parseInt(result.getTotalElements()+""));

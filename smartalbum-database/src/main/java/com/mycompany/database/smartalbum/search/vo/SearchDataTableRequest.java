@@ -20,11 +20,15 @@ public class SearchDataTableRequest {
 	private Long userId;
 	
 	private Integer draw;
-
+	
+	private String searchText;
+	
 	public SearchDataTableRequest(MultiValueMap<String, String> parametresAjax, Long userId) {
 		this.pageSize = Integer.parseInt(parametresAjax.getFirst("length"));
 		this.direction = parametresAjax.getFirst("order[0][dir]");
 		this.sortColumn = parametresAjax.getFirst("columns[0][name]");
+		this.searchText = parametresAjax.getFirst("search[value]");
+		
 		int start = Integer.parseInt(parametresAjax.getFirst("start"));
 		this.pageNumber = (start/pageSize);
 		sortColumn = computeSortColumn(parametresAjax);
@@ -168,5 +172,19 @@ public class SearchDataTableRequest {
 		}
 		
 		return result;
+	}
+
+	/**
+	 * @return the searchText
+	 */
+	public String getSearchText() {
+		return searchText;
+	}
+
+	/**
+	 * @param searchText the searchText to set
+	 */
+	public void setSearchText(String searchText) {
+		this.searchText = searchText;
 	}
 }

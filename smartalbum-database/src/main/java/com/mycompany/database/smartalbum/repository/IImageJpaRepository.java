@@ -18,8 +18,14 @@ public interface IImageJpaRepository  extends JpaRepository<Image, Long>{
 	@Query("select im from Image im where im.album.id = :albumId")
 	Page<Image> queryfindImagesByAlbumIdAndSearchRequest(@Param("albumId") Long albumId,Pageable page);
 	
+	@Query("select im from Image im where im.album.id = :albumId and ((im.name like :searchValue) or (im.height like :searchValue) or (im.width like :searchValue) or (im.size like :searchValue))")
+	Page<Image> queryfindImagesByAlbumIdAndSearchRequest(@Param("albumId") Long albumId,@Param("searchValue") String searchValue,Pageable page);
+	
 	@Query("select im from Image im where im.user.id = :userId")
 	Page<Image> queryfindImagesByUserIdAndSearchRequest(@Param("userId") Long userId,Pageable page);
+	
+	@Query("select im from Image im where im.user.id = :userId and ((im.name like :searchValue) or (im.height like :searchValue) or (im.width like :searchValue) or (im.size like :searchValue))")
+	Page<Image> queryfindImagesByUserIdAndSearchRequest(@Param("userId") Long userId,@Param("searchValue") String searchValue,Pageable page);
 	
 	Image findImageByNameAndAlbumId(@Param("name") String name,@Param("id") Long id);
 	
