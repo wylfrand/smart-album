@@ -18,6 +18,7 @@ import com.mycompany.database.smartalbum.model.Album;
 import com.mycompany.database.smartalbum.model.Image;
 import com.mycompany.database.smartalbum.repository.IAlbumJpaRepository;
 import com.mycompany.database.smartalbum.repository.IImageJpaRepository;
+import com.mycompany.database.smartalbum.search.vo.ImageResume;
 import com.mycompany.database.smartalbum.search.vo.SearchDataTableRequest;
 import com.mycompany.database.smartalbum.services.IAlbumDao;
 import com.mycompany.database.smartalbum.services.IImageDao;
@@ -127,6 +128,12 @@ public class ImageDao extends AbastractDao<Image, Long> implements IImageDao {
 	public Image findImageByNameAndUser(String imageName, Long id) {
 		return imageJpaDBService.findImageByNameAndUserId(imageName,id);
 	}
+	
+	//
+	@Override
+	public List<String> findAllImageNamesByAlbumId(final Long id) {
+		return imageJpaDBService.queryfindImageNamesByAlbumId(id);
+	}
 
 	@Override
 	public Image findImageByNameAndAlbumId(String imageName, Long id) {
@@ -177,6 +184,11 @@ public class ImageDao extends AbastractDao<Image, Long> implements IImageDao {
 	@Override
 	public List<Image> findAll() {
 		return imageJpaDBService.findAll();
+	}
+
+	@Override
+	public List<ImageResume> findAllImageResumeByAlbumId(Long id) {
+		return imageJpaDBService.findAllImageResumeByAlbumId(id);
 	}
     
 }

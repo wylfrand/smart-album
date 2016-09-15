@@ -2,7 +2,9 @@ package com.mycompany.services.smartalbum.infos;
 
 import java.io.File;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
@@ -18,7 +20,7 @@ public class AlbumInfos implements MappingInfos<ShelfInfos>,  Serializable{
 	private MessageHTMLInfos messageHTML;
 
 	private ImageInfos coveringImage;
-
+	
 	private boolean showAfterCreate;
 
 	private Date created;
@@ -27,7 +29,11 @@ public class AlbumInfos implements MappingInfos<ShelfInfos>,  Serializable{
 
 	private String description;
 	
+	private String path;
+	
 	private Set<CommentInfos> comments = Sets.newHashSet();
+	
+	private List<String> imageNames = new ArrayList<>();
 
 	// ********************** Accessor Methods ********************** //
 
@@ -108,10 +114,7 @@ public class AlbumInfos implements MappingInfos<ShelfInfos>,  Serializable{
 	 * parameter)
 	 */
 	public String getPath() {
-		if (getShelf() == null || getShelf().getPath() == null) {
-			return null;
-		}
-		return getShelf().getPath() + this.getId() + File.separator;
+		return path + File.separator;
 	}
 
 	@Override
@@ -239,5 +242,26 @@ public class AlbumInfos implements MappingInfos<ShelfInfos>,  Serializable{
 				image.update(this, options);
 			}
 		}
+	}
+
+	/**
+	 * @param path the path to set
+	 */
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	/**
+	 * @return the imageNames
+	 */
+	public List<String> getImageNames() {
+		return imageNames;
+	}
+
+	/**
+	 * @param imageNames the imageNames to set
+	 */
+	public void setImageNames(List<String> imageNames) {
+		this.imageNames = imageNames;
 	}
 }

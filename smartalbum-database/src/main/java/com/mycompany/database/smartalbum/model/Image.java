@@ -33,6 +33,8 @@ import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ColumnResult;
+import javax.persistence.ConstructorResult;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -42,6 +44,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.SqlResultSetMapping;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -50,6 +53,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.NamedNativeQuery;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.OrderBy;
@@ -59,6 +63,8 @@ import org.hibernate.validator.constraints.NotEmpty;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.mycompany.database.smartalbum.search.enums.MessageHTMLTypes;
+import com.mycompany.database.smartalbum.search.vo.ImageResume;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 import com.mycompany.database.smartalbum.utils.ActionTools;
 
 @NamedQueries({
@@ -66,6 +72,10 @@ import com.mycompany.database.smartalbum.utils.ActionTools;
 		@NamedQuery(name = "image-by-name-and-albumId", query = "select i from Image i where i.name = :name and i.album.id = :id"),
 		@NamedQuery(name = "image-by-name-and-userId", query = "select i from Image i where i.name = :name and i.user.id = :id"),
 		@NamedQuery(name = "image-countIdenticalImages", query = "select count(i) from Image i where i.path like :path and i.album = :album")})
+@NamedNativeQuery(name = "Image.findAllImageResumeByAlbumId", query="select im.id, im.name from Image im inner join Album al on (al.id = im.album_id) where al.id = :albumId", resultSetMapping="imageResumeMapping")
+@SqlResultSetMapping(name = "imageResumeMapping", classes = {
+		@ConstructorResult(targetClass = ImageResume.class, columns = { @ColumnResult(name = "id"),@ColumnResult(name = "name") })})
+
 /**
  * Class for representing Image Entity
  *

@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.mycompany.database.smartalbum.model.Shelf;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 
 @Repository
 public interface IShelfJpaRepository extends JpaRepository<Shelf, Long>{
@@ -19,6 +20,8 @@ public interface IShelfJpaRepository extends JpaRepository<Shelf, Long>{
 	
 	@Query("select distinct s from Shelf s where (s.owner.id = :userId) order by s.name")
 	List<Shelf> queryUserShelves(@Param("userId") Long userId);
+	
+	List<ModifyShelfForm> modifyShelfFormResume(@Param("userId") Long userId);
 	
 	
 }

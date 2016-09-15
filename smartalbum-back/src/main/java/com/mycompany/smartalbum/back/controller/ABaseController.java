@@ -57,6 +57,8 @@ import com.mycompany.filesystem.service.ImageDimension;
 import com.mycompany.filesystem.utils.FileFilter;
 import com.mycompany.filesystem.utils.HashUtils;
 import com.mycompany.services.model.commun.InfosBeanForm;
+import com.mycompany.services.smartalbum.infos.AlbumInfos;
+import com.mycompany.services.smartalbum.infos.ImageInfos;
 import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.smartalbum.vo.AlbumVO;
 import com.mycompany.services.smartalbum.vo.ImageVO;
@@ -118,7 +120,7 @@ public abstract class ABaseController {
 
 	FileMeta fileMeta = null;
 
-	private final transient Logger LOG = getLoger();
+	// private final transient Logger LOG = getLoger();
 
 	@Value("${smartalbum.filesystem.upload.root.path}")
 	public String picturesRootPath;
@@ -351,7 +353,7 @@ public abstract class ABaseController {
 		return aFileUploadForm;
 	}
 	
-	protected FileUploadForm getFileUploadFormFromSelectedFiles(AlbumForm form, List<CheckedFile> checkedList, AlbumVOForm album, boolean isTmpImage)
+	protected FileUploadForm getFileUploadFormFromSelectedFiles(AlbumForm form, List<CheckedFile> checkedList, AlbumInfos album, boolean isTmpImage)
 	{
 		User user = backService.getCurrentUser(false);
 		StringBuffer options = new StringBuffer();
@@ -362,8 +364,8 @@ public abstract class ABaseController {
 		
 		if(!isTmpImage){
 			basUrl = album.getPath();
-			for (ImageVOForm photoSelectionne : album.getImages()) {
-				options.append("<option value='" + (basUrl+photoSelectionne.getName()) + "'>"+(photoSelectionne.getName()).toUpperCase()+"</option>");
+			for (String nomImage : album.getImageNames()) {
+				options.append("<option value='" + (basUrl+nomImage) + "'>"+(nomImage).toUpperCase()+"</option>");
 			}
 		}
 		else{
@@ -392,8 +394,8 @@ public abstract class ABaseController {
 			}
 		}
 		else{
-			ImageVOForm cover = album.getCoveringImage();
-			int size = album.getImages().size();
+			ImageInfos cover = album.getCoveringImage();
+			int size = album.getImageNames().size();
 			aFileUploadForm.setSelectedFilesSize(size);
 			form.setSelectedFilesSize(size);
 			CheckedFile defaultSelectedImage = new CheckedFile();
@@ -404,7 +406,7 @@ public abstract class ABaseController {
 		}
 		
 		form.setSelectedPicturesOptions(options.toString());
-		form.getUserShelvesInfos().addAll(backService.getUserShelvesInfos());
+		form.setUserShelfResume(backService.getShelfDBService().findShelfResumeByUserId(user.getId()));
 		aFileUploadForm.setSelectedPicturesOptions(options.toString());
 		
 		return aFileUploadForm;
@@ -485,7 +487,7 @@ public abstract class ABaseController {
 		return jsonInString;
 	}
 	
-	protected AlbumForm initAlbumForm(final ModelMap model) {
+	protected void initAlbumForm(final ModelMap model) {
 		Object albumFormObj = backService.getCacheManager().getObjectFromCache(
 				Constant.SMARTALBUM_ALBUM_FORM);
 		AlbumForm form = null;
@@ -493,7 +495,7 @@ public abstract class ABaseController {
 			form = new AlbumForm();
 			form.setDefaultPicturePath("/default/noimage_small200.jpg");
 			form.setPublicShelves(backService.getPublicShelvesInfos());
-			form.setUserShelves(backService.getUserShelvesInfos());
+			form.getUserShelvesInfos().addAll(backService.getUserShelvesInfos());
 			backService.getCacheManager().putObjectInCache(
 					Constant.SMARTALBUM_ALBUM_FORM, form);
 		}
@@ -502,6 +504,5 @@ public abstract class ABaseController {
 			form = (AlbumForm)albumFormObj;
 		}
 		model.put(Constant.SMARTALBUM_ALBUM_FORM, form);
-		return form;
 	}
 }

@@ -93,9 +93,9 @@ $( "#valider_infos_album" ).click(function( event ) {
 									</tr>
 									<tr>
 										<td><span class="albumTitle">Mes thèmes : </span></td>
-										<td><form:select path="selectedOwnShelf" cssClass="selectClass" disabled="${empty albumForm.userShelvesInfos}">
+										<td><form:select path="selectedOwnShelf" cssClass="selectClass" disabled="${empty albumForm.userShelfResume}">
 											<form:option value="" selected="selected">-CHOISIR UN THEME-</form:option>
-											<c:forEach var="aShelf" items="${albumForm.userShelvesInfos}">
+											<c:forEach var="aShelf" items="${albumForm.userShelfResume}">
 					                			<form:option value="${aShelf.id}">${aShelf.name}</form:option>
 					        				</c:forEach>
 										</form:select></td>

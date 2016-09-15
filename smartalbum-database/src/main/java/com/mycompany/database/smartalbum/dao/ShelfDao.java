@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import com.mycompany.database.smartalbum.exception.PhotoAlbumException;
 import com.mycompany.database.smartalbum.model.Shelf;
 import com.mycompany.database.smartalbum.repository.IShelfJpaRepository;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 import com.mycompany.database.smartalbum.services.IShelfDao;
 
 @Component("shelfDBService")
@@ -80,6 +81,11 @@ public class ShelfDao extends AbastractDao<Shelf, Long> implements IShelfDao {
 	@Override
 	public List<Shelf> getUserShelves(Long userId) {
 		return shelfJpaDBService.queryUserShelves(userId);
+	}
+	
+	@Override
+	public List<ModifyShelfForm> findShelfResumeByUserId(Long userId) {
+		return shelfJpaDBService.modifyShelfFormResume(userId);
 	}
     
     

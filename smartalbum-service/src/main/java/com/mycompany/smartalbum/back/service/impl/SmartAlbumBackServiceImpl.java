@@ -6,6 +6,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.Serializable;
 import java.lang.reflect.Field;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -38,6 +39,7 @@ import com.mycompany.database.smartalbum.model.User;
 import com.mycompany.database.smartalbum.repository.IAlbumJpaRepository;
 import com.mycompany.database.smartalbum.repository.IImageJpaRepository;
 import com.mycompany.database.smartalbum.search.enums.MessageHTMLTypes;
+import com.mycompany.database.smartalbum.search.vo.ImageResume;
 import com.mycompany.database.smartalbum.search.vo.SearchDataTableRequest;
 import com.mycompany.database.smartalbum.search.vo.SearchDataTableResponse;
 import com.mycompany.database.smartalbum.services.IAlbumDao;
@@ -59,6 +61,7 @@ import com.mycompany.filesystem.service.FileUploadService;
 import com.mycompany.filesystem.service.ImageDimension;
 import com.mycompany.filesystem.utils.FileFilter;
 import com.mycompany.services.model.commun.enumeration.ApplicationsEnum;
+import com.mycompany.services.smartalbum.infos.AlbumInfos;
 import com.mycompany.services.smartalbum.infos.MappingOptions;
 import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.smartalbum.infos.UserInfos;
@@ -379,34 +382,32 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 		Object currentObject = getCacheManager()
 				.getObjectFromCache(Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM);
 		Album currentAlbum = null;
-		List<String> existingFilesNames = new ArrayList<>();
+		List<ImageResume> imagesResumee = new ArrayList<>();
 		if (currentObject == null) {
 			List<Image> images = getCurrentUser(false).getImages();
 			for(Image img : images){
-				existingFilesNames.add(img.getName());
+				imagesResumee.add(new ImageResume(new BigInteger(img.getId().toString()),img.getName()));
 			}
 			
 		} else {
 			currentAlbum = (Album)currentObject;
-			List<Image> images = currentAlbum.getImages();
-			for(Image img : images){
-				existingFilesNames.add(img.getName());
-			}
+			imagesResumee = getImageDBService().findAllImageResumeByAlbumId(currentAlbum.getId());
 		}
-		if (checkedPictures.size()>=0 && checkedPictures.size()<existingFilesNames.size()) {
-			for(String imageName : existingFilesNames)
+		if (checkedPictures.size()>=0 && checkedPictures.size()<imagesResumee.size()) {
+			
+			CheckedFile file = null;
+			Image currentImage = null;
+			if(currentAlbum != null)
 			{
-					CheckedFile file = null;
-					Image currentImage = null;
-					if(currentAlbum != null){
-						currentImage = currentAlbum.getImageByName(imageName);
-					}else{
-						currentImage = getCurrentUser(false).getImageByName(imageName);
-					}
-					if(currentImage!=null){
-						file = new CheckedFile(imageName,currentImage.getId());
-						checkedPictures.put(imageName, file);
-					}
+				
+				currentAlbum = getAlbumDBService().findAlbumById(currentAlbum.getId());
+			}
+			for(ImageResume imageResume : imagesResumee)
+			{
+				if(currentImage!=null){
+					file = new CheckedFile(imageResume.getName(),currentImage.getId());
+					checkedPictures.put(imageResume.getName(), file);
+				}
 			}
 		}
 		else{
@@ -1525,22 +1526,20 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 					String[] imageNameTab = imageName.split(File.separator);
 					imageName = imageNameTab[imageNameTab.length-1];
 				}
-				Image newCoveringImage = currentAlbum.getCoveringImage();
+				Image newCoveringImage = null;
 				// 1 - On modifie l'image de couverture si nécessaire
 				if (!currentAlbum.getCoveringImage().getName().equals(imageName)) {
 					newCoveringImage = getImageDBService().findImageByNameAndAlbumId(imageName,managedAlbumEntity.getId());
 					newCoveringImage.setCovering(true);
 					managedAlbumEntity.getCoveringImage().setCovering(false);
 					managedAlbumEntity.setCoveringImage(newCoveringImage);}
-				else{
-					newCoveringImage = getImageDBService().findImageByNameAndAlbumId(imageName, currentAlbum.getId());
-				}
+				
 				// 2 - On modifie la description et le nom de l'image
 				managedAlbumEntity.setDescription(anAlbumForm.getDescription());
 				managedAlbumEntity.setName(anAlbumForm.getName());
 
 				// 3 - On enregistre l'album ainsi mis à jour
-				if (!saveAlbum(managedAlbumEntity, false, getCurrentUser(false), newCoveringImage.getName()).getResult().booleanValue()) {
+				if (!saveAlbum(managedAlbumEntity, false, getCurrentUser(false), imageName).getResult().booleanValue()) {
 					throw new PhotoAlbumException("Impossible de sauvegarder l'album " + managedAlbumEntity.getName());
 				}
 				// 4 - On déplace l'album ainsi modifié si nécessaire vers le
@@ -1660,10 +1659,11 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 	}
 	
 	@Override
-	public AlbumVOForm findAlbumFormById(String albumId)
+	public AlbumInfos findAlbumFormById(String albumId)
 	{
-		Album album = albumDBService.findAlbumById(Long.parseLong(albumId));
-		final AlbumVOForm result = mapper.map(album, AlbumVOForm.class);
+		Album album = getAlbumDBService().findAlbumById(Long.parseLong(albumId));
+		final AlbumInfos result = mapper.map(album, AlbumInfos.class);
+		result.setImageNames(getImageDBService().findAllImageNamesByAlbumId(album.getId()));
 		result.setPath(album.getPath());
 		return result;
 	}

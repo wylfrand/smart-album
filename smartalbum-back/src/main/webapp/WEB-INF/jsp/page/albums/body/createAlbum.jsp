@@ -74,7 +74,6 @@ $( "#valider_infos_album" ).click(function( event ) {
 							</div>
 							<div class="albumInfosBlock">
 								<table>
-								
 									<tr>
 										<td><span class="albumTitle">Couverture</span></td>
 										<td>

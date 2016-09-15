@@ -29,8 +29,9 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ColumnResult;
+import javax.persistence.ConstructorResult;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
@@ -38,6 +39,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.SqlResultSetMapping;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -45,18 +47,23 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
+import org.hibernate.annotations.NamedNativeQuery;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.OrderBy;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
+
 @Entity
 @NamedQueries({
-	@NamedQuery(name = "Shelf.fingUserShelves", query = "select distinct s from Shelf s where (s.shared = true and s.owner.preDefined = true) order by s.name")
-})
+		@NamedQuery(name = "Shelf.fingUserShelves", query = "select distinct s from Shelf s where (s.shared = true and s.owner.preDefined = true) order by s.name")
+		})
+
+@NamedNativeQuery(name="Shelf.modifyShelfFormResume", query="select s.id, s.name from Shelf s inner join User u on (u.id = s.owner_id) where u.id = :userId", resultSetMapping="modifyShelfFormMapping")
+@SqlResultSetMapping(name = "modifyShelfFormMapping", classes = {
+		@ConstructorResult(targetClass = ModifyShelfForm.class, columns = { @ColumnResult(name = "id"),@ColumnResult(name = "name") })})
 @Table(name = "Shelf")
 public class Shelf extends ABuisnessObject<Long> implements Serializable {
 
@@ -79,9 +86,10 @@ public class Shelf extends ABuisnessObject<Long> implements Serializable {
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	private User owner = new User();
 
-	@OneToMany(mappedBy = "shelf",  cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH},orphanRemoval = true)
+	@OneToMany(mappedBy = "shelf", cascade = { CascadeType.PERSIST, CascadeType.REMOVE,
+			CascadeType.REFRESH }, orphanRemoval = true)
 	@OrderBy(clause = "NAME asc")
-	//@LazyCollection(LazyCollectionOption.EXTRA)
+	// @LazyCollection(LazyCollectionOption.EXTRA)
 	@Fetch(FetchMode.SUBSELECT)
 	private List<Album> albums = new ArrayList<Album>();
 
@@ -211,18 +219,17 @@ public class Shelf extends ABuisnessObject<Long> implements Serializable {
 		if (album == null) {
 			throw new IllegalArgumentException("Null album!");
 		}
-		
-		if (album.getShelf() != null
-				&& !album.getShelf().equals(this) && album.getShelf().getAlbums().contains(album)) {
+
+		if (album.getShelf() != null && !album.getShelf().equals(this)
+				&& album.getShelf().getAlbums().contains(album)) {
 			// remove from previous shelf
 			album.getShelf().removeAlbum(album);
 			album.setShelf(this);
 			albums.add(album);
-		}
-		else
-		{
-			// Il n'a pas encore d'étagère alors on le rajoute dans cette étagère
-			if(!getAlbums().contains(album)){
+		} else {
+			// Il n'a pas encore d'étagère alors on le rajoute dans cette
+			// étagère
+			if (!getAlbums().contains(album)) {
 				album.setShelf(this);
 				albums.add(album);
 			}
@@ -241,8 +248,7 @@ public class Shelf extends ABuisnessObject<Long> implements Serializable {
 		}
 
 		if (!album.getShelf().equals(this)) {
-			throw new IllegalArgumentException(
-					"This Shelf not contain this album!");
+			throw new IllegalArgumentException("This Shelf not contain this album!");
 		}
 
 		albums.remove(album);
@@ -261,11 +267,10 @@ public class Shelf extends ABuisnessObject<Long> implements Serializable {
 		}
 
 		Iterator<Album> it = albums.iterator();
-		if(it.hasNext())
-		{
-			return (Album)it.next();
+		if (it.hasNext()) {
+			return (Album) it.next();
 		}
-		
+
 		return null;
 	}
 
@@ -295,7 +300,6 @@ public class Shelf extends ABuisnessObject<Long> implements Serializable {
 		return result;
 	}
 
-	
 	@Override
 	public void setId(Long id) {
 		this.id = id;

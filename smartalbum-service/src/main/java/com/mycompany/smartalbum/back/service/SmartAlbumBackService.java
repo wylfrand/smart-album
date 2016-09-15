@@ -27,6 +27,7 @@ import com.mycompany.filesystem.model.CheckedFile;
 import com.mycompany.filesystem.service.FileService;
 import com.mycompany.filesystem.service.FileUploadService;
 import com.mycompany.filesystem.service.ImageDimension;
+import com.mycompany.services.smartalbum.infos.AlbumInfos;
 import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.smartalbum.infos.UserInfos;
 import com.mycompany.services.smartalbum.vo.AlbumVO;
@@ -174,7 +175,7 @@ import com.mycompany.smartalbum.back.form.ShelfForm;
 
 	void toogleSelectAllFiles() throws PhotoAlbumException;
 
-	AlbumVOForm findAlbumFormById(String albumId);
+	AlbumInfos findAlbumFormById(String albumId);
 
 	UserInfos findCurrentUserInfos(boolean fromCache);
 

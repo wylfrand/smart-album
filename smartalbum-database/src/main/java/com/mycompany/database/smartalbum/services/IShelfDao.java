@@ -25,6 +25,7 @@ import java.util.List;
 
 import com.mycompany.database.smartalbum.exception.PhotoAlbumException;
 import com.mycompany.database.smartalbum.model.Shelf;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 /**
  * Interface for manipulating with shelf entity
  *
@@ -48,4 +49,6 @@ public interface IShelfDao {
 	Shelf findShelfById(Long shelfId);
 
 	Shelf findShelfByName(String string);
+
+	List<ModifyShelfForm> findShelfResumeByUserId(Long userId);
 }

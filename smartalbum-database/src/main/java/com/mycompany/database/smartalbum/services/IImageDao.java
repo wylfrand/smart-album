@@ -25,6 +25,7 @@ import java.util.List;
 import com.mycompany.database.smartalbum.exception.PhotoAlbumException;
 import com.mycompany.database.smartalbum.model.Album;
 import com.mycompany.database.smartalbum.model.Image;
+import com.mycompany.database.smartalbum.search.vo.ImageResume;
 import com.mycompany.database.smartalbum.search.vo.SearchDataTableRequest;
 import com.mycompany.database.smartalbum.vo.DataTableEntity;
 
@@ -61,5 +62,9 @@ public interface IImageDao {
 	public void updateImage(Image image) throws PhotoAlbumException;
 	
 	void deleteAllImages(List<Image> imagesToDelete);
+	
+	public List<String> findAllImageNamesByAlbumId(final Long id);
+	
+	public List<ImageResume> findAllImageResumeByAlbumId(final Long id);
 
 }

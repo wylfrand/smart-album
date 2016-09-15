@@ -3,7 +3,6 @@ package com.mycompany.smartalbum.back.controller;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,7 +23,6 @@ import com.mycompany.database.smartalbum.model.Album;
 import com.mycompany.database.smartalbum.model.Image;
 import com.mycompany.database.smartalbum.model.User;
 import com.mycompany.filesystem.utils.Constants;
-import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.utils.Constant;
 import com.mycompany.services.utils.RetourReponse;
 import com.mycompany.smartalbum.back.form.AlbumForm;
@@ -71,11 +69,9 @@ public class AlbumsController extends ABaseController {
 			@PathVariable("albumId") final Long albumId,
 			final ModelMap model) {
 		
-		AlbumForm albumForm = initAlbumForm(model);
+		initAlbumForm(model);
 
 		Album album = backService.getAlbumDBService().findAlbumById(albumId);
-		List<ShelfInfos> shelvesInfos = backService.getUserShelvesInfos();
-		albumForm.getUserShelvesInfos().addAll(shelvesInfos);
 		
 		model.put(Constant.SMARTALBUM_PHOTOS_CONTROLLER,Constant.SMARTALBUM_PHOTOS_ALBUMCONTROLLER);
 		backService.getCacheManager().putObjectInCache(

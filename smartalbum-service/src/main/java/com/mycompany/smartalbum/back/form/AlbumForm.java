@@ -11,9 +11,9 @@ import com.google.common.collect.Sets;
 import com.mycompany.database.smartalbum.model.Image;
 import com.mycompany.database.smartalbum.model.Shelf;
 import com.mycompany.database.smartalbum.model.User;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 import com.mycompany.services.smartalbum.infos.ShelfInfos;
 import com.mycompany.services.smartalbum.vo.ImageVO;
-import com.mycompany.services.smartalbum.vo.ShelfVO;
 
 /**
  * Class for representing Album Entity form
@@ -70,6 +70,8 @@ public class AlbumForm implements Serializable {
 	private Boolean creation;
 	
 	private String path;
+	
+	private List<ModifyShelfForm> userShelfResume = new ArrayList<>();
 	
 	/**
 	 * @return the id
@@ -364,6 +366,27 @@ public class AlbumForm implements Serializable {
 
 	public void setSelectedPictures(List<ImageVO> selectedPictures) {
 		this.selectedPictures = selectedPictures;
+	}
+
+	/**
+	 * @return the userShelfResume
+	 */
+	public List<ModifyShelfForm> getUserShelfResume() {
+		return userShelfResume;
+	}
+
+	/**
+	 * @param userShelfResume the userShelfResume to set
+	 */
+	public void setUserShelfResume(List<ModifyShelfForm> userShelfResume) {
+		this.userShelfResume = userShelfResume;
+	}
+
+	/**
+	 * @param userShelvesInfos the userShelvesInfos to set
+	 */
+	public void setUserShelvesInfos(Set<ShelfInfos> userShelvesInfos) {
+		this.userShelvesInfos = userShelvesInfos;
 	}
 
 }
