@@ -1,14 +1,12 @@
-<%-- <li><strong>Salut</strong> [${user.username}]!</li> --%>
+<security:authorize access="isAuthenticated()">
+<%-- <span style="float : left"><strong>Salut</strong> [${user.username}]!</span> --%>
 <li <c:if test="${currentPage == 'ACCUEUIL'}">class="active"</c:if>>
 	<a href="<c:url value='/controller/initUploadedFiles.html' />"
 	onclick="javascript: showActivity();"> Nouveaux documents </a>
 </li>
-<li <c:if test="${currentPage == 'ACCUEUIL'}">class="active"</c:if>>
-	<a href="<c:url value='/home/index.html' />"
-	onclick="javascript: showActivity();"> Accueil </a>
-</li>
+</security:authorize>
 <li
-	<c:if test="${currentPage == 'ETAGERES_PUBLIQUES'}">class="active"</c:if>>
+	<c:if test="${currentPage == 'ETAGERES_PUBLIQUES' || currentPage == 'ACCUEUIL'}">class="active"</c:if>>
 	<a onclick="javascript: showActivity();"
 	href="<c:url value='/shelvesController/publicShelves.html' />">
 		Publique </a>

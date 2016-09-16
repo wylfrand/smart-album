@@ -3,19 +3,19 @@
 		<div class="footer-bottom">
 			<div class="center">
 				<p class="left">
-					<a href="index.html">Home</a>
+					<a onclick="javascript: showActivity();" href="<c:url value='/shelvesController/publicShelves.html' />">Home </a>
 					<span>|</span>
-				    <a href="about.html">About</a>
-				    <span>|</span>
-				    <a href="services.html">Services</a>
-				    <span>|</span>
-				    <a href="projects.html">Projects</a>
-				    <span>|</span>
-				    <a href="blog.html">Blog</a>
-				    <span>|</span>
-				    <a href="contact.html">Contact</a>
-				    <span>|</span>
-				    <a href="#">Templates</a>
+				    <a onclick="javascript: showActivity();" href="<c:url value='/home/index.html' />">About </a>
+<!-- 				    <span>|</span> -->
+<!-- 				    <a href="services.html">Services</a> -->
+<!-- 				    <span>|</span> -->
+<!-- 				    <a href="projects.html">Projects</a> -->
+<!-- 				    <span>|</span> -->
+<!-- 				    <a href="blog.html">Blog</a> -->
+<!-- 				    <span>|</span> -->
+<!-- 				    <a href="contact.html">Contact</a> -->
+<!-- 				    <span>|</span> -->
+<!-- 				    <a href="#">Templates</a> -->
 				</p>
 			
 				<p class="right">

@@ -4,5 +4,5 @@
 
 <%@ include file="/WEB-INF/jsp/common/include.jsp" %>
 
-<c:redirect url="/home/index.html" />
+<c:redirect url="/shelvesController/publicShelves.html" />
 

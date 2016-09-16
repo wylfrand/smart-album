@@ -47,15 +47,7 @@
 				<!-- Navigation-->
 				<nav>
 					<ul>
-						<li><a href="<c:url value='/shelvesController/publicShelves.html'/>">Accès au site</a></li>
-<!-- 					<li><a href="#" onclick="javascript:showBlockInLayer('col_gauche');return false;">S'enregistrer popup</a></li> -->
-						<security:authorize access="!isAuthenticated()">
-							<li><a href="#" onclick="javascript:logOut();return false;">Se connecter</a></li>
-							<li><a href="<c:url value='/usersController/open-creation.html'/>">S'enregistrer</a></li>
-						</security:authorize>
-						<security:authorize access="isAuthenticated()">
-							<li><a onclick="javascript:logOut();">Se déconnecter</a></li>
-						</security:authorize>
+					<%@ include file="/WEB-INF/jsp/common/nav_option.jsp"%>
 					</ul>
 				</nav>
 				<!-- Navigation -->

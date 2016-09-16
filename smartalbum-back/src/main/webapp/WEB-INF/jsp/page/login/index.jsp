@@ -20,7 +20,7 @@
 					dataType: "text",
 					success : function(data) {
 						if (data == "true") {
-							document.location.href = "<c:url value='/home/index.html' />";
+							document.location.href = "<c:url value='/shelvesController/publicShelves.html' />";
 						} else {
 							var error = JSON.parse(data);
 							alert(error.resultObject);
@@ -89,14 +89,7 @@
 					<a href="<c:url value='/usersController/open-creation.html'/>">Register</a>
 				</div>
 				<div id="links_right">
-				<c:choose>
-				<c:when test="${ not DEVICE_IS_MOBILE }">
-					<a href="<c:url value='/home/index.html'/>">Anonymous access</a>
-				</c:when>
-				<c:otherwise>
-					<a href="<c:url value='/shelvesController/publicShelves.html'/>">Anonymous access</a>
-				</c:otherwise>
-				</c:choose>
+				<a href="<c:url value='/shelvesController/publicShelves.html'/>">Anonymous access</a>
 				</div>
 			</form>
 		</div>
