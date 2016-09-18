@@ -12,3 +12,4 @@ smartalbum-filesystem/target
 smartalbum-front/target
 smartalbum-database/C:
 */.settings/
+smartalbum-database/src/main/resources/mock/
