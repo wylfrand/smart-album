@@ -22,6 +22,8 @@ public class AlbumInfos implements MappingInfos<ShelfInfos>,  Serializable{
 	private ImageInfos coveringImage;
 	
 	private boolean showAfterCreate;
+	
+	private Boolean isSliderAlbum;
 
 	private Date created;
 
@@ -263,5 +265,19 @@ public class AlbumInfos implements MappingInfos<ShelfInfos>,  Serializable{
 	 */
 	public void setImageNames(List<String> imageNames) {
 		this.imageNames = imageNames;
+	}
+
+	/**
+	 * @return the isSliderAlbum
+	 */
+	public Boolean getIsSliderAlbum() {
+		return isSliderAlbum;
+	}
+
+	/**
+	 * @param isSliderAlbum the isSliderAlbum to set
+	 */
+	public void setIsSliderAlbum(Boolean isSliderAlbum) {
+		this.isSliderAlbum = isSliderAlbum;
 	}
 }

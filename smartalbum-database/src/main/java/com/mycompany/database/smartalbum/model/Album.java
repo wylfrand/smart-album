@@ -45,6 +45,8 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.annotations.OrderBy;
@@ -68,9 +70,14 @@ public class Album extends ABuisnessObject<Long> implements Serializable, Clonea
 	@Id
 	@GeneratedValue
 	private Long id = null;
+	/**
+	 * Attribut permettant de savoir 
+	 */
+	private Boolean isSliderAlbum;
 
 	@OneToMany(mappedBy = "album", cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.REFRESH}, orphanRemoval = true)
 	@Fetch(FetchMode.SUBSELECT)
+	@LazyCollection(LazyCollectionOption.EXTRA)
 	private List<Image> images = new ArrayList<Image>();
 
 	@NotNull
@@ -475,5 +482,19 @@ public class Album extends ABuisnessObject<Long> implements Serializable, Clonea
 	 */
 	public void setComments(Set<Comment> comments) {
 		this.comments = comments;
+	}
+
+	/**
+	 * @return the isSliderAlbum
+	 */
+	public Boolean getIsSliderAlbum() {
+		return isSliderAlbum;
+	}
+
+	/**
+	 * @param isSliderAlbum the isSliderAlbum to set
+	 */
+	public void setIsSliderAlbum(Boolean isSliderAlbum) {
+		this.isSliderAlbum = isSliderAlbum;
 	}
 }
