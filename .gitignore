@@ -7,3 +7,6 @@
 *.war
 smartalbum-database/target
 smartalbum-service/target
+smartalbum-back/target
+smartalbum-filesystem/target
+smartalbum-front/target
