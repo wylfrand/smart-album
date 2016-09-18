@@ -11,3 +11,4 @@ smartalbum-back/target
 smartalbum-filesystem/target
 smartalbum-front/target
 smartalbum-database/C:
+*/.settings/
