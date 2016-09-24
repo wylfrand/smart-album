@@ -90,6 +90,8 @@ public class AlbumsController extends ABaseController {
 	public String showAlbum(@PathVariable("albumId") final Long albumId,
 			final ModelMap model) {
 		Album album = backService.getAlbumDBService().findAlbumById(albumId);
+		
+		
 		// Check, that album was not deleted recently.
 		if (album != null) {
 			if (!backService.getFileSystemService().isDirectoryPresent(

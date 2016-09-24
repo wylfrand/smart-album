@@ -137,8 +137,12 @@ public class AlbumsControllerRestCalls extends ABaseController {
 			final HttpServletResponse response, final ModelMap model) throws JSONException, PhotoAlbumException {
 		
 		LOG.debug("printsImages for dataTable processing ...");
+		
+		Album album = (Album)backService.getCacheManager().getObjectFromCache(
+				Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM);
+		
 		DataTableEnumType dataTableTypeEnum = DataTableEnumType.fromValue(dataTableType);
-		Long userId = backService.getCurrentUser(true).getId();
+		Long userId = album.getOwner().getId();
 		
 		SearchDataTableRequest currentRequest = new SearchDataTableRequest(parametresAjax, userId);
 		String requestUrl = dataTableFactoryHelper.getServerUrl(request);
