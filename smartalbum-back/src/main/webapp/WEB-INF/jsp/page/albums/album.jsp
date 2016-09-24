@@ -26,7 +26,7 @@
 				</c:otherwise>
 			</c:choose>
 			<li class="tabs"><a href="#smartslider"
-						class="js-tabLink closeState"><span>Album - Fullscreen
+						class="js-tabLink closeState"><span>Fullscreen
 								Slider</span> </a></li>
 		</ul>
 		<div class="separator ajustSeparator"></div>
