@@ -111,7 +111,7 @@ nav li a.active { background-position: 0 -52px; text-decoration: none; }
 #gallery .nav .colors { position: absolute; top: 66px; left: 0; width: 65px; height: 12px; }
 
 /* #gallery .container { position: relative; overflow: hidden; *width: 1016px; height: 819px;clear: both; } */
-#gallery .list-thumbs { position: relative; overflow: hidden; /**width: 1016px;**/ }
+#gallery .list-thumbs { position: relative; /**overflow: hidden; width: 1016px;**/ }
 #gallery .list-thumbs ul { position: relative; margin-right: -43px;/** width: 1016px;*/ }
 #gallery .list-thumbs li { float: left; display: inline; width: 295px; height: 273px; margin: 0 43px 0 0; }
 #gallery .list-thumbs .box { padding: 12px; height: 198px; -moz-box-shadow: 5px 5px 5px rgba(0,0,0,.05); -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,.05); box-shadow: 5px 5px 5px rgba(0,0,0,.05); }
