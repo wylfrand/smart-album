@@ -142,8 +142,13 @@ public class AlbumsControllerRestCalls extends ABaseController {
 				Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM);
 		
 		DataTableEnumType dataTableTypeEnum = DataTableEnumType.fromValue(dataTableType);
-		Long userId = album.getOwner().getId();
-		
+		Long userId = null;
+		if(album != null){
+			userId = album.getOwner().getId();
+		}
+		else{
+			userId = backService.getCurrentUser(true).getId();
+		}
 		SearchDataTableRequest currentRequest = new SearchDataTableRequest(parametresAjax, userId);
 		String requestUrl = dataTableFactoryHelper.getServerUrl(request);
 		DataTable table = dataTableFactoryHelper.buildImagesDataTable(currentRequest, requestUrl, dataTableTypeEnum);
