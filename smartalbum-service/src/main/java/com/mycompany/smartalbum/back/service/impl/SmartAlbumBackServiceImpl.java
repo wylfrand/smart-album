@@ -1137,6 +1137,7 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 		newAlbum.setCreated(new Date());
 		newAlbum.setName(albumForm.getName());
 		newAlbum.setDescription(albumForm.getDescription());
+		newAlbum.setIsSliderAlbum(albumForm.getIsSliderAlbum());
 		newAlbum.setId(null);
 
 		List<Shelf> shelves = StringUtils.isNotBlank(albumForm.getSelectedOwnShelf())

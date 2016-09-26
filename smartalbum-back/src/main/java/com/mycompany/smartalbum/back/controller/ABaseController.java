@@ -494,6 +494,7 @@ public abstract class ABaseController {
 			form.setDefaultPicturePath("/default/noimage_small200.jpg");
 			form.setPublicShelves(backService.getPublicShelvesInfos());
 			form.getUserShelvesInfos().addAll(backService.getUserShelvesInfos());
+			form.setIsSliderAlbum(false);
 			backService.getCacheManager().putObjectInCache(
 					Constant.SMARTALBUM_ALBUM_FORM, form);
 		}

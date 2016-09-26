@@ -88,7 +88,7 @@ $( "#valider_infos_album" ).click(function( event ) {
 										</td>
 									</tr>
 									<tr>
-										<td><div><span class="albumTitle">Nom de l'album</span></td>
+										<td><div><span class="albumTitle">Nom de l'album : </span></td>
 										<td><form:input path="name" cssClass="inputClass"/></div></td>
 									</tr>
 									<tr>
@@ -109,17 +109,17 @@ $( "#valider_infos_album" ).click(function( event ) {
 <%-- 				        					</c:forEach> --%>
 <%-- 										</form:select></td> --%>
 <!-- 									</tr> -->
-<!-- 									<tr> -->
-<!-- 									<td colspan="2"> -->
-<!-- 										<div class="actionApresCreation"> -->
-<%-- 											<form:radiobutton path="showAfterCreate" value="true" /> --%>
-<!-- 											&nbsp;&nbsp;Afficher tous les thèmes après la création de -->
-<!-- 											l'album -->
-<%-- 											<form:radiobutton path="showAfterCreate" value="false" /> --%>
-<!-- 											&nbsp;&nbsp;Fermer cette fenêtre après la création de l'album -->
-<!-- 										</div> -->
-<!-- 									</td> -->
-<!-- 								</tr> -->
+									<tr>
+									<td><span class="albumTitle">Type d'album : </span></td>
+									<td colspan="2">
+										<div class="actionApresCreation">
+											<form:radiobutton path="isSliderAlbum" value="true" />
+											&nbsp;&nbsp;Slider
+											<form:radiobutton path="isSliderAlbum" value="false" />
+											&nbsp;&nbsp;Blog
+										</div>
+									</td>
+								</tr>
 								</table>
 								<div class="additionnalBlock"><span class="albumTitle">Description de l'album : </span><br><br>
 									<div>

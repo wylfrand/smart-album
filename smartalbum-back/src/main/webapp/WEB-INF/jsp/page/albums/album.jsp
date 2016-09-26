@@ -19,25 +19,26 @@
 					<li class="tabs"><a href="#sliders"
 						class="js-tabLink closeState"><span>Regarder les
 								sliders</span> </a></li>
+								<li class="tabs"><a href="#smartslider"
+				class="js-tabLink closeState"><span>Détail des images</span> </a></li>
 				</c:when>
 				<c:otherwise>
 					<li class="tabs"><a href="#imagesBlog"
-				class="js-tabLink openState"><span>Blog des images</span> </a></li>
+						class="js-tabLink openState"><span>Blog des images</span> </a></li>
 				</c:otherwise>
 			</c:choose>
-			<li class="tabs"><a href="#smartslider"
-						class="js-tabLink closeState"><span>Fullscreen
-								Slider</span> </a></li>
+			
 		</ul>
 		<div class="separator ajustSeparator"></div>
 
-		<div id="sliders">
-			<div id="userAlbums">
-				<%@ include file="/WEB-INF/jsp/page/albums/body/albumInfo.jsp"%>
-			</div>
-		</div>
+
 		<c:choose>
 			<c:when test="${currentAlbum.isSliderAlbum}">
+				<div id="sliders">
+					<div id="userAlbums">
+						<%@ include file="/WEB-INF/jsp/page/albums/body/albumInfo.jsp"%>
+					</div>
+				</div>
 				<div id="smartslider">
 					<%@ include file="/WEB-INF/jsp/page/albums/body/imageSet.jsp"%>
 				</div>
@@ -48,6 +49,7 @@
 				</div>
 			</c:otherwise>
 		</c:choose>
+		
 	</div>
 </div>
 

@@ -29,6 +29,8 @@ public class AlbumForm implements Serializable {
 	private User user;
 
 	private List<Image> images;
+	
+	private Boolean isSliderAlbum;
 
 	// Etagère dans lequel l'album est rangé
 	private Shelf shelf;
@@ -387,6 +389,20 @@ public class AlbumForm implements Serializable {
 	 */
 	public void setUserShelvesInfos(Set<ShelfInfos> userShelvesInfos) {
 		this.userShelvesInfos = userShelvesInfos;
+	}
+
+	/**
+	 * @return the isSliderAlbum
+	 */
+	public Boolean getIsSliderAlbum() {
+		return isSliderAlbum;
+	}
+
+	/**
+	 * @param isSliderAlbum the isSliderAlbum to set
+	 */
+	public void setIsSliderAlbum(Boolean isSliderAlbum) {
+		this.isSliderAlbum = isSliderAlbum;
 	}
 
 }
