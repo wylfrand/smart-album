@@ -1,6 +1,8 @@
 # Comment
 */target/*
 *.log
+.project
+.classpath
 *.zip
 *.class
 *.jar
