@@ -557,9 +557,9 @@ function massiveAction(actionValue) {
 							if(actionValue == 'MODIFY_ALBUM')
 							{
 								controllerName = "albumsController";
-								// SelectedAlbumName
 								$("#name").val(data.resultObject.selectedAlbumName);
 								$("#descriptionAlbum").val(data.resultObject.selectedAlbumDescription);
+								
 								$("#selectedOwnShelf").val(data.resultObject.selectedAlbumShelf);
 								// 
 							}

@@ -50,6 +50,7 @@ import com.mycompany.database.smartalbum.search.options.SearchOptionByImage;
 import com.mycompany.database.smartalbum.search.options.SearchOptionByShelf;
 import com.mycompany.database.smartalbum.search.options.SearchOptionByTag;
 import com.mycompany.database.smartalbum.search.options.SearchOptionByUser;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 import com.mycompany.database.smartalbum.services.ISearchOption;
 import com.mycompany.filesystem.model.CheckedFile;
 import com.mycompany.filesystem.model.FileMeta;
@@ -404,7 +405,6 @@ public abstract class ABaseController {
 		}
 		
 		form.setSelectedPicturesOptions(options.toString());
-		form.setUserShelfResume(backService.getShelfDBService().findShelfResumeByUserId(user.getId()));
 		aFileUploadForm.setSelectedPicturesOptions(options.toString());
 		
 		return aFileUploadForm;
@@ -485,7 +485,7 @@ public abstract class ABaseController {
 		return jsonInString;
 	}
 	
-	protected void initAlbumForm(final ModelMap model) {
+	protected void initAlbumForm(final ModelMap model, Long userId, boolean isSliderAlbum) {
 		Object albumFormObj = backService.getCacheManager().getObjectFromCache(
 				Constant.SMARTALBUM_ALBUM_FORM);
 		AlbumForm form = null;
@@ -494,13 +494,18 @@ public abstract class ABaseController {
 			form.setDefaultPicturePath("/default/noimage_small200.jpg");
 			form.setPublicShelves(backService.getPublicShelvesInfos());
 			form.getUserShelvesInfos().addAll(backService.getUserShelvesInfos());
-			form.setIsSliderAlbum(false);
+			form.setIsSliderAlbum(isSliderAlbum);
 			backService.getCacheManager().putObjectInCache(
 					Constant.SMARTALBUM_ALBUM_FORM, form);
 		}
 		else
 		{
 			form = (AlbumForm)albumFormObj;
+		}
+		if(userId!=null){
+			List<ModifyShelfForm> modifyShelfForms = backService.getShelfDBService().findShelfResumeByUserId(userId);
+			form.setUserShelfResume(modifyShelfForms);
+			form.setIsSliderAlbum(isSliderAlbum);
 		}
 		model.put(Constant.SMARTALBUM_ALBUM_FORM, form);
 	}

@@ -1524,7 +1524,7 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 				}
 				Image newCoveringImage = null;
 				// 1 - On modifie l'image de couverture si nécessaire
-				if (!currentAlbum.getCoveringImage().getName().equals(imageName)) {
+				if (!managedAlbumEntity.getCoveringImage().getName().equals(imageName)) {
 					newCoveringImage = getImageDBService().findImageByNameAndAlbumId(imageName,managedAlbumEntity.getId());
 					newCoveringImage.setCovering(true);
 					managedAlbumEntity.getCoveringImage().setCovering(false);
@@ -1533,12 +1533,16 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 				// 2 - On modifie la description et le nom de l'image
 				managedAlbumEntity.setDescription(anAlbumForm.getDescription());
 				managedAlbumEntity.setName(anAlbumForm.getName());
+				
+				// 3 - On modifie le type d'album : blog ou slider
+				managedAlbumEntity.setIsSliderAlbum(anAlbumForm.getIsSliderAlbum());
 
-				// 3 - On enregistre l'album ainsi mis à jour
+				// 4 - On enregistre l'album ainsi mis à jour
 				if (!saveAlbum(managedAlbumEntity, false, getCurrentUser(false), imageName).getResult().booleanValue()) {
 					throw new PhotoAlbumException("Impossible de sauvegarder l'album " + managedAlbumEntity.getName());
 				}
-				// 4 - On déplace l'album ainsi modifié si nécessaire vers le
+				
+				// 5 - On déplace l'album ainsi modifié si nécessaire vers le
 				// nouvel étagère
 				Long newShelf = Long.parseLong(anAlbumForm.getSelectedOwnShelf());
 				if (newShelf != managedAlbumEntity.getShelf().getId()) {
@@ -1547,7 +1551,7 @@ public class SmartAlbumBackServiceImpl implements SmartAlbumBackService, Seriali
 								+ " des l'étagère " + newShelf);
 					}
 				}
-				// 5 - On sauvegarde l'album courant dant le cache
+				// 6 - On sauvegarde l'album courant dant le cache
 				getCacheManager().putObjectInCache(Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM, managedAlbumEntity);
 			}
 		} else {

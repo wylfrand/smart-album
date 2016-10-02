@@ -1,9 +1,12 @@
 package com.mycompany.smartalbum.back.form;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 import com.mycompany.filesystem.model.CheckedFile;
 import com.mycompany.services.smartalbum.infos.ShelfInfos;
 
@@ -30,6 +33,8 @@ public class FileUploadForm implements Serializable{
     private String selectedAlbumShelf;
     
     private Set<ShelfInfos> userShelvesInfos;
+    
+    List<ModifyShelfForm> userShelfResume = new ArrayList<>();
 
     /**
      * @return the selectedCoverAlbum
@@ -134,5 +139,19 @@ public class FileUploadForm implements Serializable{
 	    	userShelvesInfos = Sets.newHashSet();
             }
 		return userShelvesInfos;
+	}
+
+	/**
+	 * @return the userShelfResume
+	 */
+	public List<ModifyShelfForm> getUserShelfResume() {
+		return userShelfResume;
+	}
+
+	/**
+	 * @param userShelfResume the userShelfResume to set
+	 */
+	public void setUserShelfResume(List<ModifyShelfForm> userShelfResume) {
+		this.userShelfResume = userShelfResume;
 	}
 }

@@ -3,6 +3,7 @@ package com.mycompany.smartalbum.back.controller;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,6 +23,7 @@ import com.mycompany.database.smartalbum.exception.PhotoAlbumException;
 import com.mycompany.database.smartalbum.model.Album;
 import com.mycompany.database.smartalbum.model.Image;
 import com.mycompany.database.smartalbum.model.User;
+import com.mycompany.database.smartalbum.search.vo.ModifyShelfForm;
 import com.mycompany.filesystem.utils.Constants;
 import com.mycompany.services.utils.Constant;
 import com.mycompany.services.utils.RetourReponse;
@@ -69,10 +71,10 @@ public class AlbumsController extends ABaseController {
 			@PathVariable("albumId") final Long albumId,
 			final ModelMap model) {
 		
-		initAlbumForm(model);
-
-		Album album = backService.getAlbumDBService().findAlbumById(albumId);
 		
+		Album album = backService.getAlbumDBService().findAlbumById(albumId);
+		initAlbumForm(model, album.getOwner().getId(),album.getIsSliderAlbum());
+
 		model.put(Constant.SMARTALBUM_PHOTOS_CONTROLLER,Constant.SMARTALBUM_PHOTOS_ALBUMCONTROLLER);
 		backService.getCacheManager().putObjectInCache(
 				Constant.SMARTALBUM_PHOTOS_CONTROLLER,
@@ -90,8 +92,6 @@ public class AlbumsController extends ABaseController {
 	public String showAlbum(@PathVariable("albumId") final Long albumId,
 			final ModelMap model) {
 		Album album = backService.getAlbumDBService().findAlbumById(albumId);
-		
-		
 		// Check, that album was not deleted recently.
 		if (album != null) {
 			if (!backService.getFileSystemService().isDirectoryPresent(
@@ -103,6 +103,7 @@ public class AlbumsController extends ABaseController {
 								+ " sur le filesystème! Veuillez contacter votre administrateur.");
 				return ViewEnum.SMARTALBUM_VIEW_ERROR.getView();
 			}
+			
 			model.put(Constant.SMARTALBUM_PHOTOS_CONTROLLER,
 					Constant.SMARTALBUM_PHOTOS_ALBUMCONTROLLER);
 			model.put(Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM, album);
