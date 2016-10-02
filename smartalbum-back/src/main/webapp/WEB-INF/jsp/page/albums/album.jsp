@@ -20,7 +20,7 @@
 						class="js-tabLink closeState"><span>Regarder les
 								sliders</span> </a></li>
 								<li class="tabs"><a href="#smartslider"
-				class="js-tabLink closeState"><span>Détail des images</span> </a></li>
+				class="js-tabLink closeState"><span>Aper&ccedil;u des images</span> </a></li>
 				</c:when>
 				<c:otherwise>
 					<li class="tabs"><a href="#imagesBlog"
