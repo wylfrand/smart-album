@@ -133,10 +133,10 @@
 <%-- "<c:url value='/chatController/showChatRoom.html' /> --%>
 <!-- onclick="javascript:showCurrentChatRoom();" -->
 <%-- href="<c:url value='/chatController/showChatRoom.html' />" --%>
-			<li
-				<c:if test="${currentPage == 'ACCUEUIL'}">class="active"</c:if>>
-				<a id="chatRoom"  onclick="javascript:showCurrentChatRoom();"> Chat room </a>
-			</li>
+<!-- 			<li -->
+<%-- 				<c:if test="${currentPage == 'ACCUEUIL'}">class="active"</c:if>> --%>
+<!-- 				<a id="chatRoom"  onclick="javascript:showCurrentChatRoom();"> Chat room </a> -->
+<!-- 			</li> -->
 <%-- 			</c:if> --%>
 			<%@ include file="/WEB-INF/jsp/common/nav_option.jsp"%>
 		</ul>
