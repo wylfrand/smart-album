@@ -26,7 +26,8 @@
 				<c:set var="messageToPrint" value="${messageHTML}" />
 			</c:if>
 		</c:forEach>
-
+		
+		
 		<div id="messageToPrintPositionId${messageToPrint.id}">
 			${messageToPrint.htmlDescription}</div>
 		<div class="cl">&nbsp;</div>

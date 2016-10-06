@@ -6,6 +6,8 @@ jQuery(document).ready(
 		    currentAlbumId);
 	    blogAlbums.printSliderDataTableSearchResult("slider-files",
 		    currentAlbumId);
+	    //blogAlbums.printGenericTiny("textAreaId");
+	    
 	    // blogAlbums.loadWowSliderImageList(currentAlbumId);
 	    // alert("Pause");
 	    // blogAlbums.initWowSlider("wowslider-container1",0);
@@ -24,6 +26,10 @@ var blogAlbums = (function() {
     init = function() {
 	return true;
     };
+    
+    printGenericTiny = function(textAreaId){
+	common.buildRichTextEditor(textAreaId);
+    }
 
     printBlogDataTableSearchResult = function(dataTableId, currentAlbumId) {
 	var userUrl = common.getDocumentRootURL()
@@ -200,9 +206,11 @@ var blogAlbums = (function() {
 
 	$("#" + containerId).wowSlider(options);
     });
+    
 
     return {
 	init : init,
+	printGenericTiny : printGenericTiny,
 	initBlogDatatable : initBlogDatatable,
 	printBlogDataTableSearchResult : printBlogDataTableSearchResult,
 	saveShortDescription : saveShortDescription,

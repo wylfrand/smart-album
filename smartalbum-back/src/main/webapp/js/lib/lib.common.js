@@ -205,6 +205,58 @@ var common = (function() {
 	showPopupWarningContent(htmlContent);
        }
       
+      buildRichTextEditor = function (elementId){
+
+		 $('textarea#'+elementId).tinymce({
+	         // Location of TinyMCE script
+		 //${pageContext.request.contextPath}
+		 //documentRootURL
+	         script_url : documentRootURL+"/js/jquery/tiny_mce/tiny_mce.js",
+	          
+	         // General options
+	         theme : "advanced",
+	         plugins : "safari,style,layer,table,advhr,advimage,advlink,iespell,inlinepopups,insertdatetime,contextmenu,paste,directionality,noneditable,visualchars,nonbreaking,xhtmlxtras",
+	         theme_advanced_buttons1 : "newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect",
+	         theme_advanced_buttons2 : "cut,copy,paste|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,image,code,|,insertdate,inserttime,|,forecolor,backcolor",
+	         theme_advanced_buttons3 : "tablecontrols,|sub,sup,|,charmap,iespell,advhr,|,ltr,rtl,|insertlayer,moveforward,movebackward,absolute|visualchars,nonbreaking",
+	         theme_advanced_toolbar_location : "top",
+	         theme_advanced_toolbar_align : "left",
+	         theme_advanced_resizing : true,
+
+	         // Drop lists for link/image/media/template dialogs
+	         template_external_list_url : "lists/template_list.js",
+	         external_link_list_url : "lists/link_list.js",
+	         external_image_list_url : "lists/image_list.js"
+	     });
+	    };
+      
+	    // Enregistre le nouveau contenu
+	    saveRichText = function (messageId, entityType){
+		var messageHTML = $('textarea#' + messageId).html();
+                var urlMessage = documentRootURL
+		+ '/messageHTMLController/ajax/update.json';
+                
+                var longDescriptionFormObj = {
+			id : messageId,
+			description : messageHTML,
+			entityType : entityType
+                };
+	
+                var longDescriptionFormObjStr = JSON.stringify(longDescriptionFormObj);
+                
+                $.fancybox.showActivity();
+                $.ajax({
+                    type: 'POST',
+                    url: urlMessage,
+                    cache: false,
+                    data: longDescriptionFormObjStr,
+                    contentType : "application/json",
+                    success: function(data){
+                    	alert("Sauvegarde effectué avec succès");
+                         $.fancybox.hideActivity();
+                    }
+                });
+            };
 	return {
 		init : init,
 		exists : exists,
@@ -221,6 +273,8 @@ var common = (function() {
 		printFullImageInLayerFact : printFullImageInLayerFact,
 		editAlbum : editAlbum,
 		setHeader : setHeader,
+		buildRichTextEditor : buildRichTextEditor,
+		saveRichText : saveRichText,
 		printDataTableStandardPopup : printDataTableStandardPopup,
 	};
 })();

@@ -11,12 +11,15 @@
 <title><decorator:title default="Smart Album - Back Office"></decorator:title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta id="viewport" name="viewport"
-	content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, inital-scale=1.0" />
+	content="width=device-width, maximum-scale=1.0, minimum-scale=1.0" />
 <c:set var="user"
 	value="${SPRING_SECURITY_CONTEXT.authentication.principal}"
 	scope="request" />
 <!-- Add jQuery library -->
+
 <script language="javascript" type="text/javascript" src="<c:url value='/js/jquery/jquery-1.9.1.min.js'/>"></script>
+
+
 
 	<!-- WOW Slider -->
 <link rel="stylesheet" type="text/css"
@@ -61,8 +64,7 @@
 <link rel="stylesheet" href="<c:url value='/js/jquery/datatables/css/jquery.dataTables.min.css'/>" type="text/css" media="all" />
 <script src="<c:url value='/js/jquery/datatables/jquery.dataTables.min.js'/>" type="text/javascript" charset="utf-8"></script>
 
-<script type="text/javascript"
-	src="<c:url value='/js/wow_slider_engine/wowslider.js'/>"></script>
+
 <script type="text/javascript"
 	src="<c:url value='/js/wow_slider_engine/script.js'/>"></script>
 <!-- we code these -->
@@ -93,14 +95,9 @@
 	href="<c:url value='/css/photoalbum.css' />" />
 
 <!-- Pluralsight Gallery -->
-<script type="text/javascript"
-	src="<c:url value='/js/jquery/plsightGalery/Gallery.js'/>"></script>
-
 <!-- tinymce -->
 <script type="text/javascript"
-	src="<c:url value='/js/tiny_mce/richtext.js' />"></script>
-<script type="text/javascript"
-	src="<c:url value='/js/tiny_mce/config.js' />"></script>
+	src="<c:url value='/js/jquery/plsightGalery/Gallery.js'/>"></script>
 	<!-- Multi select -->
 	<link rel="stylesheet" type="text/css" href="<c:url value='/js/select2-3.5.1/select2.css'/>"></link>
 <script src="<c:url value='/js/select2-3.5.1/select2.min.js'/>" type="text/javascript"></script>

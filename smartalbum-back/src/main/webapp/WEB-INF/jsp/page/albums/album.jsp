@@ -53,4 +53,7 @@
 	</div>
 </div>
 
+<script type="text/javascript"
+	src="<c:url value='/js/wow_slider_engine/wowslider.js'/>"></script>
+	
 

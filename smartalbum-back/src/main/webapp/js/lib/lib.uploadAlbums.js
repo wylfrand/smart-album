@@ -100,7 +100,7 @@ var uploadAlbums = (function() {
     		"searching" : true,
     		"sort" : true,
     		"info" : true,
-    		"stateSave" : true,
+    		"stateSave" : false,
     		"autoWidth" : true,
     		"processing" : true,
     		"serverSide" : true,

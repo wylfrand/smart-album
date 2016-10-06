@@ -119,10 +119,9 @@ public class MessagesHTMLController extends ABaseController {
 			Album album = (Album) backService.getCacheManager().getObjectFromCache(
 					Constant.SMARTALBUM_PHOTOS_CURRENT_ALBUM);
 			try {
-				backService.createEntityHTMLMessage(album, MessageHTMLTypes.LONGDESCRIPTION, "Message mis à jour!", backService
+				backService.createEntityHTMLMessage(album, MessageHTMLTypes.LONGDESCRIPTION, aDescriptionForm.getDescription(), backService
 						.getCurrentUser(true).getLogin());
 			} catch (PhotoAlbumException e) {
-				// TODO Auto-generated catch block
 				LOG.error("Impossible de créer le message HTML de l'album {}", album.getName());
 			}
 		}

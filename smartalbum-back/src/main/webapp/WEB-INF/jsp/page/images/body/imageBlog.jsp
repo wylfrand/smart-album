@@ -36,7 +36,8 @@
 				<!-- Image html description -->
 				<div class="project-information">
 					<div id="printedMessage">${blogMessageHTML.htmlDescription}</div>
-					<a href="<c:url value='/albumsController/showAlbum/${image.album.id}.html'/>">Retour à la liste</a> <span>|</span> <a id="${blogMessageHTML.id}" href="#modifierDescriptionImage" class="modifierDescriptionImage">Modifier le message</a>
+					
+					<a href="<c:url value='/albumsController/showAlbum/${image.album.id}.html'/>">Retour à la liste</a> <span>|</span> <a id="${blogMessageHTML.id}" class="modifierDescriptionImage">Modifier le message</a>
 				</div>
 				<!-- End Image html description -->
 			</div>

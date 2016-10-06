@@ -1782,7 +1782,16 @@ function rteSelection() {
 		var is_link = false;
 		var is_table = false;
 		var current_tag = selected_obj;
-		var previous_tagName = selected_obj.tagName;
+		var previous_tagName = null;
+		if (selected_obj) {
+		    // your code here
+		    previous_tagName = selected_obj.tagName;
+		}
+		else
+		{
+		    current_tag = "";
+		}
+		
 		var textcolor = "";
 		document.getElementById("fontcolor4").style.backgroundColor = "#000000";
 		while (previous_tagName != "HTML") {
@@ -1916,8 +1925,12 @@ function rteSelection() {
 			if (current_tag.color != null) {
 				textcolor = current_tag.color;
 			}
-			current_tag = current_tag.parentNode;
-			previous_tagName = current_tag.tagName;
+			if(!current_tag && current_tag!="")
+			{
+			    current_tag = current_tag.parentNode;
+			 }
+			previous_tagName = "HTML";
+			
 		}
 		if (in_list) {
 		}
